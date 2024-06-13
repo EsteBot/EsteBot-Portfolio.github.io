@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Page</title>
+  <link rel="stylesheet" href="ContactPage.css" />
+</head>
+<div class="head-flex-box">
+  <div class="head-flex">
+      <nav id="navbar">
+          <ul>
+            <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
+            <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
+            <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
+            <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
+            <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
+            <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
+          </ul>
+      </nav>
+  </div>
+</div>
+<contact-body>
+  <h1>Let's Solve Problems Together!</h1>
+  <div class="divider"></div>
+  <h3>Please contact me through any of the below methods</h3>
+
+  <button class="transparent-airplane-button" onclick="toggleAirplaneIconText()">
+  <img src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535985&authkey=%21AFTUQfG9geA1mio&width=32&height=32" alt="Icon paper airplane" id="airplane" class="icon-visible">
+</button>
+<span id="emailText" class="hidden">estestyle@gmail.com</span>
+
+<script>
+function toggleAirplaneIconText() {
+  var airplane = document.getElementById('airplane');
+  var emailText = document.getElementById('emailText');
+  // Check if the icon is currently visible
+  if (airplane.classList.contains('icon-visible')) {
+    airplane.classList.remove('icon-visible'); // Hide the icon
+    emailText.classList.remove('hidden'); // Show the email text
+  } else {
+    airplane.classList.add('icon-visible'); // Show the icon
+    emailText.classList.add('hidden'); // Hide the email text
+  }
+}
+</script>
+
+<button class="transparent-phone-button" onclick="togglePhoneIconText()">
+  <img src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535981&authkey=%21ANvGQMBxBAcVVjc&width=32&height=32" alt="Icon phone" id="phone" class="icon-visible">
+</button>
+<span id="phoneText" class="hidden">303.548.0325</span>
+
+<script>
+function togglePhoneIconText() {
+  var phone = document.getElementById('phone');
+  var phoneText = document.getElementById('phoneText');
+  // Check if the icon is currently visible
+  if (phone.classList.contains('icon-visible')) {
+    phone.classList.remove('icon-visible'); // Hide the icon
+    phoneText.classList.remove('hidden'); // Show the email text
+  } else {
+    phone.classList.add('icon-visible'); // Show the icon
+    phoneText.classList.add('hidden'); // Hide the email text
+  }
+}
+</script>
+
+<button class="transparent-lnkd-button" onclick="toggleIconText()">
+  <img src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535986&authkey=%21AGcA-3JuqyKDji0&width=32&height=32" alt="Icon lnkd" id="lnkd" class="icon-visible">
+</button>
+<span id="lnkdText" class="hidden"><a target=_blank href="https://www.linkedin.com/in/esteban-loetz-272a7640/">Go to Linkedin Profile</a></span>
+
+<script>
+function toggleIconText() {
+  var lnkd = document.getElementById('lnkd');
+  var lnkdText = document.getElementById('lnkdText');
+  // Check if the icon is currently visible
+  if (lnkd.classList.contains('icon-visible')) {
+    lnkd.classList.remove('icon-visible'); // Hide the icon
+    lnkdText.classList.remove('hidden'); // Show the email text
+  } else {
+    lnkd.classList.add('icon-visible'); // Show the icon
+    lnkdText.classList.add('hidden'); // Hide the email text
+  }
+}
+</script>
+
+
+            </a></div>
+</contact-body>
+<div class="bottom-flex-box">
+    <header class="return-text">
+      <p class="p-spacing">Click icon to return </p><p class="p-spacing">to profile main page</p>
+      </header>
+    <div class="return-icon">
+      <a href="index.html"><img
+            src="https://cdn.worldvectorlogo.com/logos/python-package-index-1.svg"
+            alt="home profile logo"
+            loading="eager"
+            class="logo-img"
+            width="100px">
+      </a></div>
+  </div>
+    </div>
+</html>

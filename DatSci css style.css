@@ -1,0 +1,308 @@
+/* DatSci Styles Settings */
+
+.head-flex-box {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    flex-wrap: wrap;
+    background-color: #3a4b53;
+    height: 100px;
+}
+
+.head-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the flex items horizontally */
+    flex-wrap: wrap;
+    font-family: 'Futura', sans-serif;
+}
+
+#navbar ul li {
+    margin: 0 10px; /* Add spacing between navbar items */
+    font-family: 'Futura', sans-serif;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(70, 175, 245);
+    padding: 50px 15px;
+    font-family: 'Futura', sans-serif;
+}
+
+datsci-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 186, 241);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: -100px;
+    font-family: 'Futura', sans-serif;
+}
+
+.pro-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+h3 {
+    line-height: 1.5;
+    font-family: 'Futura', sans-serif;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Futura', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Futura', sans-serif;
+}
+
+.h2-spacing {
+    margin-bottom: 0em;
+    margin-top: 0.2em;
+    font-family: 'Futura', sans-serif;
+  }
+
+.datsci-pro {
+    padding-top: 30px;
+    font-family: 'Futura', sans-serif;
+}
+
+.title-divider {
+    height: 5px;
+    width: 90%;
+    background-color: #000; /* Color of the line */
+    margin: 0; /* Adjust margin as needed */
+}
+
+.divider {
+    height: 5px;
+    width: 90%;
+    background-color: #000; /* Color of the line */
+    margin: 60px 0; /* Adjust margin as needed */
+}
+
+.datsci-img {
+    text-align: center;
+}
+
+.datsci-graph {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.datsci-vid {
+    padding-top: 30px;
+}
+
+.dreadd-subtitle {
+    text-align: left;
+    margin-left: 10%;
+    font-family: 'Futura', sans-serif;
+}
+
+.dreadd-graph {
+    max-width: 1000px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.mindiff-subtitle {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Futura', sans-serif;
+}
+
+.mindiff-graph {
+    max-width: 1000px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.rh-pro-subtitle {
+    margin-left:20%;
+    margin-top: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+.datsci-rh-logo {
+    max-width: 1000px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.rh-list-subtitle {
+    margin-top: 5%;
+}
+
+.rh-graph {
+    max-width: 1000px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.datsci-rh-graphs {
+    width: 650px;
+    padding-right: 120px;
+}
+
+.run-wheel-subtitle {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Futura', sans-serif;
+}
+
+.run-wheel-graph {
+    max-width: 1000px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.graph-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusts space between the items */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 50px; /* Adds space between the items */
+    padding-left: 250px; /* Adds padding around the container */
+    padding-right: 250px;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    width: 100%; /* Ensures the container takes the full width of its parent */
+}
+
+.graph-box {
+    flex: 1; /* Account for the gap */ /* Ensures each item grows equally */
+    max-width: 100%; /* Ensures they fit side by side without exceeding 100% */
+}
+
+.fin-CH-img {
+    max-width: 500px;
+    width: 100%; /* Ensure images fit the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.fin-CC-img {
+    max-width: 500px;
+    width: 100%; /* Ensure images fit the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.activity-subtitle {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 1000px;
+    font-family: 'Futura', sans-serif;
+}
+
+.activity-graph {
+    max-width: 1000px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.github-pro-link {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.vid-atr {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    
+}
+
+.datsci-vid {
+    width: 90%; /* Max width of the video relative to its container */
+    text-align: center;
+    margin-top: 5%;
+}
+
+.return-icon {
+    float: right;
+    padding-top: 100px;
+}
+
+.return-text {
+    float: right;
+    padding-top: 120px;
+    padding-right: 20px;
+    font-family: 'Futura', sans-serif;
+}
+
+.pro-subtitle.p-spacing{
+    line-height: 1.5;
+    font-size: 1.05em;
+    margin-right: 40%;
+    font-family: 'Futura', sans-serif;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+p.p-spacing  {
+    display: block;
+    line-height: 0;
+    font-size: 1em;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: 'Futura', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.05em;
+    font-family: 'Futura', sans-serif;
+  }
+
+li {
+    line-height: 1.5;
+    font-size: 1.05em;
+    line-height: 1.5;
+    font-size: 1.05em;
+    font-family: 'Futura', sans-serif;
+}
+
+  @font-face {
+    font-family: 'Futura';
+    src: url('path/to/futura.woff2') format('woff2'),
+         url('path/to/futura.woff') format('woff');
+}
+
+  @media only screen and (max-width: 200px) {
+      img {
+      width: 25%;
+      object-fit: cover;
+      }
+}
