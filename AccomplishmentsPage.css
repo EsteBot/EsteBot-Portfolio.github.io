@@ -5,7 +5,7 @@
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
     font-family: 'Futura', sans-serif;
-    height: 100px;
+    height: 120px;
 }
 
 .head-flex {
@@ -83,7 +83,7 @@ section {
 }
 
 ul {
-    line-height: 1.5; /* Adjust the value as needed */
+    line-height: 2; /* Adjust the value as needed */
     font-family: 'Futura', sans-serif;
 }
 

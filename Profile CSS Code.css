@@ -5,7 +5,7 @@
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
     background-color: #3a4b53;
-    height: 100px;
+    height: 120px;
 }
 
 #navbar ul {
@@ -39,6 +39,16 @@
     
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 186, 241);
+    margin-bottom: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
 .welcome-section {
     display: flex;
     flex-direction: column;
@@ -46,8 +56,8 @@
     align-items: center;
     background-color: rgb(130, 186, 241);
     padding-top: 10%;
-    padding-bottom: 40%;
-    margin-bottom: 5%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
     font-family: 'Futura', sans-serif;
 }
 
@@ -70,26 +80,30 @@ h2 {
 }
 
 h3 {
-    margin-top: 10%;
+    
     font-family: 'Futura', sans-serif;
 }
 
 ul {
-    line-height: 1.5; /* Adjust the value as needed */
+    line-height: 2; /* Adjust the value as needed */
     font-family: 'Futuras', sans-serif;
 }
 
 .projects {
     display: flex;
-    justify-content: none; /* Adjust spacing between the sections */
+    justify-content: space-between; /* Adjust spacing between the sections */
     flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10%;
+    padding: 5%;
+    width: 100%;
+    box-sizing: border-box;
     font-family: 'Futura', sans-serif;
 }
 
 .project-tile {
     flex: 1; /* Each tile section takes equal width */
-    margin-right: 10px; /* Adjust margin between sections */
-    padding: 10px 70px;
+    padding: 2%;
     font-family: 'Futura', sans-serif;
 }
 

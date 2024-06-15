@@ -5,7 +5,7 @@
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
     background-color: #3a4b53;
-    height: 100px;
+    height: 120px;
 }
 
 #navbar ul {
@@ -67,7 +67,7 @@ section {
 }
 
 ul {
-    line-height: 1.5; /* Adjust the value as needed */
+    line-height: 2; /* Adjust the value as needed */
     font-family: 'Futuras', sans-serif;
 }
 
