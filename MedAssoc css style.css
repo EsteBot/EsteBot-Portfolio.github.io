@@ -42,6 +42,15 @@ medassoc-body {
     font-family: 'Futura', sans-serif;
 }
 
+.cntr-txt {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
 .head-flex {
     display: flex;
     justify-content: flex-end;
@@ -50,10 +59,14 @@ medassoc-body {
     
 }
 
-.pro-descript {
+.pro-description {
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'Futura', sans-serif;
+}
+
+.pro-description.indented {
+    text-indent: 2em; /* Apply indent */
 }
 
 h3 {
