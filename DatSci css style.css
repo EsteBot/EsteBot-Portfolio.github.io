@@ -49,6 +49,15 @@ datsci-body {
     font-family: 'Futura', sans-serif;
 }
 
+.cntr-txt {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
 .pro-description {
     display: flex;
     flex-direction: column;
@@ -58,6 +67,11 @@ datsci-body {
     margin-right: 5%;
     font-family: 'Futura', sans-serif;
 }
+
+.pro-description.indented {
+text-indent: 2em; /* Apply indent */
+}
+
 
 h3 {
     line-height: 1.5;
@@ -69,6 +83,19 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: 'Futura', sans-serif;
 }
 
@@ -107,6 +134,10 @@ section {
 
 .datsci-img {
     text-align: center;
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .datsci-graph {
@@ -206,12 +237,14 @@ section {
 
 .fin-CH-img {
     max-width: 500px;
+    min-width: 200px;
     width: 100%; /* Ensure images fit the container */
     height: auto; /* Maintain aspect ratio */
 }
 
 .fin-CC-img {
     max-width: 500px;
+    min-width: 200px;
     width: 100%; /* Ensure images fit the container */
     height: auto; /* Maintain aspect ratio */
 }
