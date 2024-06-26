@@ -1,198 +1,146 @@
-/* PySimpleGUI Styles Settings */
-
-.head-flex-box {
-    display: flex;
-    justify-content: center; /* Center the flex items horizontally */
-    flex-wrap: wrap;
-    background-color: #3a4b53;
-    height: 120px;
-}
-
-.head-flex {
-    display: flex;
-}
-
-#navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; /* Remove default margin */
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center the flex items horizontally */
-    flex-wrap: wrap;
-    font-family: 'Futura', sans-serif;
-}
-
-#navbar ul li {
-    margin: 0 10px; /* Add spacing between navbar items */
-    font-family: 'Futura', sans-serif;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: rgb(70, 175, 245);
-    padding: 50px 15px;
-    font-family: 'Futura', sans-serif;
-}
-
-tkinter-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(130, 186, 241);
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin-bottom: -100px;
-    font-family: 'Futura', sans-serif;
-}
-
-.cntr-txt {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: 'Futura', sans-serif;
-}
-
-.head-flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.tkinter-pro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Futura', sans-serif;
-}
-
-.divider {
-    height: 5px;
-    width: 90%;
-    background-color: #000; /* Color of the line */
-    margin: 60px 0; /* Adjust margin as needed */
-    font-family: 'Futura';
-}
-
-.title-divider {
-    height: 5px;
-    width: 90%;
-    background-color: #000; /* Color of the line */
-    margin: 0; /* Adjust margin as needed */
-}
-
-.pro-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: 'Futura', sans-serif;
-}
-
-.pro-description.indented {
-    text-indent: 2em; /* Apply indent */
-}
-
-.pro-header {
-    margin-top: 5%;
-    font-family: 'Futura', sans-serif;
-}
-
-.pro-subtitle {
-    text-align: center;
-    font-family: 'Futura', sans-serif;
-}
-
-.pysimp-img1 {
-    width: 90%;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;  
-}
-
-.PySimp-img2 {
-    width: 90%;
-    align-items: center;
-    padding-left: 5%;
-}
-
-.pysimp-vid1 {
-    width: 80%; /* Max width of the video relative to its container */
-    text-align: center;
-    margin-top: 5%;
-}
-
-.pysimp-vid2 {
-    width: 80%; /* Max width of the video relative to its container */
-    text-align: center;
-    margin-top: 5%;
-}
-
-.vid-atr {
-    max-width: 50%;
-    min-width: 200px;
-    height: auto
-}
-
-.return-icon {
-    float: right;
-    padding-top: 100px;
-}
-
-.return-text {
-    float: right;
-    padding-top: 120px;
-    padding-right: 20px;
-    font-family: 'Futura', sans-serif;
-}
-
-h3 {
-    line-height: 1.5;
-    font-family: 'Futura', sans-serif;
-}
-
-p.p-spacing  {
-    line-height: 1;
-    font-size: 1em;
-    font-family: 'Futura', sans-serif;
-}
-
-p {
-    line-height: 1.5;
-    font-size: 1.05em;
-    font-family: 'Futura', sans-serif;
-  }
-
-.p-spacing {
-    margin-bottom: 0em;
-    margin-top: 0.2em;
-    font-family: 'Futura', sans-serif;
-  }
-
-li {
-    line-height: 2;
-    font-size: 1.05em;
-    line-height: 1.5;
-    font-size: 1.05em;
-    font-family: 'Futura', sans-serif;
-}
-
-
-
-  @font-face {
-    font-family: 'Futura';
-    src: url('path/to/futura.woff2') format('woff2'),
-         url('path/to/futura.woff') format('woff');
-}
-
-  @media only screen and (max-width: 200px) {
-      img {
-      width: 25%;
-      object-fit: cover;
-      }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PySimpleGUI Page</title>
+  <link rel="stylesheet" href="PySimpleGUI css style.css" />
+</head>
+<div class="head-flex-box">
+  <div class="head-flex">
+      <nav id="navbar">
+        <ul>
+          <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
+          <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
+          <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
+          <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
+          <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
+          <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
+      </ul>
+      </nav>
+  </div>
+</div>
+<tkinter-body>
+  <h1 class="cntr-txt">Welcome to my PySimpleGUI page!</h1>
+  <div class="title-divider"></div>
+  <p class="cntr-txt">Check out some of my PysimpleGUI projects</p>
+    <div class="tkinter-pro">
+      <header class="pro-header cntr-txt"><h2 class="project-title">End Weight of Diluent Calculator</h2>
+      </header>
+      <div>
+        <h3 class="pro-description">Problem:</h3>
+        <h3 class="pro-description indented">
+          The problem involves accurately quantifying the amount of pure ethanol 
+          (EtOH) ingested by subjects from a percent ethanol solution in water. 
+          The method involves measuring the solution's weight change before and 
+          after consumption. Since ethanol has a lower density than water, the 
+          solution’s weight per milliliter deviates from pure water, complicating 
+          direct weight-based calculations. The task is to account for this density 
+          variation to determine the exact volume of pure ethanol consumed.
+        <h3 class="pro-description">Solution:</h3>
+        <h3 class="pro-description indented">
+          To solve this problem, a desktop application was developed that enables 
+          users to input the specific gravity of the stock liquid, the target volume 
+          percentage (Vol/Vol) for dilution in water, and the desired final volume. 
+          The application calculates the required quantities of each component in 
+          milliliters to create the specified final solution. Additionally, it 
+          provides the corresponding weights in grams for each component, allowing 
+          precise formulation and ensuring accurate knowledge of the weight of the 
+          stock liquid in each milliliter of the final solution. While initially 
+          designed to handle ethanol solutions, the application can be used for any 
+          liquid with a known specific gravity, making it a versatile tool for 
+          various dilution calculations.</h3>
+        </div>
+        <div>
+        <section class="github-pro-link">
+        <a id="profile-link" target="_blank" href="https://github.com/EsteBot/mLPctEtOH2GramsCalc"><img class="git-logo"
+          src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
+          alt="GitHub Logo img"
+          loading="eager"
+            class="logo-img"
+            width="50px">
+        </section></a>
+      </div>
+  </div>
+  <div>
+      <p class="pro-subtitle">Desktop Application's UI</p>
+        <a><img class="pysimp-img1"
+              src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535956&authkey=%21AACf5zbhSPyUiPU&width=452&height=507"
+              alt="PySimpleGUI img"
+              loading="eager">
+          </a>
+        </div>
+    <div class="pysimp-vid1">
+      <header class="pro-header">
+      <p class="pro-subtitle">Short video demonstrating the desktop application's functionality</p>
+      </header>
+      <video class="vid-atr" controls>
+        <source src=
+        "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21535961&authkey=!AOQqy1D7ZfQGABs">
+        Your browser does not support the video tag.
+      </video>
+      </div>
+      <div class="divider"></div>
+      <div class="tkinter-pro">
+        <header class="pro-header cntr-txt"><h2 class="project-title">3:2 Solution Calculator</h2>
+        </header>
+        <div>
+          <h3 class="pro-description">Problem:</h3>
+          <h3 class="pro-description indented">
+            To prep laboratory animals for surgical proceedures, a 3:2 anesthetic
+            solution is created. The amounts to use are straight forward if someone needs
+            exactly 5 units of total volume of final solution, however, this is often 
+            not the case. Doing these calculations by hand takes valuable proceedure 
+            time and can be vulnrable to error.</h3>
+          <h3 class="pro-description">Solution:</h3>
+          <h3 class="pro-description indented">
+            Using Python and the PySimpleGUI framework, a desktop application was 
+            designed for calculating any final volume's components amounts
+            requiring a 3:2 mixture. The app increases workflow efficieny and 
+            eliminates human error as well as the arduous rigors of mathing.</h3>
+          </div>
+          <div>
+          <section class="github-pro-link">
+          <a id="profile-link" target="_blank" href="https://github.com/EsteBot/3-2DesktopPySimpCalc"><img class="git-logo"
+            src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
+            alt="GitHub Logo img"
+            loading="eager"
+              class="logo-img"
+              width="50px">
+          </section></a>
+        </div>
+    </div>
+    <div>
+        <p class="pro-subtitle">Desktop Application's UI</p>
+          <a><img class="PySimp-img2"
+                src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535946&authkey=%21AFktKugZCBGebd0&width=432&height=280"
+                alt="PySimpleGUI img"
+                loading="eager">
+            </a>
+          </div>
+      <div class="pysimp-vid2">
+        <header class="pro-header">
+        <p class="pro-subtitle">Short video demonstrating the desktop application's functionality</p>
+        </header>
+        <video class="vid-atr" controls>
+          <source src=
+          "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21535955&authkey=!ADgBgqHDFCOHg0g">
+          Your browser does not support the video tag.
+        </video>
+        </div>
+</tkinter-body>
+      <div class="bottom-flex-box">
+        <header class="return-text">
+          <p class="p-spacing">Click icon to return </p><p class="p-spacing">to profile main page</p>
+          </header>
+        <div class="return-icon">
+          <a href="index.html"><img
+                src="https://cdn.worldvectorlogo.com/logos/python-package-index-1.svg"
+                alt="GitHub logo"
+                loading="eager"
+                class="logo-img"
+                width="100px">
+          </a></div>
+      </div>
+  </tkinter-body>
+</html>
