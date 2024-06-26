@@ -46,6 +46,15 @@ tkinter-body {
     font-family: 'Futura', sans-serif;
 }
 
+.cntr-txt {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
 .head-flex {
     display: flex;
     justify-content: flex-end;
@@ -85,6 +94,10 @@ tkinter-body {
     font-family: 'Futura', sans-serif;
 }
 
+.pro-description.indented {
+    text-indent: 2em; /* Apply indent */
+}
+
 .pro-header {
     margin-top: 5%;
     font-family: 'Futura', sans-serif;
@@ -95,23 +108,40 @@ tkinter-body {
     font-family: 'Futura', sans-serif;
 }
 
-.tkinter-img1 {
-    width: 100%;
-    display: flex;
+.pysimp-img1 {
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;  
 }
 
-.tkinter-img2 {
-    width: 100%;
+.PySimp-img2 {
+    width: 90%;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.pysimp-vid1 {
+    width: 80%; /* Max width of the video relative to its container */
+    text-align: center;
+    margin-top: 5%;
+}
+
+.pysimp-vid2 {
+    width: 80%; /* Max width of the video relative to its container */
+    text-align: center;
+    margin-top: 5%;
+}
+
+.vid-atr {
+    max-width: 50%;
+    min-width: 200px;
+    height: auto
 }
 
 .return-icon {
     float: right;
     padding-top: 100px;
-}
-
-.example-vid {
-    text-align: center;
-    margin-top: 5%;
 }
 
 .return-text {
