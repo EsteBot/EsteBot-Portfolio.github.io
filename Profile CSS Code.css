@@ -36,7 +36,6 @@
     align-items: center;
     padding: 10px 20px;
     font-family: 'Futura', sans-serif;
-    
 }
 
 body {
@@ -46,18 +45,6 @@ body {
     align-items: center;
     background-color: rgb(130, 186, 241);
     margin-bottom: 5%;
-    font-family: 'Futura', sans-serif;
-}
-
-.welcome-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(130, 186, 241);
-    padding-top: 10%;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
     font-family: 'Futura', sans-serif;
 }
 
@@ -71,7 +58,11 @@ body {
 }
 
 h1 {
-    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
     font-family: 'Futura', sans-serif;
 }
 
@@ -80,13 +71,16 @@ h2 {
 }
 
 h3 {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Futura', sans-serif;
 }
 
 ul {
     line-height: 2; /* Adjust the value as needed */
-    font-family: 'Futuras', sans-serif;
+    font-family: 'Futura', sans-serif;
 }
 
 .projects {
@@ -95,7 +89,8 @@ ul {
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 10%;
-    padding: 5%;
+    padding-left: 8%;
+    padding-right: 3%;
     width: 100%;
     box-sizing: border-box;
     font-family: 'Futura', sans-serif;
@@ -107,12 +102,7 @@ ul {
     font-family: 'Futura', sans-serif;
 }
 
-
-body {
-    font-family: 'Futura', sans-serif;
-}
-
-.divider {
+.title-divider {
     height: 5px;
     width: 90%;
     background-color: #000; /* Color of the line */
