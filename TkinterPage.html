@@ -21,33 +21,43 @@
   </div>
 </div>
 <tkinter-body>
-  <h1>Welcome to my Tkinter page!</h1>
+  <h1 class="cntr-txt">Welcome to my Tkinter page!</h1>
   <div class="title-divider"></div>
-  <p>Check out some of my Tkinter projects</p>
+  <p class="cntr-txt">Check out some of my Tkinter projects</p>
     <div class="tkinter-pro">
-      <header class="pro-header"><h2 class="project-title">Mg/Kg Dose Calculator for Gram Body Weights</h2>
+      <header class="pro-header cntr-txt"><h2 class="project-title">Mg/Kg Dose Calculator for Gram Body Weights</h2>
       </header>
       <div>
-        <h3 class="pro-description">Description:</h3>
-        <h3 class="pro-description">A Tkinter GUI desktop application. 
-          The application has three ways to calculate the correct compound 
-          weight to create Mg/Kg doses for systemic injections. 
+        <h3 class="pro-description">Problem:</h3>
+            <h3 class="pro-description indented">Accurate drug dosing is critical 
+              in experimental research involving animal subjects, especially for 
+              tests that depend on precise drug formulations. In our lab, we train 
+              students who are new to scientific research and animal models of 
+              neurobiology. A significant challenge they face is converting between 
+              different units: animals are weighed in grams, drugs are measured in 
+              grams, but dosing calculations must be expressed in milligrams of drug 
+              per kilogram of animal body weight. This complexity in unit 
+              conversions frequently leads to confusion and errors among novice 
+              scientists, impacting the accuracy and reliability of dosing.
+          <h3 class="pro-description">Solution:</h3>
+            <h3 class="pro-description indented">To reduce confusion around unit 
+              conversions and prevent calculation errors in drug dosing, a Tkinter 
+              desktop application with three key functionalities was developed. 
+              This application facilitates accurate drug formulation with three 
+              primary calculation functions:
           <ol>
-            <li class="MgKg-list">The first 
-          method requires desired Mg/Kg dose and final solution volume to created. 
-          Outputs are dry compound weight in Mg and grams.</li> 
-            <li class="MgKg-list">The second method 
-          enables the user to input as many individual subject body weights in 
-          grams as needed. The program will total these weight inputs. Then the 
-          user inputs the desired Mg/Kg dose and final solution volume. The 
-          program will output dry compound weight in Mg and grams.</li>
-            <li class="MgKg-list">Lastly, 
-          the user can input their desired Mg/Kg dose and total subject weight 
-          in grams. The calculator will output dry compound weight in Mg, grams, 
-          and the solution volume necessary.</li> 
-          </ol>There is also a button to see 
-          example calculations that demonstrate and explain all calculations 
-          used in the application for reference and educational purposes.</h3>
+            <li class="MgKg-list">Calculating the required drug weight in both 
+              grams and milligrams based on the total volume of solution to be 
+              prepared and the desired mg/kg dose</li> 
+            <li class="MgKg-list">Determining the drug weight needed in grams 
+              and milligrams using the individual weights of animals in grams and 
+              the mg/kg dose</li>
+            <li class="MgKg-list">Computing the total drug weight in grams and 
+              milligrams by considering the combined weight of the animals and the 
+              specified mg/kg dose</li> 
+          </ol>
+              By automating these calculations, the application aids novice 
+              scientists in achieving accurate dosing with ease and confidence.</h3>
         </div>
         <div>
         <section class="github-pro-link">
@@ -62,10 +72,10 @@
   </div>
   <div>
       <p class="pro-subtitle">Tkinter UI</p>
-        <a><img class="datsci-img1"
+        <a><img class="tkinter-img1"
               src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535962&authkey=%21AH99hSkSpqs2hbQ&width=462&height=752"
               alt="Tkinter GUI img"
-              loading="lazy">
+              loading="eager">
           </a>
         </div>
     <div class="example-vid">
@@ -80,17 +90,30 @@
       </div>
       <div class="divider"></div>
       <div class="tkinter-pro">
-        <header class="pro-header"><h2 class="project-title">Behavioral Timer with Excel Data Output</h2>
+        <header class="pro-header cntr-txt"><h2 class="project-title">Behavioral Timer with Excel Data Output</h2>
         </header>
         <div>
-          <h3 class="pro-description">Description:</h3>
-          <h3 class="pro-description">A Tkinter desktop application for timing 
-            behaviors of experimental subjects. Up to three different behaviors 
-            can be quantified simultaneously along with the counting of another 
-            temporally discrete behavior. The timer enables the user to select 
-            the total time duration of the test trial. Total behavior bouts, 
-            total time of the behavior duration and the average time duration 
-            of each behavioral bout are output as an Excel file for further analysis.</h3>
+          <h3 class="pro-description">Problem:</h3>
+          <h3 class="pro-description indented">
+            In our laboratory, we needed to 
+            quantify specific behaviors of animal test subjects during social 
+            interactions by tracking their frequency and duration. This process 
+            required continuous human observation, without the ability to look 
+            away to write paper notes or enter numerical data to a screen. 
+            Additionally, the need to monitor multiple behaviors and capture 
+            discrete occurrences in real time could not be effectively managed 
+            with traditional tools such as stopwatches or multiple timers, 
+            which would lead to inefficient and inaccurate data collection.
+          <h3 class="pro-description">Solution:</h3>
+          <h3 class="pro-description indented">
+            A Tkinter desktop application was developed to address the need for 
+            detailed behavioral quantification. The application enables the user 
+            to quantify three different behaviors during one interaction session 
+            by recording total time and bout durations, and includes a tally for 
+            an additional discrete, fleeting behavior. With an easy-to-navigate 
+            interface, the application facilitates user input and outputs all data 
+            into a user-defined Excel spreadsheet for efficient data handling and 
+            analysis.</h3>
           </div>
           <div>
           <section class="github-pro-link">
@@ -105,10 +128,10 @@
     </div>
     <div>
         <p class="pro-subtitle">Tkinter UI</p>
-          <a><img class="datsci-img1"
+          <a><img class="tkinter-img2"
                 src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535960&authkey=%21AHk-FXEzsPsLzws&width=505&height=834"
                 alt="Tkinter GUI img"
-                loading="lazy">
+                loading="eager">
             </a>
           </div>
       <div class="example-vid">
