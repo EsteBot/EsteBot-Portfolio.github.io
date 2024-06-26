@@ -46,6 +46,15 @@ kivy-body {
     font-family: 'Futura', sans-serif;
 }
 
+.cntr-txt {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
 .head-flex {
     display: flex;
     justify-content: flex-end;
@@ -61,6 +70,21 @@ kivy-body {
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'Futura', sans-serif;
+}
+
+.pro-description.indented {
+    text-indent: 2em; /* Apply indent */
+}
+
+.indented-list {
+    list-style-position: inside; /* Keep bullets inside the list */
+    padding-left: 60px; /* Space for the bullets */
+}
+
+.indented-list li {
+    padding-left: 10px; /* Additional space for text indentation */
+    text-indent: -50px; /* Align text with the bullet */
+    margin-right: 5%;
 }
 
 .app-title {
@@ -113,7 +137,7 @@ kivy-body {
     justify-content: space-between; /* Adjusts space between the items */
     align-items: center; /* Aligns items vertically in the center */
     gap: 0px; /* Adds space between the items */
-    padding: 50px; /* Adds padding around the container */
+    padding: 10px 50px 10px 50px; /* Adds padding around the container */
     box-sizing: border-box; /* Ensures padding is included in the total width */
     width: 100%; /* Ensures the container takes the full width of its parent */
 }
@@ -128,7 +152,7 @@ kivy-body {
     height: 5px;
     width: 90%;
     background-color: #000; /* Color of the line */
-    margin: 1% 0; /* Adjust margin as needed */
+    margin: 5% 0; /* Adjust margin as needed */
 }
 
 .title-divider {
@@ -151,11 +175,11 @@ kivy-body {
 .mobile-app-out {
     display: block;
     text-align: center;
-    margin: 0 auto;
-    max-width: 400px;;
+    margin-left:10%;
+    margin-right:20%;
+    padding-right: 5%;
+    max-width: 400px;
     width: 50%;
-    padding-right: -11%;
-    padding-bottom: 3%;
 }
 
 .pro-subtitle {
