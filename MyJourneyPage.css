@@ -1,0 +1,142 @@
+/* My Journey Styles Settings */
+
+.head-flex-box {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    flex-wrap: wrap;
+    background-color: #3a4b53;
+    height: 120px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the flex items horizontally */
+    flex-wrap: wrap;
+    font-family: 'Futura', sans-serif;
+}
+
+#navbar ul li {
+    margin: 0 10px; /* Add spacing between navbar items */
+    font-family: 'Futura', sans-serif;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(70, 175, 245);
+    padding: 50px 15px;
+    font-family: 'Futura', sans-serif;
+}
+
+journey-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 186, 241);
+    padding-top: 10%;
+    margin-bottom: -100px;
+    font-family: 'Futura', sans-serif;
+}
+
+.cntr-txt {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+.head-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Futura', sans-serif;
+}
+
+h1, h4, h3, ul{
+    font-family: 'Futura', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Futura', sans-serif;
+}
+
+ul {
+    line-height: 2; /* Adjust the value as needed */
+    font-family: 'Futuras', sans-serif;
+}
+
+li{
+    margin-bottom: 20px; /* Adjust the value as needed */
+    font-family: 'Futura', sans-serif;
+}
+
+.h2-spacing {
+    margin-bottom: 0em;
+    margin-top: 0.2em;
+    font-family: 'Futura', sans-serif;
+  }
+
+.body-flex {
+    display: flex;
+    padding: 10px 20px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.jrn-sub-text {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Futura', sans-serif;
+}
+
+.divider {
+    height: 5px;
+    width: 90%;
+    background-color: #000; /* Color of the line */
+    margin: 0; /* Adjust margin as needed */
+}
+
+.return-icon {
+    float: right;
+    padding-top: 100px;
+}
+
+.return-text {
+    float: right;
+    padding-top: 120px;
+    padding-right: 20px;
+    font-family: 'Futura', sans-serif;
+}
+
+.p-spacing {
+    margin-bottom: 0em;
+    margin-top: 0.2em;
+    font-family: 'Futura', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'Futura';
+    src: url('path/to/aptos-font.woff') format('woff');
+}
+
+  @media only screen and (max-width: 200px) {
+      img {
+      width: 25%;
+      object-fit: cover;
+      }
+}

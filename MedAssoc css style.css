@@ -1,0 +1,159 @@
+/* Med Assoc Styles Settings */
+
+.head-flex-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #3a4b53;
+    height: 120px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Futura', sans-serif;
+}
+
+#navbar ul li {
+    margin: 0 10px;
+    font-family: 'Futura', sans-serif;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(70, 175, 245);
+    padding: 50px 15px;
+    font-family: 'Futura', sans-serif;
+}
+
+medassoc-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 186, 241);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin-bottom: -100px;
+    font-family: 'Futura', sans-serif;
+}
+
+.cntr-txt {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+.head-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.pro-description {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+.pro-description.indented {
+    text-indent: 2em; /* Apply indent */
+}
+
+h3 {
+    line-height: 1.5;
+    font-family: 'Futura', sans-serif;
+}
+
+.divider {
+    height: 5px;
+    width: 90%;
+    background-color: #000; /* Color of the line */
+    margin: 60px 0; /* Adjust margin as needed */
+}
+
+.title-divider {
+    height: 5px;
+    width: 90%;
+    background-color: #000; /* Color of the line */
+    margin: 0; /* Adjust margin as needed */
+}
+
+.medassoc-img1 {
+    padding-top: 3%;
+    margin-left: 9%;
+    width: 80%
+}
+
+.return-icon {
+    float: right;
+    padding-top: 100px;
+}
+
+.return-text {
+    float: right;
+    padding-top: 120px;
+    padding-right: 20px; 
+    font-family: 'Futura', sans-serif;
+}
+
+p.p-spacing  {
+    line-height: 0;
+    font-size: 1em;
+    font-family: 'Futura', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.05em;
+    font-family: 'Futura', sans-serif;
+  }
+
+.pro-title {
+    text-align: center;
+    font-family: 'Futura', sans-serif;
+}
+
+.pro-subtitle{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+.github-pro-link {
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    line-height: 2;
+    font-size: 1.05em;
+    line-height: 1.5;
+    font-size: 1.05em;
+    font-family: 'Futura', sans-serif;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('path/to/futura.woff2') format('woff2'),
+         url('path/to/futura.woff') format('woff');
+}
+
+  @media only screen and (max-width: 200px) {
+      img {
+      width: 25%;
+      object-fit: cover;
+      }
+}

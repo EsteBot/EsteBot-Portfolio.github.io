@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KivyApp Page</title>
+  <link rel="stylesheet" href="kivy css style.css" />
+</head>
+<div class="head-flex-box">
+  <div class="head-flex">
+      <nav id="navbar">
+        <ul>
+          <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
+            <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
+            <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
+            <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
+            <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
+            <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
+      </ul>
+      </nav>
+  </div>
+</div>
+<kivy-body>
+  <h1 class="cntr-txt">Welcome to my Kivy page!</h1>
+  <div class="title-divider"></div>
+  <p class="cntr-txt">Check out some of my Kivy projects</p>
+    <!-- Kivy Behavior Timer App1 -->
+    <div class="kivy-pro">
+      <div class="app-title">
+        <h2>Bout Time Mobile App</h2>
+      </div>
+      <div>
+        <h3 class="pro-description">Problem:</h3>
+        <h3 class="pro-description indented">
+          Behavioral neuroscience research depends heavily on accurately quantifying 
+          the frequency and duration of specific behaviors. Often, these are single 
+          behaviors selected based on their importance in contributing to the 
+          understanding of underlying mechanisms, relationships, or phenomena being 
+          investigated. Therefore, this behavior needs to be meticulously segmented 
+          into individual occurrences. This task often requires the input of 
+          multiple observers to ensure unbiased results. Moreover, experiments 
+          often involve testing numerous subjects over extended periods, making it 
+          essential to have a straightforward and reliable method for robust behavior 
+          quantification. To maximize efficiency, it’s ideal that the resulting data 
+          is readily available in a format suitable for detailed analysis.
+        <h3 class="pro-description">Solution:</h3>
+        <h3 class="pro-description indented">
+          A Python-based mobile application using the Kivy framework was developed to 
+          streamline behavioral data collection for scientific research. 
+          The application allows users to input experiment details into specified fields that, 
+          once the session data is saved, gets transferred into an Excel document dedicated to 
+          storing behavior data in a format that streamlines subsequent data analysis. 
+          The experimental observer depresses a main button on the app's interface to record 
+          behavior instances and their durations when subjects engage in the specified behavior.
+          Key features of the application include:</h3>
+          <h3 class="indented-list">
+          <ul class="indented-list">
+            <li>Real-Time Data Display: The app continuously updates and displays 
+              essential metrics:</li>
+              <ul >
+                <li>Total Behavior Time: Displays the cumulative duration the 
+                    main button has been pressed, indicating the total time the 
+                    behavior was exhibited.</li>
+                <li>Total Number of Behavior Bouts: Counts and displays the 
+                    total occurrences of behavior bouts recorded.</li>
+                <li>Duration of Last Bout: Shows the duration of the most recent 
+                    behavior bout, providing immediate feedback on recent 
+                    behavioral activity.</li>
+              </ul>
+            <li>Data Logging: with a few taps all recorded data, 
+              including total behavior time, number of bouts, 
+              and bout durations are saved to the predefined 
+              Excel file for each subject as experimental trials progress.</li>
+            <li>Excel File Formatting: The Excel file is structured in a format 
+              optimized for statistical analysis, ensuring compatibility with common 
+              data analysis tools.</li>
+            </h3>
+        <h3 class="pro-description">
+          This mobile application enhances efficiency and accuracy in behavioral 
+          data collection by providing real-time monitoring and seamless 
+          integration with data storage and analysis processes. 
+          It simplifies the task of recording and managing key behavioral metrics, 
+          supporting rigorous scientific research methodologies.</h3>
+        </div>
+      <div>
+        <section class="github-pro-link">
+        <a id="profile-link" target="_blank" href="https://github.com/EsteBot/KivyMD_MobileApp_BoutTime"><img class="git-logo"
+          src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536017&authkey=%21ABPGedGVfxhKs2U&width=500&height=501"
+          alt="GitHub Logo img"
+          loading="eager"
+            class="logo-img"
+            width="50px">
+        </section></a>
+      </div>
+      <section class="app-flex-box">
+        <div class="app-box">
+            <p class="pro-subtitle">Behavior Timer's UI</p>
+            <a>
+                <img class="kivy-img" src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536006&authkey=%21APWRgl0gu4tsM9M&width=1080&height=2400"
+                alt="Kivy UI img"
+                loading="eager">
+            </a>
+        </div>
+        <div class="app-box">
+            <p class="pro-subtitle">Demo of app functionality</p>
+            <video class="vid-atr" controls>
+              <source src=
+            "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536007&authkey=!AAEUzR1dah_KrqY">
+                Your browser does not support the video tag
+            </video>
+        </div>
+    </section>
+</div>
+      <div class="divider"></div>
+      <!-- Kivy DaSoln App2 -->
+      <div class="kivy-pro">
+        <div class="app-title">
+          <h2>DaSoln Mobile App</h2>
+        </div>
+        <div>
+          <h3 class="pro-description">Problem:</h3>
+          <h3 class="pro-description indented">
+            In laboratory environments, creating and adjusting chemical solutions is a 
+            frequent and essential task. This process presents significant challenges 
+            for new lab members who must learn various preparation methods, 
+            including calculations for molarity, dilutions, and percentages. 
+            Even experienced scientists often require a quick and reliable way to 
+            verify their reagent calculations to avoid errors. Our laboratory’s 
+            previous method for performing these calculations by hand could be complex 
+            and prone to mistakes, making it crucial to develop a more accessible and 
+            accurate tool for reagent preparation and verification.
+          <h3 class="pro-description">Solution:</h3>
+          <h3 class="pro-description indented">
+            To address the complexities of reagent preparation in laboratories, 
+            a Python-based mobile application using the Kivy framework was developed. 
+            The app features three main functions, each accessible through individual 
+            tabs:</h3>
+            <h3 class="indented-list">
+            <ol>
+              <li>Molarity and Dilution Calculator: Applying the formula M1⋅V1=M2⋅V2 
+                  to solve for any unknown variable when three variables are provided. 
+                  The app displays the calculation process and the result.</li>
+              <li>Diluents Ratio Calculator: Helps in preparing a final volume of 
+                  solution by calculating the necessary volumes of two diluents 
+                  based on the specified ratio and total volume.</li>
+              <li>Percent Solution Calculator: Calculates the weight of dry 
+                  chemical needed to prepare a specific percentage solution for a 
+                  given final volume, showing both the required weight and the 
+                  calculation used</li>
+            </ol>
+          </h3>
+          <h3 class="pro-description">
+            This application facilitates quick and accurate reagent preparation 
+            directly at the lab bench, minimizing errors and enhancing efficiency 
+            for both novice and experienced scientists.
+          </h3>
+          </div>
+        <div>
+          <section class="github-pro-link">
+          <a id="profile-link" target="_blank" href="https://github.com/EsteBot/KivyMD_MobileApp_DaSoln"><img class="git-logo"
+            src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536017&authkey=%21ABPGedGVfxhKs2U&width=500&height=501"
+            alt="GitHub Logo img"
+            loading="eager"
+              class="logo-img"
+              width="50px">
+          </section></a>
+        </div>
+        <section class="app-flex-box">
+            <div class="app-box">
+                <p class="pro-subtitle">M1V1=M2V2 UI</p>
+                <a><img class="kivy-img"
+                        src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536008&authkey=%21AIv6BNopyBw-SSg&width=1080&height=2400"
+                        alt="Kivy UI img"
+                        loading="eager">
+                </a>
+            </div>
+          <div class="app-box">
+              <p class="pro-subtitle">2 Soln Ratio UI</p>
+              <a><img class="kivy-img"
+                      src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536020&authkey=%21ALrj0LrvpFsrghM&width=1080&height=2400"
+                      alt="Kivy UI img"
+                      loading="eager">
+              </a>
+          </div>
+        </section>
+        <section class="app-flex-box">
+          <div class="app-box">
+            <p class="pro-subtitle">Grams for % Soln UI</p>
+            <a><img class="kivy-img"
+                    src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536021&authkey=%21AC2w_2bCQ72Z9j0&width=1080&height=2400"
+                    alt="Kivy UI img"
+                    loading="eager">
+            </a>
+        </div>
+          <div class="app-box">
+            <div class="kivy-vid">
+                <p class="pro-subtitle">Demo of app functionality</p>
+                <video class="vid-atr" controls>
+                  <source src=
+                  "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536032&authkey=!AN_xexuXttvSo5E">
+                  Your browser does not support the video tag
+                </video>
+              </div>
+                </section>
+        </section>
+</div>
+      <div class="divider"></div>
+      <!-- Kivy Weight4It App4 -->
+      <div class="kivy-pro">
+        <div class="app-title">
+          <h2>Weight4It Mobile App</h2>
+        </div>
+        <div>
+          <h3 class="pro-description">Problem:</h3>
+          <h3 class="pro-description indented">
+            Accurate drug dosing is essential in experimental research involving animal subjects, 
+            especially in studies that rely on precise drug formulations. 
+            Our laboratory frequently trained students new to scientific research 
+            and animal models of neurobiology. A significant hurdle they faced was 
+            converting between units of measurement: animals were weighed in grams, 
+            whereas drugs were measured in grams, yet dosing calculations must be expressed 
+            in milligrams of drug per kilogram of animal body weight. 
+            These unit conversions posed a challenge, often leading to confusion and errors 
+            among novice scientists, which can compromise the accuracy and reliability of 
+            dosing in experimental protocols. To enhance accessibility and mitigate these challenges, 
+            there was a compelling need for a mobile application that could provide a solution to these 
+            challenges. Such an application would enable users to perform precise dosing calculations 
+            conveniently and promptly anywhere in the laboratory, ensuring consistent and reliable dosing 
+            practices. 
+          <h3 class="pro-description">Solution:</h3>
+          <h3 class="pro-description indented">
+            To address challenges associated with unit conversions and 
+            calculation errors in drug dosing, a Python-based Kivy application 
+            was designed. This application features two distinct calculation 
+            functionalities, each accessible through complementary, user-friendly tabs, aimed 
+            at simplifying drug formulation tasks:</h3>
+            <h3 class="indented-list">
+              <ol>
+                <li>Drug Weight Calculation: Users input the desired milligrams 
+                  per kilogram dose and the total volume required for the solution. 
+                  The application swiftly computes the precise amount of drug 
+                  needed in both grams and milligrams, alongside displaying the 
+                  maximum subject gram weight the formulation will support.</li>
+                <li>Volume Calculation: This tab allows users to input the 
+                  combined weight of animals slated to receive the drug and 
+                  the targeted mg/kg dose. The application instantly calculates 
+                  the exact quantity of drug in grams and milligrams required 
+                  for the dosage, as well as the corresponding required volume 
+                  of solution in milliliters.</li>
+              </ol>
+          </h3>
+          <h3 class="pro-description">
+            By automating these calculations, the application equips novice 
+            scientists with a reliable toolset to execute dosing procedures 
+            accurately and efficiently. Its mobile compatibility further 
+            ensures accessibility wherever and whenever needed, supporting 
+            seamless integration into daily laboratory workflows.
+            </h3>
+          </div>
+        <div>
+          <section class="github-pro-link">
+          <a id="profile-link" target="_blank" href="https://github.com/EsteBot/KivyMD_MobileApp_MgKgDose"><img class="git-logo"
+            src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536017&authkey=%21ABPGedGVfxhKs2U&width=500&height=501"
+            alt="GitHub Logo img"
+            loading="eager"
+              class="logo-img"
+              width="50px">
+          </section></a>
+        </div>
+        <section class="app-flex-box">
+            <div class="app-box">
+                <p class="pro-subtitle">Mg/Kg for total Vol UI</p>
+                <a><img class="kivy-img"
+                        src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536013&authkey=%21AM2p9onBr7ExQ0Y&width=1080&height=2400"
+                        alt="Kivy UI img"
+                        loading="eager"></a>
+            </div>
+            <div class="app-box">
+              <p class="pro-subtitle">Mg/Kg for total weight UI</p>
+              <a><img class="kivy-img"
+                      src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536014&authkey=%21APDnGb-R5Y7adJ0&width=1080&height=2400"
+                      alt="Kivy UI img"
+                      loading="eager"></a>
+          </div>
+        </section>
+        <section class="app-flex-box">
+          <div class="app-box">
+          <p class="pro-subtitle">Demo of app functionality</p>
+          <video class="vid-atr" controls>
+            <source src=
+                 "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536018&authkey=!AArzOEqM3ms_PFI">
+                      Your browser does not support the video tag
+          </video>
+          </div>
+        </div>
+      <div class="divider"></div>
+      <!-- Kivy StaxAttax App4 -->
+      <div class="kivy-pro">
+        <div class="app-title">
+          <h2>StaxAttax Mobile App</h2>
+        </div>
+        <div>
+          <h3 class="pro-description">Problem:</h3>
+          <h3 class="pro-description indented">
+            A rodent stereotaxic device is a specialized tool used in scientific 
+            research to perform precise surgery on small animals such as rats and mice.</h3>
+          <h3 class="indented-list">
+              <ol>
+                <li>The device has a platform and a set of clamps to gently hold 
+                  the animal's head in place. This ensures the animal stays still 
+                  during the procedure.</li>
+                <li>It has three adjustable arms that can move in three 
+                  directions: up and down (dorsal/ventral), left and right 
+                  (lateral/medial), and forward and backward (anterior/posterior). 
+                  Each arm has scales for fine measurements.</li>
+                <li>The adjustable arms hold surgical tools or instruments, 
+                  allowing scientists to accurately position them in the animal's 
+                  brain or other parts of the body. This precision helps 
+                  researchers target very specific areas.</li>
+              </ol>
+            </h3>
+            <h3 class="pro-description">What It's Used For:</h3>
+            <h3 class="pro-description indented">
+              Scientists use the stereotaxic device to implant electrodes, 
+              inject substances, or perform other delicate procedures on small, 
+              precise locations in the animal. This can help in studying brain 
+              functions, testing new treatments, or understanding diseases.
+            </h3>
+            <h3 class="pro-description">Coordinate Calculations:</h3>
+            <h3 class="pro-description indented">
+              When doing stereotaxic brain surgery, the operator bases the 
+              position of their targets from a location on the skull known 
+              as bregma. Bregma is referenced in three-dimensional space by 
+              the three variables DV (dorsal/ventral), LM (lateral/medial), 
+              AP (anterior/posterior). For each of these variables there is 
+              a distance from their bregma location that is calculated to position 
+              an apparatus at a desired location in the brain. These calculations 
+              were most often performed in a lab notebook and using a basic 
+              calculator. This method introduces the possibility of human error, 
+              is slow, might be illegible to other lab members and can be variable in 
+              how values are formatted between individuals increasing confusion if 
+              referenced by other lab members.</h3>
+          <h3 class="pro-description">Solution:</h3>
+          <h3 class="pro-description indented">
+            A Python Kivy mobile app was created to assist in correct coordinate 
+            calculations when performing stereotaxic brain surgery on rodents. 
+            The application has three tabs, the tab chosen being based on the 
+            number of stereotaxic targets the operator is aiming for. 
+            The Unilateral tab is for a single target, the Bilateral tab is 
+            for two targets, each equidistant and on either side of the brain, 
+            the third tab is useful for two bilateral targets having four 
+            calculated targets total. The app takes the initial bregma variables 
+            as well as their respective distance variables and performs their 
+            calculations to display the color-coded target values to the user. 
+            The target values are then simply dialed into the stereotaxic frame.
+            This eliminates hand calculation time as well as human error. 
+            The app has several additional fields to facilitate record keeping. 
+            These are ‘Subject’, ‘Experiment’, ‘Operator’, ‘Weight’, ‘Region’, 
+            ‘Date’, there is also a ‘Reset’ button for the quick start of the next 
+            subject or input errors.  The app introduces the capability to export 
+            the calculation image to integrate data seamlessly into lab databases or experimental records. 
+            Since the input values are uniformly formatted, color coded and not 
+            individually written in different lab notebooks, the records can be 
+            accessed and understood by all lab members from anywhere the lab’s 
+            file system can be accessed.</h3>
+          </div>
+        <div>
+          <section class="github-pro-link">
+          <a id="profile-link" target="_blank" href="https://github.com/EsteBot/KivyMD_MobileApp_StereotaxicCoordinateCalc"><img class="git-logo"
+            src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536017&authkey=%21ABPGedGVfxhKs2U&width=500&height=501"
+            alt="GitHub Logo img"
+            loading="eager"
+              class="logo-img"
+              width="50px">
+          </section></a>
+        </div>
+        <section class="app-flex-box">
+            <div class="app-box">
+                <p class="pro-subtitle">Unilateral Clac UI</p>
+                <a><img class="kivy-img"
+                        src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536074&authkey=%21AOMQzj9g9hzGA4Q&width=1080&height=2400"
+                        alt="Kivy UI img"
+                        loading="eager">
+                </a>
+            </div>
+        
+          <div class="app-box">
+              <p class="pro-subtitle">Bilateral Calc UI</p>
+              <a><img class="kivy-img"
+                      src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536016&authkey=%21AHTK1DvE6e0JVPg&width=1080&height=2400"
+                      alt="Kivy UI img"
+                      loading="eager">
+              </a>
+          </div>
+        </section>
+        <section class="app-flex-box">
+          <div class="app-box">
+            <p class="pro-subtitle">2 x Bilateral Calc UI</p>
+            <a><img class="kivy-img"
+                    src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536073&authkey=%21AFJmzLBN86bL9XQ&width=1080&height=2400"
+                    alt="Kivy UI img"
+                    loading="eager">
+            </a>
+        </div>
+          <div class="app-box">
+                <p class="pro-subtitle">Demo of app functionality</p>
+                <video class="vid-atr" controls>
+                  <source src=
+                       "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536019&authkey=!AHeb1gAauTZMoXI">
+                            Your browser does not support the video tag
+                </video>
+                </section>
+              </div>
+<div class="divider"></div>
+
+<div class="kivy-dsk-pro">
+  <div class="app-title">
+    <h2>FRZNTRACK Desktop App</h2>
+  </div>
+  <div>
+    <h3 class="pro-description">Problem:</h3>
+    <h3 class="pro-description indented">
+      Our lab's method for quantifying freezing behavior (a proxy for their fear response) 
+      in experimental test subjects involved a labor-intensive and error-vulnerable process. 
+      Observers manually check each subject for freezing behavior every ten seconds, 
+      recording results on paper. These observations are individually aggregated by hand, 
+      into minute intervals to calculate the percentage of freezing time per minute. 
+      The data is then manually transferred to an Excel spreadsheet and reformatted 
+      for statistical analysis and graphing. This multi-step process not only creates a 
+      significant bottleneck in data analysis but also increases the likelihood of introducing errors, 
+      thus compromising the efficiency and accuracy of the research.
+    <h3 class="pro-description">Solution:</h3>
+    <h3 class="pro-description indented">
+      To streamline the quantification of freezing behavior and minimize errors, 
+      a Kivy-based graphical user interface (GUI) application was developed. 
+      This application allows observers to record freezing behavior in real-time by 
+      selecting the subject's status (check-box indicating freezing or not) on a screen 
+      at ten-second intervals. The backend of the application performs automated calculations 
+      and formats the data into an Excel spreadsheet, detailing the percentage of freezing 
+      time per minute. This automated process eliminates manual data handling and formatting, 
+      reducing errors and accelerating data processing. The resulting spreadsheet is immediately 
+      compatible with the lab’s statistical analysis software, facilitating seamless further analysis. 
+      The application also includes user-friendly controls and visual feedback to enhance the 
+      recording process and ensure data accuracy.</h3>
+    </div>
+  <div>
+    <section class="github-pro-link">
+    <a id="profile-link" target="_blank" href="https://github.com/EsteBot/KivyMD_DesktopApp_FZn4AuditoryExt"><img class="git-logo"
+      src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536017&authkey=%21ABPGedGVfxhKs2U&width=500&height=501"
+      alt="GitHub Logo img"
+      loading="eager"
+        class="logo-img"
+        width="50px">
+    </section></a>
+  </div>
+  <div class="fz-img-grp">
+      <p class="pro-subtitle">Freezing Quantification UI</p>
+  <a><img class="kivy-dsk-img1"
+        src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536009&authkey=%21ACofz3Pn03uR7mc&width=759&height=1004"
+        alt="Desktop Kivy UI img"
+        loading="eager">
+  </a>
+  </div>
+  <div class="example-vid">
+    <header class="pro-header">
+    <p class="subtitle">Video demonstrating the desktop application's functionality</p>
+    </header>
+    <video class="fz-vid-atr" controls>
+      <source src=
+      "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536033&authkey=!AMG_GlR-chg342Q">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+      </div>
+</kivy-body>
+      <div class="bottom-flex-box">
+        <header class="return-text">
+          <p class="p-spacing">Click icon to return </p><p class="p-spacing">to profile main page</p>
+          </header>
+        <div class="return-icon">
+          <a href="index.html"><img
+                src="https://cdn.worldvectorlogo.com/logos/python-package-index-1.svg"
+                alt="home profile logo"
+                loading="eager"
+                class="logo-img"
+                width="100px">
+          </a></div>
+      </div>
+  </kivy-body>
+</html>
