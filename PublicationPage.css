@@ -1,4 +1,4 @@
-/* LandingPage Styles Settings */
+/* Publication Styles Settings */
 
 .head-flex-box {
     display: flex;
@@ -6,6 +6,13 @@
     flex-wrap: wrap;
     background-color: #3a4b53;
     height: 120px;
+}
+
+.head-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 #navbar ul {
@@ -30,25 +37,18 @@
     font-family: 'Futura', sans-serif;
 }
 
-.head-flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px;
-    font-family: 'Futura', sans-serif;
-}
-
-body {
+resume-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(130, 186, 241);
-    margin-bottom: 5%;
+    padding-top: 10%;
+    margin-bottom: -100px;
     font-family: 'Futura', sans-serif;
 }
 
-.main-page-subtxt {
+.cntr-txt {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -57,24 +57,13 @@ body {
     font-family: 'Futura', sans-serif;
 }
 
-h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10%;
-    font-family: 'Futura', sans-serif;
-}
-
 h2 {
+    display: flex;
+    flex-direction: column;
     font-family: 'Futura', sans-serif;
 }
 
-h3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+h1, h4, h3, ul{
     font-family: 'Futura', sans-serif;
 }
 
@@ -83,71 +72,89 @@ ul {
     font-family: 'Futura', sans-serif;
 }
 
-.projects {
+li {
+    line-height: 2;
+    font-size: 1.05em;
+    line-height: 1.5;
+    font-size: 1.05em;
+    font-family: 'Futura', sans-serif;
+}
+
+.last_li {
+    margin-bottom: 90px;
+    font-family: 'Futura', sans-serif;
+}
+
+.h2-spacing {
+    margin-bottom: 0em;
+    margin-top: 0.2em;
+    font-family: 'Futura', sans-serif;
+  }
+
+.body-flex {
     display: flex;
-    justify-content: space-between; /* Adjust spacing between the sections */
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 10%;
-    padding-left: 8%;
-    padding-right: 3%;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 5%;
     font-family: 'Futura', sans-serif;
 }
 
-.project-tile {
-    flex: 1; /* Each tile section takes equal width */
-    padding: 2%;
-    font-family: 'Futura', sans-serif;
-}
-
-.title-divider {
+.divider {
     height: 5px;
     width: 90%;
     background-color: #000; /* Color of the line */
-    margin: 0; /* Adjust margin as needed */
+    margin:  0; /* Adjust margin as needed */
+    font-family: 'Futura';
 }
 
-#tkinter-img {
-    height: 250px;
-    width: 250px;
+.minor {
+    height: 1px;
+    width: 81%;
+    background-color: #000; /* Color of the line */
+    margin:  9% 3% 7% 7%; /* Adjust margin as needed */
+    margin-top: 5%;
 }
 
-#pysimplegui-img {
-    height: 250px;
-    width: 250px;
+.return-icon {
+    float: right;
+    padding-top: 100px;
 }
 
-#medassoc-img {
-    height: 250px;
-    width: 250px;
+.return-text {
+    float: right;
+    padding-top: 120px;
+    padding-right: 20px;
+    font-family: 'Futura', sans-serif;
 }
 
-#kivy-img {
-    height: 250px;
-    width: 250px;
+.p-spacing {
+    margin-bottom: 0em;
+    margin-top: 0.2em;
+    font-family: 'Futura', sans-serif;
+  }
+
+  p.p-spacing  {
+    line-height: 1;
+    font-size: 1em;
+    font-family: 'Futura', sans-serif;
 }
 
-#scripts-img {
-    height: 250px;
-    width: 250px;
-}
+p {
+    line-height: 1.5;
+    font-size: 1.05em;
+    font-family: 'Futura', sans-serif;
+  }
 
-#data_sci-img {
-    height: 250px;
-    width: 250px;
-}
-
-@font-face {
+  @font-face {
     font-family: 'Futura';
     src: url('path/to/futura.woff2') format('woff2'),
          url('path/to/futura.woff') format('woff');
 }
 
-@media only screen and (max-width: 200px) {
-    img {
-    width: 25%;
-    object-fit: cover;
-    }
+  @media only screen and (max-width: 200px) {
+      img {
+      width: 25%;
+      object-fit: cover;
+      }
 }

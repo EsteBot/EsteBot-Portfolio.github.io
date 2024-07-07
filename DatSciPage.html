@@ -32,10 +32,10 @@
         <h3 class="pro-description">Problem:</h3>
         <h3 class="pro-description indented">In our lab, we collected a variety of behavioral data 
           from experimental subjects across four distinct groups. The challenge was that this data 
-          requires extensive reformatting before it can be transferred to statistical analysis 
+          required extensive reformatting before it can be transferred to statistical analysis 
           software for group-by-group testing and graphing. This manual reformatting process was 
           not only time-consuming but also susceptible to human error. Moreover, the statistical 
-          software used generates basic and aesthetically unappealing graphs, which limits the 
+          software used generated basic and aesthetically unappealing graphs, which limited the 
           quality of data visualization.</h3>
           <h3 class="pro-description">Solution:</h3>
         <h3 class="pro-description indented">To overcome the inefficiencies and error-prone nature 
@@ -89,25 +89,26 @@
           <h2 class="pro-title cntr-txt">Least Different Group Matching Analysis & Visualization</h2>
           <div>
             <h3 class="pro-description">Problem:</h3>
-            <h3 class="pro-description indented">In experiments involving pair-housed subjects, the 
-              challenge lies in assigning them to two groups (control vs treatment) with 
-              minimal initial differences between groups. This ensures that any biases from 
+            <h3 class="pro-description indented">In experiments involving pair-housed subjects that 
+              undergo an initial baseline test and based on this baseline data are assigned to subsequent groups,
+              the challenge lies in assigning them to two groups (control vs treatment) with 
+              minimal initial differences between groups. However, doing so ensures that any biases from 
               previous conditions do not influence the outcomes of subsequent experiments. 
               Moreover, it's crucial to maintain cage mates within the same group to prevent 
               potential cross-group effects—if one subject experiences stress due to its 
               group's treatment, it could impact the results of its paired partner in future 
-              tests. Compounding this challenge is the need to identify the two groups that 
-              exhibit the absolute least differences, a task that could potentially involve 
+              tests. Compounding this challenge of identifying the two groups that exhibit the 
+              absolute least differences, is the fact that the task could  potentially involve 
               analyzing and comparing hundreds, if not thousands, of group assignment 
               possibilities. Such extensive analysis would be impractical for a human to 
               perform manually. 
             <h3 class="pro-description">Solution:</h3>
             <h3 class="pro-description indented"> 
               A PySimpleGUI desktop application was developed to analyze individual 
-              data from cage mate pairs stored in an Excel file while preserving 
-              their pairing. The application systematically evaluates every possible 
+              data from cage mate pairs stored in an Excel file. The application systematically evaluates every possible 
               combination of group assignments to identify the combination where the 
-              data points exhibit the least overall difference. This analysis 
+              data points exhibit the least overall difference while preserving 
+              their pairing. This analysis 
               includes calculating and recording various metrics in an Excel 
               output file, such as: 
               <ol>
@@ -118,11 +119,11 @@
                 <li class="rh-list">The specific group assignments resulting in 
                                     the smallest mean difference between groups</li>
               </ol>
-              A graphical representation using Matplotlib, 
-              where two lines depict the data points of the least 
-              different group assignments is also displayed. While maintaining 
-              adherence to cage mate pairing, these lines are plotted to visually 
-              illustrate the minimal distance between data points.
+              The program also displays a graphical representation of the group assignments using Matplotlib. 
+              The line plot depicts the data points of the least 
+              different group assignments, while also maintaining 
+              adherence to cage mate pairing. These lines are plotted to visually 
+              illustrate the minimal possible distance between data points.
               The application’s output provides a comprehensive overview of the 
               analysis steps and results, facilitating informed decision-making 
               for optimal group assignment in experimental setups.</h3>
@@ -233,33 +234,29 @@
               </header>
               <div>
                 <h3 class="pro-description">Problem:</h3>
-                <h3 class="pro-description indented">In studying the effects of 
-                  exercise using a running wheel, the wheel tracks total revolutions 
-                  every minute, with data logged into an Excel worksheet per minute 
-                  over a 24-hour cycle creating one sheet per subject for each 
-                  24-hour cycle. For many subjects over extended periods, this 
-                  generates millions of data points. The analytical challenge 
-                  includes counting only valid running bouts (≥3 revolutions per 
-                  minute) and distinguishing running behaviors between the light 
-                  (inactive) and dark (active) phases of the light cycle. The goal 
-                  is to efficiently process and analyze this extensive dataset to 
-                  quantify various aspects of running behavior while considering 
-                  phase-specific activity patterns, providing meaningful insights 
-                  into the effects of exercise.
+                <h3 class="pro-description indented">
+                  In studies investigating the effects of exercise using a running wheel, 
+                  our lab used a program that tracked total revolutions every minute. 
+                  This data was logged into an Excel worksheet each minute over a 24-hour 
+                  cycle creating one sheet per subject for each 24-hour cycle. For many 
+                  subjects over extended periods, this generates millions of data points. 
+                  The analytical challenge included counting only valid running bouts 
+                  (≥3 revolutions per minute) and distinguishing running behaviors between 
+                  the light (inactive) and dark (active) phases of the subject’s light cycle. 
+                  The goal was to efficiently process and analyze this extensive dataset to 
+                  quantify various aspects of running behavior while considering phase-specific 
+                  activity patterns, providing meaningful insights into the effects of exercise.
                 <h3 class="pro-description">Solution:</h3>
                 <h3 class="pro-description indented">
-                  To address the data management challenges posed by running wheel 
-                  experiments, a user-friendly graphical interface program was 
-                  developed. This program compiles and organizes the raw data from 
-                  Excel files into a ‘Combined Data’ sheet, categorizing running 
-                  behaviors and distinguishing them by the subjects’ inactive 
-                  (light) and active (dark) phases. By automating data calculation 
-                  and aggregation, it significantly reduces the manual workload and 
-                  minimizes errors, accomplishing in seconds what would otherwise 
-                  take hours. Additionally, the program features a bar graph 
-                  visualization tool, providing users with a quick and informative 
-                  visual analysis of the dataset providing users with a quick and 
-                  informative visual analysis.</h3>
+                  To address the data management challenges posed by these running wheel experiments, 
+                  a user-friendly graphical interface program was developed. This program compiles 
+                  and organizes the raw data from Excel files into a ‘Combined Data’ sheet alongside 
+                  the original data sheets, categorizing running behaviors and distinguishing them by 
+                  the subjects’ inactive (light) and active (dark) phases. Automating data calculation 
+                  and aggregation significantly reduced the manual workload and minimizes errors, 
+                  accomplishing in seconds what would otherwise have taken hours. Additionally, the program 
+                  features a bar graph visualization tool, providing users with a quick and 
+                  informative visual analysis of the dataset.</h3>
                 </div>
                 <div>
                 <section class="github-pro-link">
@@ -309,7 +306,7 @@
                 <div>
                   <h3 class="pro-description">Problem:</h3>
                   <h3 class="pro-description indented">Credit card companies and 
-                    banks typically offer basic charts that categorize spending into 
+                    banks typically offer basic charts that group spending into 
                     broad categories. While useful for a general overview, these 
                     charts fail to monitor spending trends over time and frequently 
                     miscategorized transactions, leading to inaccuracies. These 
@@ -317,7 +314,7 @@
                     informed financial decisions and plan budgets effectively. 
                     A more personalized and precise system that accurately 
                     categorizes spending and tracks detailed spending patterns over 
-                    time, provides more reliable data to support financial planning. 
+                    time, provides more reliable data analysis to support financial planning. 
                   <h3 class="pro-description">Solution:</h3>
                   <h3 class="pro-description indented"> 
                     To address the limitations of basic spending charts, a 
@@ -374,13 +371,13 @@
                     subjects using an activity tracking chamber. This chamber 
                     records the subjects’ movements via infrared beam breaks 
                     and the software outputs comprehensive data in a .txt file 
-                    across various categories. However, our analysis requires 
-                    only specific portions of this data. Currently, locating, 
-                    extracting, and transferring this relevant data into a 
+                    across various categories. However, our analysis required 
+                    only specific portions of this data. The large amount of superfluous data in text format made locating
+                    extracting, and transferring the relevant data into a 
                     formatted Excel spreadsheet for statistical analysis is a 
-                    manual, labor-intensive task that consumes significant time 
-                    and is prone to errors, especially with large datasets from 
-                    multiple subjects over extended experimental periods. 
+                    manual, labor-intensive task that consumed significant time. 
+                    The process was not only inefficient, but  prone to errors, especially with large datasets from 
+                    multiple subjects over extended experimental trials. 
                   <h3 class="pro-description">Solution:</h3>
                   <h3 class="pro-description indented"> 
                     To address the inefficiencies in handling locomotion activity 
@@ -391,7 +388,9 @@
                     categories required for analysis, and transfers this data 
                     into a properly formatted Excel spreadsheet. This automation 
                     reduces the processing time from hours to seconds and eliminates 
-                    the risk of human errors associated with manual data handling.</h3>
+                    the risk of human errors associated with manual data handling. 
+                    In addition to data handling, the program allows the user to output 
+                    a bar graph of activity data over time for rapid analysis and anomaly detection.</h3>
                   </div>
                   <div>
                   <section class="github-pro-link">

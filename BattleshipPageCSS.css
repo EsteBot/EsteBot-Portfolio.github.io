@@ -4,11 +4,15 @@
     display: flex;
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
+    background-color: #3a4b53;
     height: 120px;
 }
 
 .head-flex {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 #navbar ul {
@@ -52,18 +56,6 @@ battleship-body {
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'Futura', sans-serif;
-}
-
-.head-flex-box {
-    background-color: #3a4b53;
-    height: 100px;
-}
-
-.head-flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px;
 }
 
 h2 {
@@ -169,6 +161,7 @@ p {
     font-size: 1.05em;
     font-family: 'Futura', sans-serif;
 }
+
 
 li {
     line-height: 2;

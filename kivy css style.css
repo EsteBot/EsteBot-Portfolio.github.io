@@ -78,12 +78,19 @@ kivy-body {
 
 .indented-list {
     list-style-position: inside; /* Keep bullets inside the list */
-    padding-left: 60px; /* Space for the bullets */
+    padding-left: 0px; /* Space for the bullets */
+    margin-left: 5%;
+}
+
+ul {
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .indented-list li {
-    padding-left: 10px; /* Additional space for text indentation */
-    text-indent: -50px; /* Align text with the bullet */
+     /* Additional space for text indentation */
+    padding-bottom: 2%;
+    text-indent: -30px; /* Align text with the bullet */
     margin-right: 5%;
 }
 
@@ -240,6 +247,12 @@ p {
     margin-top: 0.2em;
     font-family: 'Futura', sans-serif;
   }
+
+
+ol li {
+    text-indent: 5px; /* Pull text to the left */
+    margin-left: 20px;  /* Space between marker and text */
+}
 
 li {
     line-height: 2;

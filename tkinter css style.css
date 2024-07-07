@@ -161,6 +161,14 @@ p {
     font-family: 'Futura', sans-serif;
   }
 
+  ol {
+    padding-left: 40px; /* Space for the list marker */
+}
+ol li {
+    text-indent: 5px; /* Pull text to the left */
+    margin-left: 20px;  /* Space between marker and text */
+}
+
 li {
     line-height: 2;
     font-size: 1.05em;
