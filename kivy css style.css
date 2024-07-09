@@ -5,11 +5,14 @@
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
     background-color: #3a4b53;
-    height: 120px;
+    height: 50%;
 }
 
 .head-flex {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
 }
 
 #navbar ul {
@@ -23,7 +26,7 @@
 }
 
 #navbar ul li {
-    margin: 0 10px; /* Add spacing between navbar items */
+    margin: 10px 20px; /* Add spacing between navbar items */
     font-family: 'Futura', sans-serif;
 }
 
