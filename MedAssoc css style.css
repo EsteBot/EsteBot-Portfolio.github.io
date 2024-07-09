@@ -2,24 +2,31 @@
 
 .head-flex-box {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
     background-color: #3a4b53;
-    height: 120px;
+    height: 50%;
+}
+
+.head-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
 }
 
 #navbar ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
     font-family: 'Futura', sans-serif;
 }
 
 #navbar ul li {
-    margin: 0 10px;
+    margin: 10px 20px; /* Add spacing between navbar items */
     font-family: 'Futura', sans-serif;
 }
 

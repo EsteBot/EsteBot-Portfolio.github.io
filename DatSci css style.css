@@ -5,14 +5,14 @@
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
     background-color: #3a4b53;
-    height: 120px;
+    height: 50%;
 }
 
 .head-flex {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 #navbar ul {
@@ -26,7 +26,7 @@
 }
 
 #navbar ul li {
-    margin: 0 10px; /* Add spacing between navbar items */
+    margin: 10px 20px; /* Add spacing between navbar items */
     font-family: 'Futura', sans-serif;
 }
 
@@ -224,8 +224,10 @@ section {
     justify-content: space-between; /* Adjusts space between the items */
     align-items: center; /* Aligns items vertically in the center */
     gap: 50px; /* Adds space between the items */
-    padding-left: 250px; /* Adds padding around the container */
-    padding-right: 250px;
+    padding-left: 5%; /* Adds padding around the container */
+    padding-right: 5%;
+    
+    
     box-sizing: border-box; /* Ensures padding is included in the total width */
     width: 100%; /* Ensures the container takes the full width of its parent */
 }

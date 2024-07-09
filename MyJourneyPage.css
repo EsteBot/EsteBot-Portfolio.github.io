@@ -5,7 +5,14 @@
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
     background-color: #3a4b53;
-    height: 120px;
+    height: 50%;
+}
+
+.head-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
 }
 
 #navbar ul {
@@ -19,7 +26,7 @@
 }
 
 #navbar ul li {
-    margin: 0 10px; /* Add spacing between navbar items */
+    margin: 10px 20px; /* Add spacing between navbar items */
     font-family: 'Futura', sans-serif;
 }
 
@@ -50,13 +57,6 @@ journey-body {
     font-family: 'Futura', sans-serif;
 }
 
-.head-flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px;
-}
-
 h2 {
     display: flex;
     flex-direction: column;
@@ -80,8 +80,15 @@ ul {
     font-family: 'Futuras', sans-serif;
 }
 
-li{
-    margin-bottom: 20px; /* Adjust the value as needed */
+.jrn-list {
+    line-height: 2;
+    margin-bottom: 4%;
+}
+
+li {
+    font-size: 1.05em;
+    line-height: 1.5;
+    font-size: 1.05em;
     font-family: 'Futura', sans-serif;
 }
 
