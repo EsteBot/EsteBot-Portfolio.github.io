@@ -124,13 +124,18 @@ ul {
 
 .kivy-dsk-img1 {
     text-align: center;
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
     max-width: 500px;
 }
 
 .fz-vid-atr {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 5%;
+    width: 90%; /* Max width of the video relative to its container */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .example-vid {
