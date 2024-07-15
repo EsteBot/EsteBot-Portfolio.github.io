@@ -31,10 +31,16 @@
 }
 
 .nav-link {
+    display: inline-block;
     text-decoration: none;
     color: rgb(70, 175, 245);
-    padding: 50px 15px;
+    padding: 10px 10px;
     font-family: 'Futura', sans-serif;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
+    border-radius: 4px; /* Rounded corners for the hover effect */
 }
 
 .head-flex {
