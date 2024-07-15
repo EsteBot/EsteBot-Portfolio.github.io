@@ -1,3 +1,5 @@
+/* Contact Page Styles Settings */
+
 .head-flex-box {
     display: flex;
     justify-content: center; /* Center the flex items horizontally */
@@ -10,7 +12,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 20px 20px 20px;
+    padding: 10px 20px;
+    font-family: 'Futura', sans-serif;
 }
 
 #navbar ul {
@@ -53,14 +56,6 @@ contact-body {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-    font-family: 'Futura', sans-serif;
-}
-
-.head-flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px;
     font-family: 'Futura', sans-serif;
 }
 
