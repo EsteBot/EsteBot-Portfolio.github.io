@@ -12,7 +12,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 20px 20px 20px;
+    padding: 10px 20px;
+    font-family: 'Futura', sans-serif;
 }
 
 #navbar ul {
@@ -26,15 +27,21 @@
 }
 
 #navbar ul li {
-    margin: 10px 20px; /* Add spacing between navbar items */
+    margin: 5px 20px; /* Add spacing between navbar items */
     font-family: 'Futura', sans-serif;
 }
 
 .nav-link {
+    display: inline-block; /* Limits clickable link area to text */
     text-decoration: none;
     color: rgb(70, 175, 245);
-    padding: 50px 15px;
+    padding: 0px 10px;
     font-family: 'Futura', sans-serif;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
+    border-radius: 4px; /* Rounded corners for the hover effect */
 }
 
 kivy-body {
