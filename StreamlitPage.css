@@ -119,28 +119,31 @@ streamlit-body {
     font-family: 'Futura', sans-serif;
 }
 
-.streamlit-img1 {
+.streamlit-img {
     width: 90%;
     align-items: center;
     margin-left: 5%;
     margin-right: 5%;  
 }
 
-.streamlit-img2 {
-    width: 90%;
+.streamlit-vid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-left: 5%;
-}
+    text-align: center; /* Center text within the container */
+    width: 80%; /* Optional: adjust container width */
+    max-width: 800px; /* Optional: limit maximum width */
+  }
 
-.streamlit-vid1 {
-    width: 90%;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%; 
+iframe {
+width: 100%; /* Adjust width relative to the container */
+height: 400px; /* Adjust height as needed */
+border: 1px solid #ccc; /* Optional: border styling */
 }
 
 .streamlit-pro-link {
-    margin-top: -4%;
+    margin-top: 2%;
 }
 
 .return-icon {
