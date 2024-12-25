@@ -20,6 +20,8 @@
       </nav>
   </div>
 </div>
+<div class="background"></div>
+<div class="content">
 <contact-body>
   <h1 class="cntr-txt">Let's Solve Problems Together!</h1>
   <div class="divider"></div>
@@ -84,7 +86,20 @@ function toggleIconText() {
 }
 </script>
 </a></div>
+<script>
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY; // Get the vertical scroll position
+    const background = document.querySelector('.background');
+
+    if (scrollY > 10) {
+      background.style.filter = 'blur(35px)';
+    } else {
+      background.style.filter = 'blur(0)';
+    }
+  });
+</script>
 </contact-body>
+</div>
 <div class="bottom-flex-box">
     <header class="return-text">
       <p class="p-spacing">Click icon to return </p><p class="p-spacing">to profile main page</p>
