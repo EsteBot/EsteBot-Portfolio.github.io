@@ -49,7 +49,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 90%;
+    height: 105%;
     background: url('https://1drv.ms/i/s!ArWyPNkF5S-foaEmOxjPXGZ1Bxj-4A?embed=1&width=1024&height=1024') no-repeat center center/cover;
     z-index: -1; /* Ensures it stays behind the content */
     transition: filter 0.3s ease; /* Smooth blur transition */
