@@ -23,7 +23,7 @@
 </div>
     <h1 class="main-page-subtxt">Welcome, my name is Esteban!</h1>
     <div class="title-divider main-page-subtxt"></div>
-    <h3 class="main-page-subtxt">I'm excited to show you the problems I've solved with these projects I've built!</h3>
+    <h3 class="main-page-subtxt">I'm excited to share the problems I've solved with these projects I've built!</h3>
     <div id="chart" style="width: 100%; height: 500px;"></div>
       <script>
         // Data for the doughnut chart
@@ -37,7 +37,14 @@
               colors: ['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A'], // Custom colors
             },
             textinfo: 'label+percent', // Display labels and percentages
-            hoverinfo: 'label', // Display additional info on hover
+            hoverinfo: 'text',
+            hovertext: [
+              'PY Hero',
+              'Query Quests',
+              'Viz Wiz',
+              'Stats Awesome',
+              'Hello www.'
+            ]
           },
         ];
 
