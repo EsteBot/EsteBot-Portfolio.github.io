@@ -115,23 +115,10 @@ h3 {
     font-family: 'Futura', sans-serif;
   }
 
-  .divider {
-    height: 5px;
-    width: 90%;
-    background-color: #000; /* Color of the line */
-    margin: 0; /* Adjust margin as needed */
-}
-
 .return-icon {
     float: right;
     padding-top: 100px;
-}
-
-.return-text {
-    float: right;
-    padding-top: 120px;
-    padding-right: 20px;
-    font-family: 'Futura', sans-serif;
+    padding-bottom: 10px;
 }
 
 .p-spacing {

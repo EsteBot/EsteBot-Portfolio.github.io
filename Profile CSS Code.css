@@ -44,6 +44,16 @@
     border-radius: 4px; /* Rounded corners for the hover effect */
 }
 
+#chart {
+    margin: auto;
+    background-color: rgb(130, 186, 241);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+  }
+
 body {
     flex-direction: column;
     justify-content: center;
