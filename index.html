@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <title>estestyle.com</title>
     <link rel="stylesheet" href="Profile CSS Code.css" />
 </head>
@@ -20,10 +21,82 @@
       </nav>
     </div>
 </div>
-    <h1 class="main-page-subtxt">Welcome!</h1>
+    <h1 class="main-page-subtxt">Welcome, my name is Esteban!</h1>
     <div class="title-divider main-page-subtxt"></div>
-    <h3 class="main-page-subtxt">My name is Esteban</h3>
-    <h2 class="main-page-subtxt">I'm excited to show you the problems I've solved with these projects I've built!</h2>
+    <h3 class="main-page-subtxt">I'm excited to show you the problems I've solved with these projects I've built!</h3>
+    <div id="chart" style="width: 100%; height: 500px;"></div>
+      <script>
+        // Data for the doughnut chart
+        var data = [
+          {
+            labels: ['Python', 'SQL', 'Tableau', 'Statistics', 'Streamlit'],
+            values: [40, 15, 10, 10, 25], // Adjust percentages to reflect your skills
+            type: 'pie',
+            hole: 0.4, // Creates the doughnut effect
+            marker: {
+              colors: ['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A'], // Custom colors
+            },
+            textinfo: 'label+percent', // Display labels and percentages
+            hoverinfo: 'label', // Display additional info on hover
+          },
+        ];
+
+        // Layout customization
+        var layout = {
+          title: 'Data Science Tools Applied:',
+          height: 500,
+          width: 500,
+          showlegend: false, // Show legend for labels
+          plot_bgcolor: 'rgb(130, 186, 241)', // Match the container's background
+  paper_bgcolor: 'rgb(130, 186, 241)', // Match the container's background
+          annotations: [
+            {
+              x: 0.5, // Center of the chart (x-axis)
+              y: 0.5, // Center of the chart (y-axis)
+              text: '☕', // Default emoji for the center
+              font: {
+                size: 50, // Font size for the emoji
+              },
+              showarrow: false, // Hide the arrow pointing to the annotation
+              name: 'center-text', // Name to identify the annotation
+            },
+          ],
+        };
+
+        // Render the chart
+        Plotly.newPlot('chart', data, layout);
+
+        // Mapping of skills to emojis
+        var skillEmojis = {
+          Python: '🐍',
+          SQL: '🛢️',
+          Tableau: '📊',
+          Statistics: '📈',
+          Streamlit: '🚀'
+        };
+
+        // Add hover event listener
+        var chartDiv = document.getElementById('chart');
+
+        chartDiv.on('plotly_hover', function (data) {
+          var skill = data.points[0].label; // Get the hovered skill label
+          var emoji = skillEmojis[skill] || '☕'; // Get corresponding emoji or default
+
+          // Update the annotation text
+          Plotly.relayout(chartDiv, {
+            'annotations[0].text': emoji,
+          });
+        });
+
+        // Add unhover event listener to reset emoji
+        chartDiv.on('plotly_unhover', function () {
+          // Reset to default emoji
+          Plotly.relayout(chartDiv, {
+            'annotations[0].text': '☕',
+          });
+        });
+</script>
+    
   <section class="projects">
     <div class="project-tile">
     <header class="pro-header"><h2 class="project-title">Tkinter</h2>
