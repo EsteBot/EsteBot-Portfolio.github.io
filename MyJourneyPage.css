@@ -44,6 +44,27 @@
     border-radius: 4px; /* Rounded corners for the hover effect */
 }
 
+.vertical-timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    height: 100%;
+    width: 40px; /* Adjust to fit the design */
+  }
+  
+  .event {
+    position: relative;
+    margin-left: 50px; /* Space for the graphic */
+    margin-bottom: 30px;
+}
+
 journey-body {
     display: flex;
     flex-direction: column;

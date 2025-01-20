@@ -24,7 +24,7 @@
     <h1 class="main-page-subtxt">Welcome, my name is Esteban!</h1>
     <div class="title-divider main-page-subtxt"></div>
     <h3 class="main-page-subtxt">I'm excited to share the problems I've solved with these projects I've built!</h3>
-    <div id="chart" style="width: 100%; height: 500px;"></div>
+    <div id="chart" style="width: 100%; height: 500px;">
       <script>
         // Data for the doughnut chart
         var data = [
@@ -51,21 +51,21 @@
         // Layout customization
         var layout = {
           title: 'Data Science Tools Applied:',
-          height: 500,
-          width: 500,
-          showlegend: false, // Show legend for labels
-          plot_bgcolor: 'rgb(130, 186, 241)', // Match the container's background
-  paper_bgcolor: 'rgb(130, 186, 241)', // Match the container's background
+          height: window.innerWidth < 600 ? 'auto' : 500,
+          width: window.innerWidth < 600 ? '100%' : 500,
+          showlegend: false,
+          plot_bgcolor: 'rgb(130, 186, 241)',
+          paper_bgcolor: 'rgb(130, 186, 241)',
           annotations: [
             {
-              x: 0.5, // Center of the chart (x-axis)
-              y: 0.5, // Center of the chart (y-axis)
-              text: '☕', // Default emoji for the center
+              x: 0.5,
+              y: 0.5,
+              text: '☕',
               font: {
-                size: 50, // Font size for the emoji
+                size: 50,
               },
-              showarrow: false, // Hide the arrow pointing to the annotation
-              name: 'center-text', // Name to identify the annotation
+              showarrow: false,
+              name: 'center-text',
             },
           ],
         };
@@ -102,8 +102,8 @@
             'annotations[0].text': '☕',
           });
         });
-</script>
-    
+      </script>
+    </div>
   <section class="projects">
     <div class="project-tile">
     <header class="pro-header"><h2 class="project-title">Tkinter</h2>
