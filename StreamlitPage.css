@@ -127,13 +127,11 @@ streamlit-body {
 }
 
 .streamlit-vid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Center text within the container */
-    width: 80%; /* Optional: adjust container width */
-    max-width: 800px; /* Optional: limit maximum width */
+    width: 80%; /* Makes the iframe responsive */
+    max-width: 800px; /* Sets the maximum width */
+    height: auto; /* Maintains aspect ratio */
+    aspect-ratio: 16/9; /* Ensures consistent dimensions for video */
+    border: none; /* Optional: Removes border for a cleaner look */
   }
 
 iframe {

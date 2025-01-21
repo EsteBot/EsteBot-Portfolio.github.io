@@ -164,3 +164,9 @@ li {
     object-fit: cover;
     }
 }
+@media (max-width: 320px) {
+    #chart {
+        width: 80% !important;
+        height: auto !important;
+    }
+}
