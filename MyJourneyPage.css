@@ -44,118 +44,150 @@
     border-radius: 4px; /* Rounded corners for the hover effect */
 }
 
-.vertical-timeline {
-    position: relative;
+.main-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .timeline-line {
-    position: absolute;
-    left: 10px;
-    top: 0;
-    height: 100%;
-    width: 40px; /* Adjust to fit the design */
-  }
-  
-  .event {
-    position: relative;
-    margin-left: 50px; /* Space for the graphic */
-    margin-bottom: 30px;
+    justify-content: space-between;
 }
 
-journey-body {
+.content {
+    font-weight: bold;
+    font-family: 'Futura', sans-serif;
+}
+
+.timeline-container {
+    flex: 0 0 200px; /* Fixed width for the timeline container */
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative
+}
+
+.events {
+    flex: 1;
+}
+
+.timeline {
+    margin-top: -10%;
+    position: absolute; /* Change to sticky to keep it in place within its container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-year {
+    margin: 500% 0; /* Controls the spacing between the years */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+  
+.event {
+    position: relative;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 300px 50px 230px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden; /* Hide overflow content */
+    width: 300px; /* Set a fixed width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event-1 {
+    left: 4%; 
+}
+
+.event-2 {
+    left: 10%; 
+}
+
+.event-3 {
+    left: 25%; 
+}
+
+.event-4 {
+    left: 17%; 
+}
+
+.event-6 {
+    right: 10%; 
+}
+
+.event-7 {
+    right: 17%; 
+}
+
+.event-8 {
+    right: 9%; 
+}
+
+
+.event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.details {
+    text-align: left;
+    color: #343434;
+    max-height: none; /* Remove max-height restriction */
+    overflow: visible; /* Ensure overflow is visible */
+    margin-top: 10px;
+}
+
+.details.hidden {
+    display: block;
+}
+
+.event-blue {
+    background-color: rgb(117, 186, 251); /* Light blue */
+}
+
+.journey-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(130, 186, 241);
+    background-color: rgb(90, 113, 133);
     padding-top: 10%;
-    margin-bottom: -100px;
     font-family: 'Futura', sans-serif;
 }
 
 .cntr-txt {
-    display: flex;
-    flex-wrap: wrap;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
     font-family: 'Futura', sans-serif;
 }
 
-h2 {
-    display: flex;
-    flex-direction: column;
+h1 {
     font-family: 'Futura', sans-serif;
+    color: rgb(117, 186, 251);
 }
 
-h1, h4, h3, ul{
+h3{
     font-family: 'Futura', sans-serif;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Futura', sans-serif;
-}
-
-ul {
-    line-height: 2; /* Adjust the value as needed */
-    font-family: 'Futuras', sans-serif;
-}
-
-.jrn-list {
-    line-height: 2;
-    margin-bottom: 4%;
-}
-
-li {
-    font-size: 1.05em;
-    line-height: 1.5;
-    font-size: 1.05em;
-    font-family: 'Futura', sans-serif;
-}
-
-.h2-spacing {
-    margin-bottom: 0em;
-    margin-top: 0.2em;
-    font-family: 'Futura', sans-serif;
-  }
-
-.body-flex {
-    display: flex;
-    padding: 10px 20px;
-    margin-left: 5%;
-    margin-right: 10%;
-}
-
-.jrn-sub-text {
-    display: flex;
-    justify-content: flex-end;
-    font-family: 'Futura', sans-serif;
+    padding-bottom: 5%;
 }
 
 .divider {
     height: 5px;
     width: 90%;
     background-color: #000; /* Color of the line */
-    margin: 0; /* Adjust margin as needed */
 }
 
 .return-icon {
     float: right;
-    padding-top: 100px;
-}
-
-.return-text {
-    float: right;
-    padding-top: 120px;
-    padding-right: 20px;
-    font-family: 'Futura', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .p-spacing {

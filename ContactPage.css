@@ -168,6 +168,12 @@ h3 {
     font-weight: bolder;
     font-size: x-large;
     cursor: pointer;
+    color: rgb(70, 175, 245);
+    text-shadow: 
+    -2px -2px 0 #3a4b53,
+    2px -2px 0 #3a4b53,
+    -2px 2px 0 #3a4b53,
+    2px 2px 0 #3a4b53;
 }
 
 #phoneText {
@@ -175,13 +181,39 @@ h3 {
     font-weight: bolder;
     font-size: x-large;
     cursor: pointer;
+    color: rgb(70, 175, 245);
+    text-shadow: 
+    -2px -2px 0 #3a4b53,
+    2px -2px 0 #3a4b53,
+    -2px 2px 0 #3a4b53,
+    2px 2px 0 #3a4b53;
 }
 
 #lnkdText {
     font-family: 'Futura', sans-serif;
     font-weight: bolder;
-    font-size: large;
+    font-size: x-large; /* Match the font size with #phoneText */
     cursor: pointer;
+    color: rgb(70, 175, 245);
+    text-shadow: 
+    -2px -2px 0 #3a4b53,
+    2px -2px 0 #3a4b53,
+    -2px 2px 0 #3a4b53,
+    2px 2px 0 #3a4b53;
+    text-decoration: none; /* Remove underline from link */
+}
+
+#lnkdText a {
+    color: rgb(70, 175, 245); /* Ensure the color stays the same for all states */
+    text-decoration: none; /* Remove underline from link */
+}
+
+#lnkdText:link,
+#lnkdText:visited,
+#lnkdText:hover,
+#lnkdText:active {
+    color: rgb(70, 175, 245); /* Ensure the color stays the same for all states */
+    text-decoration: none; /* Remove underline from link */
 }
 
 .hidden {
