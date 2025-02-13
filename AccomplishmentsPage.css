@@ -49,10 +49,9 @@ accomplish-body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(130, 186, 241);
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin-bottom: -100px;
+    background-color: rgb(90, 113, 133);
+    padding-top: 5%;
+    padding-bottom: 5%;
     font-family: 'Futura', sans-serif;
 }
 
@@ -65,6 +64,33 @@ accomplish-body {
     font-family: 'Futura', sans-serif;
 }
 
+/* Card container to hold the cards */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 80%;
+    min-width: 0;
+    margin: 0 auto;
+  }
+  
+  /* Individual card styling */
+.card {
+    background-color: rgb(117, 186, 251);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 0;
+  }
+  
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
 h2 {
     display: flex;
     flex-direction: column;
@@ -72,6 +98,14 @@ h2 {
     align-items: center;
     line-height: 1.5;
     font-family: 'Futura', sans-serif;
+}
+
+h1 {
+    color: rgb(117, 186, 251);
+}
+
+h3 {
+    padding-bottom: 5%;
 }
 
 h1, h4, h3, ul{
@@ -87,8 +121,14 @@ section {
 }
 
 ul {
+    list-style-type: disc; /* Ensure bullet points are used */
+    list-style-position: inside; /* Position bullet points inside the list item */
+    padding-left: 0; /* Remove default padding */
+    margin-left: 20px; /* Adjust margin as needed */
     line-height: 2; /* Adjust the value as needed */
+    color: #555;
     font-family: 'Futura', sans-serif;
+    
 }
 
 li:not(:last-child) {
@@ -111,21 +151,11 @@ li:not(:last-child) {
 
 .return-icon {
     float: right;
-    padding-top: 100px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 15%;
+    
 }
-
-.return-text {
-    float: right;
-    padding-top: 120px;
-    padding-right: 20px;
-    font-family: 'Futura', sans-serif;
-}
-
-.p-spacing {
-    margin-bottom: 0em;
-    margin-top: 0.2em;
-    font-family: 'Futura', sans-serif;
-  }
 
   @font-face {
     font-family: 'Futura';
