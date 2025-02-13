@@ -81,7 +81,7 @@ resume-body {
     gap: 20px; /* Adjust the gap between cards as needed */
 }
   
-  /* Card container to hold the cards */
+/* Card container to hold the cards */
 .card-container {
     display: grid;
     grid-template-columns: 1fr;
