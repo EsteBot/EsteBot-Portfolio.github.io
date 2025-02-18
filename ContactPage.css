@@ -37,6 +37,9 @@
     color: rgb(70, 175, 245);
     padding: 0px 10px;
     font-family: 'Futura', sans-serif;
+    border: 2px solid rgb(90, 129, 155); /* Add border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
 }
 
 .nav-link:hover {
@@ -120,6 +123,10 @@ h3 {
     padding-top: 100px;
     padding-bottom: 10px;
 }
+
+.return-icon:hover {
+    transform: translateY(-5px);
+  }
 
 .p-spacing {
     margin-bottom: 0em;
