@@ -54,7 +54,7 @@ accomplish-body {
     align-items: center;
     background-color: rgb(90, 113, 133);
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
     font-family: 'Futura', sans-serif;
 }
 
@@ -153,11 +153,12 @@ li:not(:last-child) {
 }
 
 .return-icon {
-    float: right;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-right: 15%;
-    
+    margin-left: 65%;
+    margin-right: 5%;
+}
+
+.return-icon:hover {
+    transform: translateY(-5px);
 }
 
   @font-face {

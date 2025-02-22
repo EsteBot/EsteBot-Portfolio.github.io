@@ -1,18 +1,11 @@
 /* Resume Styles Settings */
+
 .head-flex-box {
     display: flex;
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
     background-color: #3a4b53;
     height: 50%;
-    width: 100%; /* Ensure full width */
-}
-
-/* Ensure the navbar spans the full width */
-#navbar {
-    width: 100%; /* Ensure full width */
-    display: flex;
-    justify-content: center; /* Center the navbar items horizontally */
 }
 
 .head-flex {
@@ -21,7 +14,6 @@
     align-items: center;
     padding: 10px 20px;
     font-family: 'Futura', sans-serif;
-    
 }
 
 #navbar ul {

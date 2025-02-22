@@ -6,14 +6,6 @@
     flex-wrap: wrap;
     background-color: #3a4b53;
     height: 50%;
-    width: 100%; /* Ensure full width */
-}
-
-/* Ensure the navbar spans the full width */
-#navbar {
-    width: 100%; /* Ensure full width */
-    display: flex;
-    justify-content: center; /* Center the navbar items horizontally */
 }
 
 .head-flex {
@@ -115,6 +107,7 @@
     font-family: 'Futura', sans-serif;
     line-height: 1.4;
 }
+
 .main-page-subtxt {
     flex-direction: column;
     justify-content: center;
