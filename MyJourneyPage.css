@@ -37,6 +37,9 @@
     color: rgb(70, 175, 245);
     padding: 0px 10px;
     font-family: 'Futura', sans-serif;
+    border: 2px solid rgb(90, 129, 155); /* Add border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
 }
 
 .nav-link:hover {
@@ -185,9 +188,8 @@ h3{
 }
 
 .return-icon {
-    float: right;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-left: 75%;
+    padding-bottom: 2%;
 }
 
 .p-spacing {
@@ -229,7 +231,7 @@ h3{
 @media only screen and (max-width: 600px) {
     .event {
         width: 150px; /* Adjust width for smaller screens */
-        height: 150px; /* Adjust height for smaller screens */
+        height: auto; /* Adjust height for smaller screens */
         margin: 10px 50px 50px 50px; /* Adjust margins for smaller screens */
     }
 
@@ -239,6 +241,6 @@ h3{
     }
 
     .timeline-year {
-        margin: 400% 0; /* Adjust spacing between the years */
+        margin: 800% 0; /* Adjust spacing between the years */
     }
 }

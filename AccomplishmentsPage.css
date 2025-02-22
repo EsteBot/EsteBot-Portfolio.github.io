@@ -37,6 +37,9 @@
     color: rgb(70, 175, 245);
     padding: 0px 10px;
     font-family: 'Futura', sans-serif;
+    border: 2px solid rgb(90, 129, 155); /* Add border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
 }
 
 .nav-link:hover {
@@ -51,7 +54,7 @@ accomplish-body {
     align-items: center;
     background-color: rgb(90, 113, 133);
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
     font-family: 'Futura', sans-serif;
 }
 
@@ -150,11 +153,12 @@ li:not(:last-child) {
 }
 
 .return-icon {
-    float: right;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-right: 15%;
-    
+    margin-left: 65%;
+    margin-right: 5%;
+}
+
+.return-icon:hover {
+    transform: translateY(-5px);
 }
 
   @font-face {

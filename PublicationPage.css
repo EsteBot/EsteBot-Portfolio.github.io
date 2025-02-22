@@ -37,6 +37,9 @@
     color: rgb(70, 175, 245);
     padding: 0px 10px;
     font-family: 'Futura', sans-serif;
+    border: 2px solid rgb(90, 129, 155); /* Add border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
 }
 
 .nav-link:hover {
@@ -44,38 +47,92 @@
     border-radius: 4px; /* Rounded corners for the hover effect */
 }
 
-resume-body {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(130, 186, 241);
-    padding-top: 10%;
-    margin-bottom: -100px;
+    background-color: rgb(90, 113, 133);
+    margin-bottom: 0px;
     font-family: 'Futura', sans-serif;
 }
 
-.cntr-txt {
-    display: flex;
-    flex-wrap: wrap;
+.card-container {
+    display: block;
+    gap: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 3%;
+    
+}
+
+.card {
+    background-color: rgb(117, 186, 251);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: 'Futura', sans-serif;
-}
-
-h2 {
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: auto; /* Set a fixed height */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 3%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Card title */
+.card h3, h4, ul {
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #333;
+    font-family: 'Futura', sans-serif;
+    line-height: 1.4;
+}
+
+h1 {
+    color: rgb(117, 186, 251);
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
     font-family: 'Futura', sans-serif;
 }
 
-h1, h4, h3, ul{
-    font-family: 'Futura', sans-serif;
+h3.j-label {
+    margin-bottom: -0.8em; /* Adjust the value as needed to reduce space */
+}
+
+h3.title {
+    font-family: 'Georgia', sans-serif;
+    font-weight: bold;
+    color: black
+}
+
+h4.auth {
+    font-family: 'Lato', sans-serif;
+}
+
+em {
+    color: #137577; /* Change this to the desired color */
+    font-style: italic; /* Optional: Ensure the text is italicized */
+}
+
+li.cite {
+    padding-bottom: 7%;
 }
 
 ul {
     line-height: 2; /* Adjust the value as needed */
+    list-style-position: inside;
     font-family: 'Futura', sans-serif;
 }
 
@@ -87,26 +144,6 @@ li {
     font-family: 'Futura', sans-serif;
 }
 
-.last_li {
-    margin-bottom: 90px;
-    font-family: 'Futura', sans-serif;
-}
-
-.h2-spacing {
-    margin-bottom: 0em;
-    margin-top: 0.2em;
-    font-family: 'Futura', sans-serif;
-  }
-
-.body-flex {
-    display: flex;
-    padding: 10px 20px;
-    margin-left: 5%;
-    margin-right: 10%;
-    margin-top: 5%;
-    font-family: 'Futura', sans-serif;
-}
-
 .divider {
     height: 5px;
     width: 90%;
@@ -115,43 +152,15 @@ li {
     font-family: 'Futura';
 }
 
-.minor {
-    height: 1px;
-    width: 81%;
-    background-color: #000; /* Color of the line */
-    margin:  9% 3% 7% 7%; /* Adjust margin as needed */
-    margin-top: 5%;
-}
-
 .return-icon {
-    float: right;
-    padding-top: 100px;
+    margin-left: 65%;
+    margin-right: 5%;
+    margin-bottom: 3%;
 }
 
-.return-text {
-    float: right;
-    padding-top: 120px;
-    padding-right: 20px;
-    font-family: 'Futura', sans-serif;
+.return-icon:hover {
+    transform: translateY(-5px);
 }
-
-.p-spacing {
-    margin-bottom: 0em;
-    margin-top: 0.2em;
-    font-family: 'Futura', sans-serif;
-  }
-
-  p.p-spacing  {
-    line-height: 1;
-    font-size: 1em;
-    font-family: 'Futura', sans-serif;
-}
-
-p {
-    line-height: 1.5;
-    font-size: 1.05em;
-    font-family: 'Futura', sans-serif;
-  }
 
   @font-face {
     font-family: 'Futura';

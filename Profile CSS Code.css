@@ -37,6 +37,9 @@
     color: rgb(70, 175, 245);
     padding: 0px 10px;
     font-family: 'Futura', sans-serif;
+    border: 2px solid rgb(90, 129, 155); /* Add border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
 }
 
 .nav-link:hover {
@@ -53,7 +56,7 @@
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     margin: 10%;
-    padding: 20px; /* Add padding to match the cards */
+    padding: 50px 10px; /* Add padding to match the cards */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
@@ -104,6 +107,7 @@
     font-family: 'Futura', sans-serif;
     line-height: 1.4;
 }
+
 .main-page-subtxt {
     flex-direction: column;
     justify-content: center;
@@ -177,8 +181,7 @@ li {
 
 @font-face {
     font-family: 'Futura';
-    src: url('path/to/futura.woff2') format('woff2'),
-         url('path/to/futura.woff') format('woff');
+    src: url('path/to/futura.woff') format('woff');
 }
 
 @media only screen and (max-width: 200px) {
@@ -187,10 +190,13 @@ li {
     object-fit: cover;
     }
 }
-@media (max-width: 320px) {
+
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
     #chart {
-        width: 80% !important;
-        height: auto !important;
+        padding: 10px 5px;
+        margin: 10% 5%; /* Reduce margin for smaller screens */
     }
 }
 
