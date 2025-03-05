@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="https://1drv.ms/i/s!ArWyPNkF5S-foaJ-HEmM_EMkZ0XFAQ?embed=1&width=512&height=512">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
     <title>estestyle.com</title>
     <link rel="stylesheet" href="Profile CSS Code.css" />
 </head>
+<body>
 <div class="head-flex-box">
     <div class="head-flex">
         <nav id="navbar">
@@ -22,12 +24,13 @@
         </nav>
     </div>
 </div>
-    <body>
     <h1 class="main-page-subtxt">Welcome, my name is Esteban!</h1>
     <div class="title-divider main-page-subtxt"></div>
     <h3 class="main-page-subtxt">I'm excited to share the problems I've solved with these projects I've built!</h3>
-    <div id="chart"></div>
-    <section class="projects">
+    <div id="chart-container">
+        <div id="chart"></div>
+        <div id="networkchart"></div>
+    </div>
       <script>
         // Data for the doughnut chart
         var data = [
@@ -37,7 +40,7 @@
             type: 'pie',
             hole: 0.4, // Creates the doughnut effect
             marker: {
-              colors: ['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A'], // Custom colors
+            colors: ['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A'], // Custom colors
             },
             textinfo: 'label+percent', // Display labels and percentages
             hoverinfo: 'text',
@@ -53,44 +56,62 @@
 
         // Layout customization
         var layout = {
-    title: 'Data Science Tools Applied:',
-    height: window.innerWidth < 600 ? 'auto' : 400, // Match the height of the cards
-    width: window.innerWidth < 600 ? '100%' : 460, // Match the width of the cards
-    showlegend: false,
-    plot_bgcolor: 'rgb(117, 186, 251)', // Match the background color of the cards
-    paper_bgcolor: 'rgb(117, 186, 251)', // Match the background color of the cards
-    margin: {
-        l: 20, // Adjust left margin
-        r: 20, // Adjust right margin
-        t: 40, // Adjust top margin
-        b: 20  // Adjust bottom margin
-    },
-    annotations: [
-        {
-            x: 0.5,
-            y: 0.5,
-            text: '☕',
-            font: {
-                size: 50,
+            title: {
+                text: 'Key Data Science Tools',
+                font: {
+                    size: 22,
+                    weight: 'bold', // Make the title bold
+                    color: '#000000', // Set the color
+                    family: 'Futura, sans-serif'
+                }
             },
-            showarrow: false,
-            name: 'center-text',
-        },
-    ],
-    
-};
+            height: window.innerWidth < 600 ? 350 : 380, // Match the height of the cards
+            width: window.innerWidth < 600 ? 290 : 320, // Match the width of the cards
+            showlegend: false,
+            plot_bgcolor: 'rgb(117, 186, 251)', // Match the background color of the cards
+            paper_bgcolor: 'rgb(117, 186, 251)', // Match the background color of the cards
+            margin: {
+                l: 10, // Adjust left margin
+                r: 20, // Adjust right margin
+                t: 40, // Adjust top margin
+                b: 10  // Adjust bottom margin
+                },
+            annotations: [
+                {
+                x: 0.5,
+                y: 0.5,
+                text: '☕',
+                font: {
+                    size: 50,
+                    },
+                showarrow: false,
+                name: 'center-text',
+                },
+                {
+                x: 0.5,
+                y: 1.05, // Position above the plot area
+                xref: 'paper',
+                yref: 'paper',
+                text: 'Hover to enhace viz',
+                showarrow: false,
+                font: {
+                    size: 14
+                }
+                },
+                ],
+                };
 
         // Render the chart
         Plotly.newPlot('chart', data, layout);
 
         // Mapping of skills to emojis
         var skillEmojis = {
-          Python: '🐍',
-          SQL: '🛢️',
-          Tableau: '📊',
-          Statistics: '📈',
-          Streamlit: '🚀'
-        };
+            Python: '🐍',
+            SQL: '🛢️',
+            Tableau: '📊',
+            Statistics: '📈',
+            Streamlit: '🚀'
+            };
 
         // Add hover event listener
         var chartDiv = document.getElementById('chart');
@@ -112,8 +133,175 @@
             'annotations[0].text': '☕',
           });
         });
-      </script>
-    </div>
+
+        
+        // Network chart code ############################
+
+        const svg = d3.select("#networkchart").append("svg")
+            .attr("width", 360)
+            .attr("height", 380);
+
+        
+
+        const graph = {
+            nodes: [
+                {id: "Analytics", emoji: "📊"},
+                {id: "Scripting", emoji: "💻"},
+                {id: "Communication", emoji: "📞"},
+                {id: "Automation", emoji: "🤖"},
+                {id: "Data", emoji: "🗄️"},
+                {id: "Data-Analysis", emoji: "🔍"},
+                {id: "Python", emoji: "🐍"},
+                {id: "SQL", emoji: "💾"},
+                {id: "R", emoji: "📐"},
+                {id: "Tableau", emoji: "📊"},
+                {id: "Excel", emoji: "📑"},
+                {id: "Numpy", emoji: "🔢"},
+                {id: "Pandas", emoji: "🐼"},
+                {id: "Matplotlib", emoji: "📈"},
+                {id: "Seaborn", emoji: "🐟"},
+                {id: "Jupyter Notebooks", emoji: "📒"},
+                {id: "Streamlit", emoji: "🚀"},
+                {id: "Kivy", emoji: "📱"},
+                {id: "Tkinter", emoji: "🖥️"},
+                {id: "PySimpleGUI", emoji: "🖼️"},
+                {id: "GitHub", emoji: "🐙"},
+                {id: "Google Sheets", emoji: "📑"},
+                {id: "Google Colab", emoji: "🧪"},
+                {id: "Data-Visualization", emoji: "👁️"},
+            ],
+            
+            links: [
+                {source: "Analytics", target: "Scripting"},
+                {source: "Data", target: "Analytics"},
+                {source: "Data-Analysis", target: "Analytics"},
+                {source: "Data-Analysis", target: "Communication"},
+                {source: "Data-Analysis", target: "Automation"},
+                {source: "Data-Analysis", target: "Data"},
+                {source: "Python", target: "Scripting"},
+                {source: "Python", target: "Automation"},
+                {source: "Python", target: "Data-Analysis"},
+                {source: "SQL", target: "Data-Analysis"},
+                {source: "R", target: "Data-Analysis"},
+                {source: "Numpy", target: "Python"},
+                {source: "Pandas", target: "Python"},
+                {source: "Matplotlib", target: "Python"},
+                {source: "Seaborn", target: "Python"},
+                {source: "Jupyter Notebooks", target: "Python"},
+                {source: "GitHub", target: "Scripting"},
+                {source: "Google Colab", target: "Scripting"},
+                {source: "Tableau", target: "Data-Visualization"},
+                {source: "Excel", target: "Data-Visualization"},
+                {source: "Data-Visualization", target: "Python"},
+                {source: "Data-Visualization", target: "Data-Analysis"},
+                {source: "Automation", target: "Scripting"}
+        
+                
+            ]
+        };
+
+        const simulation = d3.forceSimulation(graph.nodes)
+            .force("link", d3.forceLink(graph.links).id(d => d.id))
+            .force("charge", d3.forceManyBody().strength(-500))
+            .force("center", d3.forceCenter(300, 300));
+
+        const link = svg.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(graph.links)
+            .enter().append("line")
+            .attr("stroke", "#ddd")
+            .attr("stroke-opacity", 0.6)
+            .attr("stroke-width", 4.5);
+
+        const node = svg.append("g")
+            .attr("class", "nodes")
+            .selectAll("text")
+            .data(graph.nodes)
+            .enter().append("text")
+            .attr("class", "node")
+            .attr("text-anchor", "middle")
+            .attr("dy", ".35em")
+            .attr("font-size", "24px") // Set the font size for the emojis
+            .text(d => d.emoji)
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended));
+
+        // Add labels to nodes
+        const labels = svg.append("g")
+            .attr("class", "labels")
+            .selectAll("text")
+            .data(graph.nodes)
+            .enter().append("text")
+            .attr("text-anchor", "middle")
+            .attr("dy", -25)
+            .text(d => d.id);
+
+        node.append("title")
+            .text(d => d.id);
+
+        simulation
+            .nodes(graph.nodes)
+            .on("tick", ticked);
+
+        simulation.force("link")
+            .links(graph.links);
+
+        function ticked() {
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+
+            node
+                .attr("x", d => d.x)
+                .attr("y", d => d.y);
+
+            labels
+                .attr("x", d => d.x)
+                .attr("y", d => d.y);
+        }
+
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        // Append a title to the SVG
+        svg.append("text")
+           .attr("x", 180) // Position the title at the center horizontally
+           .attr("y", 20) // Position the title vertically
+           .attr("text-anchor", "middle") // Center the text
+           .style("font-size", "22px") // Set the font size
+           .style("fill", "#000000")
+           .text("Skill Network"); // Set the title text
+
+        // Append a title to the SVG
+        svg.append("text")
+           .attr("x", 180) // Position the title at the center horizontally
+           .attr("y", 40) // Position the title vertically
+           .attr("text-anchor", "middle") // Center the text
+           .style("font-size", "15px") // Set the font size
+           .style("fill", "#000000")
+           .text("Drag nodes to investigate connections"); // Set the title text
+           
+    </script>
+    <h3 class="main-page-subtxt">Click on the below project to investigate their use cases</h3>
     <section class="projects">
       <div class="card-container">
           <div class="card">

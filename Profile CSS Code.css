@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     background-color: #3a4b53;
     height: 50%;
+    width: 100%;
 }
 
 .head-flex {
@@ -31,23 +32,31 @@
     font-family: 'Futura', sans-serif;
 }
 
-.nav-link {
+#navbar .nav-link {
     display: inline-block; /* Limits clickable link area to text */
     text-decoration: none;
     color: rgb(70, 175, 245);
-    padding: 0px 10px;
+    padding: 7px 10px;
     font-family: 'Futura', sans-serif;
     border: 2px solid rgb(90, 129, 155); /* Add border */
     border-radius: 4px; /* Rounded corners */
     transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
 }
 
-.nav-link:hover {
+#navbar .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
     border-radius: 4px; /* Rounded corners for the hover effect */
 }
 
-#chart {
+#chart-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 8% auto;
+}
+
+#chart, #networkchart {
     background-color: rgb(117, 186, 251); /* Match the background color of the cards */
     border: 1px solid #ddd; /* Match the border of the cards */
     border-radius: 8px; /* Match the border-radius of the cards */
@@ -55,9 +64,14 @@
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    margin: 10%;
+    height: 450px;
+    width: 350px;
     padding: 50px 10px; /* Add padding to match the cards */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#networkchart text {
+    fill: rgb(156, 10, 46); /* Set the desired color for the title text */
 }
 
   body {
@@ -134,14 +148,6 @@ h3 {
     font-family: 'Futura', sans-serif;
 }
 
-li {
-    line-height: 2;
-    font-size: 1.05em;
-    line-height: 1.5;
-    font-size: 1.05em;
-    font-family: 'Futura', sans-serif;
-}
-
 .title-divider {
     height: 5px;
     width: 90%;
@@ -184,24 +190,11 @@ li {
     src: url('path/to/futura.woff') format('woff');
 }
 
-@media only screen and (max-width: 200px) {
-    img {
-    width: 25%;
-    object-fit: cover;
-    }
-}
-
-
-/* Media query for smaller screens */
-@media (max-width: 600px) {
-    #chart {
-        padding: 10px 5px;
-        margin: 10% 5%; /* Reduce margin for smaller screens */
-    }
-}
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+    #chart-container {
+        grid-template-columns: 1fr; /* Stack charts in a single column */
+    }
     .card-container {
         grid-template-columns: 1fr; /* Stack cards in a single column */
     }

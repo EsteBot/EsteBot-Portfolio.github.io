@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     background-color: #3a4b53;
     height: 50%;
+    width: 100%;
 }
 
 .head-flex {
@@ -31,18 +32,18 @@
     font-family: 'Futura', sans-serif;
 }
 
-.nav-link {
+#navbar .nav-link {
     display: inline-block; /* Limits clickable link area to text */
     text-decoration: none;
     color: rgb(70, 175, 245);
-    padding: 0px 10px;
+    padding: 7px 10px;
     font-family: 'Futura', sans-serif;
     border: 2px solid rgb(90, 129, 155); /* Add border */
     border-radius: 4px; /* Rounded corners */
     transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
 }
 
-.nav-link:hover {
+#navbar .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
     border-radius: 4px; /* Rounded corners for the hover effect */
 }
@@ -70,7 +71,6 @@ contact-body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-color: rgb(130, 186, 241);*/
     padding-top: 10%;
     padding-bottom: 25%;
     margin-bottom: -100px;
@@ -231,13 +231,7 @@ h3 {
     display: visable;
   }
 
-li {
-    line-height: 2;
-    font-size: 1.05em;
-    line-height: 1.5;
-    font-size: 1.05em;
-    font-family: 'Futura', sans-serif;
-}
+
 
 @font-face {
 font-family: 'Futura';
