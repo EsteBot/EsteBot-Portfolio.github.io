@@ -113,6 +113,7 @@ h3.j-label {
 }
 
 h3.title {
+    margin-top: 4%;
     font-family: 'Georgia', sans-serif;
     font-weight: bold;
     color: black

@@ -51,7 +51,7 @@
 #chart-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 20px;
+    gap: 50px;
     max-width: 1000px;
     margin: 8% auto;
 }
@@ -87,7 +87,7 @@
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 20px;
+    gap: 50px;
     max-width: 1000px;
     margin: 0 auto;
     
@@ -130,6 +130,7 @@
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+    margin-right: 5%;
     font-family: 'Futura', sans-serif;
 }
 
@@ -151,8 +152,11 @@ h3 {
 .title-divider {
     height: 5px;
     width: 90%;
-    background-color: #000; /* Color of the line */
-    
+    background-color: #000; /* Color of the line */ 
+}
+
+.projects {
+    padding-top: 1%;
 }
 
 #tkinter-img {
