@@ -62,6 +62,13 @@ body {
     justify-content: space-between;
 }
 
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    font-family: 'Futura', sans-serif;
+}
+
 .content {
     font-weight: bold;
     font-family: 'Futura', sans-serif;

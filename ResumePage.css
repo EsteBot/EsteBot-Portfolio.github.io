@@ -58,10 +58,11 @@ body {
     font-family: 'Futura', sans-serif;
 }
 
-.sig {
-    font-family: 'Dancing Script';
-    font-size: 2.2em;
-    padding-top: 50px;
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    font-family: 'Futura', sans-serif;
 }
 
 .cntr-txt {
@@ -145,6 +146,20 @@ body {
     margin: 0 auto; /* Horizontally centers the image */
     max-width: 100%; /* Ensures the image scales responsively */
     height: auto; /* Maintains aspect ratio */
+}
+
+h1 {
+    color: rgb(117, 186, 251);
+}
+
+.divider {
+    height: 5px;
+    width: 90%;
+    background-color: #000; /* Color of the line */
+}
+
+.headline-txt{
+    padding-bottom: 5%;
 }
 
 h2 {
