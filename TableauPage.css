@@ -1,0 +1,177 @@
+/* Tableau Styles Settings */
+
+.head-flex-box {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    flex-wrap: wrap;
+    background-color: #3a4b53;
+    height: 50%;
+}
+
+.head-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 50px;
+    font-family: 'Futura', sans-serif;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the flex items horizontally */
+    flex-wrap: wrap;
+    font-family: 'Futura', sans-serif;
+}
+
+#navbar ul li {
+    margin: 5px 20px; /* Add spacing between navbar items */
+    font-family: 'Futura', sans-serif;
+}
+
+.nav-link {
+    display: inline-block; /* Limits clickable link area to text */
+    text-decoration: none;
+    color: rgb(70, 175, 245);
+    padding: 0px 10px;
+    font-family: 'Futura', sans-serif;
+    border: 2px solid rgb(90, 129, 155); /* Add border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
+    border-radius: 4px; /* Rounded corners for the hover effect */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(130, 186, 241);
+    padding-top: 0%;
+    padding-bottom: 10%;
+    margin-bottom: -100px;
+    font-family: 'Futura', sans-serif;
+}
+
+.cntr-txt {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+.head-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.tableau-pro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Futura', sans-serif;
+}
+
+.divider {
+    height: 5px;
+    width: 90%;
+    background-color: #000; /* Color of the line */
+    margin: 60px 0; /* Adjust margin as needed */
+    font-family: 'Futura';
+}
+
+.title-divider {
+    height: 5px;
+    width: 90%;
+    background-color: #000; /* Color of the line */
+    margin: 0; /* Adjust margin as needed */
+}
+
+.pro-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+.pro-description.indented {
+    text-indent: 2em; /* Apply indent */
+}
+
+.pro-header {
+    margin-top: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+.pro-subtitle {
+    text-align: center;
+    font-family: 'Futura', sans-serif;
+}
+
+.tableau-img {
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;  
+}
+
+h1 {
+    padding-top: 10%;
+}
+
+h3 {
+    line-height: 1.5;
+    font-family: 'Futura', sans-serif;
+}
+
+p.p-spacing  {
+    line-height: 1;
+    font-size: 1em;
+    font-family: 'Futura', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.05em;
+    font-family: 'Futura', sans-serif;
+  }
+
+.p-spacing {
+    margin-bottom: 0em;
+    margin-top: 0.2em;
+    font-family: 'Futura', sans-serif;
+  }
+
+li {
+    line-height: 2;
+    font-size: 1.05em;
+    line-height: 1.5;
+    font-size: 1.05em;
+    font-family: 'Futura', sans-serif;
+}
+
+  @font-face {
+    font-family: 'Futura';
+    src: url('path/to/futura.woff2') format('woff2'),
+         url('path/to/futura.woff') format('woff');
+}
+
+  @media only screen and (max-width: 200px) {
+      img {
+      width: 25%;
+      object-fit: cover;
+      }
+}
