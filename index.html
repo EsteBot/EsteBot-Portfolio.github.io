@@ -282,6 +282,14 @@
             d.fy = null;
         }
 
+        // Append a background rectangle for the title
+        svg.append("rect")
+        .attr("x", 47) // Position the rectangle horizontally
+        .attr("y", 0) // Position the rectangle vertically
+        .attr("width", 264) // Set the width of the rectangle
+        .attr("height", 46) // Set the height of the rectangle
+        .style("fill", "#75BAFB"); // Set the background color
+
         // Append a title to the SVG
         svg.append("text")
            .attr("x", 180) // Position the title at the center horizontally
@@ -301,7 +309,7 @@
            .text("Drag nodes to investigate connections"); // Set the title text
            
     </script>
-    <h3 class="main-page-subtxt">Click on the below project to investigate their use cases</h3>
+    <h3 class="main-page-subtxt">See them in action! Uncover the project's use cases by clicking on a tile</h3>
     <section class="projects">
       <div class="card-container">
           <div class="card">
@@ -371,17 +379,17 @@
               </div>
           </div>
           <div class="card">
-              <div class="project-tile">
-                  <header class="pro-header">
-                      <h2 class="project-title">One for Fun!</h2>
-                      <p class="pro-subtitle">CLI battleship game created learning Python</p>
-                  </header>
-                  <a href="BattleshipPageHTML.html">
-                      <img id="scripts-img" src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536024&authkey=%21AEJrvPxc-fGq85A&width=1024&height=1024" alt="battleship project thumbnail" loading="eager" class="logo-img">
-                  </a>
-              </div>
-          </div>
+            <div class="project-tile">
+                <header class="pro-header">
+                    <h2 class="project-title">Tableau</h2>
+                    <p class="pro-subtitle">Visual analytics for data dashboards</p>
+                </header>
+                <a href="TableauPage.html">
+                    <img id="scripts-img" src="https://1drv.ms/i/s!ArWyPNkF5S-foqs63psVsewC0aKDLw?embed=1&width=480&height=480" alt="tableau project thumbnail" loading="eager" class="logo-img" width="100px">
+                </a>
+            </div>
+        </div>
       </div>
   </section>
 </body>
-</html>
+</html
