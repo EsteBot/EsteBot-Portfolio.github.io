@@ -150,6 +150,13 @@ section {
     margin-right: 5%;
 }
 
+.pysimp-img1 {
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;  
+}
+
 .datsci-graph {
     padding-top: 30px;
     text-align: center;
