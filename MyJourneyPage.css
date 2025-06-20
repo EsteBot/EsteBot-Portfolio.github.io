@@ -69,6 +69,12 @@ body {
     font-family: 'Futura', sans-serif;
 }
 
+.divider {
+    height: 5px;
+    width: 90%;
+    background-color: #000; /* Color of the line */
+}
+
 .content {
     font-weight: bold;
     font-family: 'Futura', sans-serif;
@@ -183,15 +189,13 @@ h3{
     padding-bottom: 5%;
 }
 
-.divider {
-    height: 5px;
-    width: 90%;
-    background-color: #000; /* Color of the line */
-}
-
 .return-icon {
     margin-left: 75%;
     padding-bottom: 2%;
+}
+
+.return-icon:hover {
+    transform: translateY(-5px);
 }
 
 .p-spacing {

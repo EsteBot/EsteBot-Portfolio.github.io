@@ -74,7 +74,7 @@
     fill: rgb(156, 10, 46); /* Set the desired color for the title text */
 }
 
-  body {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,17 +166,17 @@ h3 {
 
 #pysimplegui-img {
     height: 250px;
-    width: 250px;
+    width: 300px;
 }
 
 #medassoc-img {
     height: 250px;
-    width: 250px;
+    width: 300px;
 }
 
 #kivy-img {
     height: 250px;
-    width: 250px;
+    width: 200px;
 }
 
 #scripts-img {
