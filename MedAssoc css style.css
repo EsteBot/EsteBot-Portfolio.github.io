@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     background-color: #3a4b53;
     height: 50%;
+    width: 100%;
 }
 
 .head-flex {
@@ -47,48 +48,40 @@
     border-radius: 4px; /* Rounded corners for the hover effect */
 }
 
-medassoc-body {
+.project-title {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(130, 186, 241);
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin-bottom: -100px;
-    font-family: 'Futura', sans-serif;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align left, or center as needed */
 }
 
-.cntr-txt {
+.trigger-main-text {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.project-subtext {
+    font-size: 0.85em;
+    color: #b0c4d4;
+    margin-top: 4px;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+}
+
+.title {
+    color: rgb(117, 186, 251);
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 10%;
     font-family: 'Futura', sans-serif;
 }
 
-.head-flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px;
-    
-}
-
-.pro-description {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: 'Futura', sans-serif;
-}
-
-.pro-description.indented {
-    text-indent: 2em; /* Apply indent */
-}
-
-h3 {
-    line-height: 1.5;
-    font-family: 'Futura', sans-serif;
+.project-subtext {
+    display: block;
+    font-size: 0.85em;
+    color:  rgb(117, 186, 251); /* or any subtle color you like */
+    margin-top: 4px;
+    font-weight: normal;
+    letter-spacing: 0.01em;
 }
 
 .divider {
@@ -105,6 +98,55 @@ h3 {
     margin: 0; /* Adjust margin as needed */
 }
 
+.cntr-txt {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(90, 113, 133);
+    font-family: 'Futura', sans-serif;
+}
+
+.medassoc-pro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Futura', sans-serif;
+}
+
+.pro-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+.pro-description.indented {
+    text-indent: 2em; /* Apply indent */
+}
+
+.pro-header {
+    margin-top: 5%;
+    font-family: 'Futura', sans-serif;
+}
+
+h3 {
+    line-height: 1.5;
+    font-family: 'Futura', sans-serif;
+}
+
 .medassoc-img1 {
     padding-top: 3%;
     margin-left: 9%;
@@ -112,15 +154,12 @@ h3 {
 }
 
 .return-icon {
-    float: right;
     padding-top: 100px;
+    padding-bottom: 3%;
 }
 
-.return-text {
-    float: right;
-    padding-top: 120px;
-    padding-right: 20px; 
-    font-family: 'Futura', sans-serif;
+.return-icon:hover {
+    transform: translateY(-5px);
 }
 
 p.p-spacing  {
@@ -160,6 +199,95 @@ li {
     line-height: 1.5;
     font-size: 1.05em;
     font-family: 'Futura', sans-serif;
+}
+
+/* Styles for the collapsible trigger (the project title) */
+.collapsible-trigger {
+    cursor: pointer;
+    padding: 12px 24px;
+    background-color: #3a4b53; /* Opposite of nav-link: blue background */
+    color: rgb(70, 175, 245); /* White text for contrast */
+    border: 2px solid rgb(70, 175, 245); /* Same border as nav-link */
+    border-radius: 8px;
+    font-family: 'Futura', sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 6px rgba(70, 175, 245, 0.08);
+    margin-bottom: 8px;
+}
+
+.collapsible-trigger:hover,
+.collapsible-trigger.active {
+    background-color: rgba(255, 255, 255, 0.1); /* Invert on hover */
+    color: rgb(70, 175, 245); /* Blue text */
+    border-color: rgb(70, 175, 245);
+    box-shadow: 0 4px 12px rgba(70, 175, 245, 0.15);
+}
+
+.collapsible-trigger::after {
+    content: '\25B6';
+    font-size: 0.9em;
+    margin-left: 12px;
+    transition: transform 0.3s;
+    color: inherit; /* Arrow matches text color */
+}
+
+.collapsible-trigger.active::after {
+    transform: rotate(90deg);
+}
+
+/* Styles for the collapsible content */
+.collapsible-content {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden; /* Hides content that exceeds max-height */
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Smooth transitions */
+    padding: 0 20px; /* No vertical padding when collapsed */
+    background-color: rgb(90, 113, 133); /* Slightly different background for content */
+    /*border-bottom: 1px solid #eee; /* Bottom border for separator */
+}
+
+/* When the content is active (open) */
+.collapsible-content.active {
+    max-height: 20000px; /* A large enough value to accommodate all content. Adjust if your project content is exceptionally long. */
+    padding: 20px; /* Add vertical padding when open */
+    transition: max-height 0.4s ease-in, padding 0.4s ease-in; /* Smooth transitions */
+}
+
+/* Optional: Styles for the project header within the content */
+.pro-header {
+    background-color: transparent; /* Override any header styles from the trigger */
+    border-bottom: none; /* Remove border from inner header */
+}
+
+/* Ensure images and videos are responsive within the collapsed area */
+.collapsible-content img,
+.collapsible-content video {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents extra space below images */
+    margin: 15px auto; /* Center images/videos */
+}
+
+.card {
+    background-color: rgb(117, 186, 251);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 45px;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 5% auto 0 auto; /* Top margin, auto left/right centers the card */
+    width: 100%;             /* Card takes up to 90% of parent width */
+    max-width: 1000px;       /* But never exceeds 800px (adjust as needed) */
+    box-sizing: border-box;
+}
+  
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 @font-face {
