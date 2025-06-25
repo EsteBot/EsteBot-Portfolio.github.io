@@ -3,90 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://1drv.ms/i/c/9f2fe505d93cb2b5/IQQ1viORou1US5BLjYZ34ezJAV_Pg8fkzHc0ybH6iu_7MY4?width=1024">
   <title>DataSci Page</title>
   <link rel="stylesheet" href="DatSci css style.css" />
 </head>
 <div class="head-flex-box">
   <div class="head-flex">
-      <nav id="navbar">
-          <ul>
-            <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
-            <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
-            <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
-            <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
-            <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
-            <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
-        </ul>
-      </nav>
+    <nav id="navbar">
+        <ul>
+          <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
+          <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
+          <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
+          <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
+          <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
+          <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </div>
-<datsci-body>
-  <h1 class="cntr-txt">Welcome to my Data Science page!</h1>
-  <div class="title-divider"></div>
-  <p class="cntr-txt">Check out some of my Data Science projects</p>
-    <div class="datsci-pro">
-      <header class="pro-header">
-        <h2 class="pro-title cntr-txt">Four-Group Data Analysis & Visualization</h2>
-      </header>
+<body>
+  <h1 class="title">Welcome to my Data Science page!</h1>
+  <div class="divider"></div>
+  <p class="cntr-txt">Check out some of my data analysis and vizualization projects</p>
+  <div class="datsci-pro">
+    <header class="pro-header cntr-txt">
+        <h2 class="project-title collapsible-trigger" data-target="google-sheets-dashboard-details">
+            <span class="trigger-main-text">📊 KPI Data Dashboard with Google Sheets 🔎</span>
+            <span class="project-subtext">Google Sheets Formulas Pivot Tables</span>
+        </h2>
+    </header>
+    <div id="google-sheets-dashboard-details" class="collapsible-content">
+      <div class="card">
         <div>
-        <h3 class="pro-description">Problem:</h3>
-        <h3 class="pro-description indented">In our lab, we collected a variety of behavioral data 
-          from experimental subjects across four distinct groups. The challenge was that this data 
-          required extensive reformatting before it can be transferred to statistical analysis 
-          software for group-by-group testing and graphing. This manual reformatting process was 
-          not only time-consuming but also susceptible to human error. Moreover, the statistical 
-          software used generated basic and aesthetically unappealing graphs, which limited the 
-          quality of data visualization.</h3>
+          <h3 class="pro-description">Problem:</h3>
+          <h3 class="pro-description indented">
+              For hotel operations to thrive, swift and informed decisions are paramount. 
+              However, critical data points such as real-time occupancy, projected arrivals, 
+              out-of-order room availability, and variable room pricing were often fragmented 
+              and difficult to access in a coherent format. This presented a significant challenge: 
+              how to synthesize these dynamic metrics, track their evolution over time, 
+              and visualize their interdependencies to empower effective decision-making? 
+              The absence of a readily accessible, visual overview meant that opportunities for optimizing room pricing, 
+              and maximizing overall revenue might be overlooked due to data being siloed and difficult to interpret 
+              as various numbers only tables.
+          </h3>
           <h3 class="pro-description">Solution:</h3>
-        <h3 class="pro-description indented">To overcome the inefficiencies and error-prone nature 
-          of manual data reformatting, a PySimpleGUI desktop application was created, tailored 
-          for processing behavioral data from uniformly formatted Excel datasheets. The application 
-          boasts a user-friendly graphical interface, enabling lab members to quickly extract 
-          relevant data, conduct group-by-group analyses, and generate comparative graphs with 
-          minimal effort. This solution allows users to perform these tasks with a few clicks, 
-          delivering analyzed results and high-quality visualizations of group differences within 
-          seconds, thereby streamlining the workflow and improving the quality of data representation.</h3>
+          <h3 class="pro-description indented">
+              To streamline the analysis of critical hotel performance indicators, 
+              I engineered an automated data analysis and visualization dashboard within Google Sheets. 
+              This robust solution was designed to efficiently parse disparate raw data sources for hotel occupancy, 
+              arrivals, out-of-order rooms, and pricing, and then aggregate these metrics dynamically. 
+              The core of this solution lies in its ability to present complex, time-series data in clear, 
+              digestible visualizations that update automatically. This drastically reduced the manual effort 
+              and potential for error, providing management with a high-fidelity, real-time overview of operational health. 
+              The result is a powerful tool that enables proactive adjustments to pricing, optimized resource allocation, 
+              and a deeper, ongoing understanding of the hotel's evolving financial and operational landscape.
+          </h3>
         </div>
+        <section class="live-dashboard-section">
+          <header class="pro-header">
+            <h3 class="subtitle">Experience the Live Dashboard!</h3>
+            <p class="subtitle">Daily KPIs by hour</p>
+          </header>
+          <div class="dashboard-embed-container">
+            <div class="responsive-iframe-container">
+              <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRb6OsRej7szxX1g5BD0o1lWIQZnUqSwWGXfhfH7qFCXDwSUB9HmxBawYQYp5Fai0id7mP1f1TFmm6/pubhtml?widget=true&amp;headers=false" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="live-dashboard-section">
+          <header class="pro-header">
+            <h3 class="subtitle">Experience the Live Dashboard!</h3>
+            <p class="subtitle">Weekly KPIs by day</p>
+          </header>
+          <div class="dashboard-embed-container">
+            <div class="responsive-iframe-container">
+              <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS33s9YrJ0Q8p2AP2bnhFIs5MVM4OslixwnJxCKrvSFBA81WBCFZaqISayUyYPuhfpj-a76Ah8_syf9/pubhtml?widget=true&amp;headers=false" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="datsci-pro">
+    <header class="pro-header cntr-txt">
+    <h2 class="project-title collapsible-trigger" data-target="for-group-analysis-details">
+      <span class="trigger-main-text">🧬 Experimental Groups Data Analysis & Stats 🔎</span>
+      <span class="project-subtext">PySimpleGUI Pandas Matplotlib Numpy Scipy Math</span>
+    </h2>
+    </header>
+    <div id="for-group-analysis-details" class="collapsible-content">
+      <div class="card">
         <div>
+          <h3 class="pro-description">Problem:</h3>
+          <h3 class="pro-description indented">In our lab, we collected a variety of behavioral data 
+            from experimental subjects across four distinct groups. The challenge was that this data 
+            required extensive reformatting before it can be transferred to statistical analysis 
+            software for group-by-group testing and graphing. This manual reformatting process was 
+            not only time-consuming but also susceptible to human error. Moreover, the statistical 
+            software used generated basic and aesthetically unappealing graphs, which limited the 
+            quality of data visualization.
+          </h3>
+            <h3 class="pro-description">Solution:</h3>
+          <h3 class="pro-description indented">To overcome the inefficiencies and error-prone nature 
+            of manual data reformatting, a PySimpleGUI desktop application was created, tailored 
+            for processing behavioral data from uniformly formatted Excel datasheets. The application 
+            boasts a user-friendly graphical interface, enabling lab members to quickly extract 
+            relevant data, conduct group-by-group analyses, and generate comparative graphs with 
+            minimal effort. This solution allows users to perform these tasks with a few clicks, 
+            delivering analyzed results and high-quality visualizations of group differences within 
+            seconds, thereby streamlining the workflow and improving the quality of data representation.
+          </h3>
+        </div>
         <section class="github-pro-link">
-        <a id="profile-link" target="_blank" href="https://github.com/EsteBot/DREADDGraphnStatScripts"><img class="git-logo"
-          src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536000&authkey=%21AIbtXUDz29FCd2g&width=500&height=501"
-          alt="GitHub Logo img"
-          loading="eager"
+          <a id="profile-link" 
+            target="_blank" 
+            href="https://github.com/EsteBot/DREADDGraphnStatScripts">
+          <img class="git-logo"
+            src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536000&authkey=%21AIbtXUDz29FCd2g&width=500&height=501"
+            alt="GitHub Logo img"
+            loading="eager"
             class="logo-img"
             width="50px">
-        </section></a>
-      </div>
-  </div>
-  <div>
-      <p class="subtitle">PySimpleGUI</p>
-        <a><img class="datsci-img"
+          </a>
+        </section>
+        <div>
+          <p class="subtitle">PySimpleGUI</p>
+          <a>
+            <img class="datsci-img"
               src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535991&authkey=%21ALCDP-lSHBVZTQM&width=635&height=149"
               alt="PySimpleGIU img"
               loading="eager">
-        </a>
-  </div>
-    <div class="datsci-graph">
-    <p class="dreadd-subtitle">Graphs generated with SEM & ANOVA tables</p>
-    <a><img class="dreadd-graph"
+          </a>
+        </div>
+        <div class="datsci-graph">
+          <p class="dreadd-subtitle">Graphs generated with SEM & ANOVA tables</p>
+          <a><img class="dreadd-graph"
             src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535992&authkey=%21APqIlf_mbgLE7t0&width=1200&height=950"
             alt="Graph and table img"
             loading="eager">
-        </a></div>
-    <div class="datsci-vid">
-      <header class="pro-header">
-      <p class="subtitle">Short video demonstrating the desktop application's functionality</p>
-      </header>
-      <video class="vid-atr" controls>
-        <source src=
-        "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21535989&authkey=!AAzI4w87ct2Lklk">
-          Your browser does not support the video tag.
-      </video>
+          </a>
+        </div>
+        <div class="datsci-vid">
+          <header class="pro-header">
+            <p class="subtitle">Short video demonstrating the desktop application's functionality</p>
+          </header>
+          <video class="vid-atr" controls>
+            <source src="https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21535989&authkey=!AAzI4w87ct2Lklk">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
-      <div class="divider"></div>
-      <div class="datsci-pro">
-        <header class="pro-header">
-          <h2 class="pro-title cntr-txt">Least Different Group Matching Analysis & Visualization</h2>
+    </div>
+    <div class="datsci-pro">
+      <header class="pro-header cntr-txt">
+      <h2 class="project-title collapsible-trigger" data-target="least-diff-group-matching-details">
+        <span class="trigger-main-text">🧩 Experimental Design using Least Different Group Matching 🔎</span>
+        <span class="project-subtext">PySimpleGUI Pandas Itertools Matplotlib re</span>
+      </h2>
+      </header>
+      <div id="least-diff-group-matching-details" class="collapsible-content">
+        <div class="card">
           <div>
             <h3 class="pro-description">Problem:</h3>
             <h3 class="pro-description indented">In experiments involving pair-housed subjects that 
@@ -126,112 +201,132 @@
               illustrate the minimal possible distance between data points.
               The application’s output provides a comprehensive overview of the 
               analysis steps and results, facilitating informed decision-making 
-              for optimal group assignment in experimental setups.</h3>
-            </div>
-            <div>
-            <section class="github-pro-link">
-            <a id="profile-link" target="_blank" href="https://github.com/EsteBot/Min_Diff_Btw_Group_Subj_Assignor"><img class="git-logo"
+              for optimal group assignment in experimental setups.
+            </h3>
+          </div>
+          <section class="github-pro-link">
+            <a id="profile-link" 
+            target="_blank" 
+            href="https://github.com/EsteBot/Min_Diff_Btw_Group_Subj_Assignor">
+            <img class="git-logo"
               src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536000&authkey=%21AIbtXUDz29FCd2g&width=500&height=501"
               alt="GitHub Logo img"
               loading="eager"
-                class="logo-img"
-                width="50px">
-            </section></a>
-          </div>
-      </div>
-      <div>
-          <p class="subtitle">PySimpleGUI</p>
-            <a><img class="datsci-img"
+              class="logo-img"
+              width="50px">
+          </section></a>
+          <div>
+            <p class="subtitle">PySimpleGUI</p>
+              <a>
+                <img class="datsci-img"
                   src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535993&authkey=%21AHCyBvWnT6PPBMI&width=693&height=192"
                   alt="PySimpleGIU img"
                   loading="eager">
               </a>
-            </div>
-      <div class="datsci-graph">
-      <header class="pro-header">
-      <p class="mindiff-subtitle">Graph generated showing hypothetical 
-        two-group assignments that are the least different between each other 
-        out of all possible group assignments</p>
-      </header>
-      <a><img class="mindiff-graph"
+          </div>
+          <div class="datsci-graph">
+            <header class="pro-header">
+              <p class="mindiff-subtitle">
+                Graph generated showing hypothetical 
+                two-group assignments that are the least different between each other 
+                out of all possible group assignments</p>
+            </header>
+            <a><img class="mindiff-graph"
               src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535994&authkey=%21AC9nOqLOFiCI9Vc&width=1017&height=906"
               alt="Line graph img"
               loading="eager">
-          </a></div>
-      <div class="datsci-vid">
-        <header class="pro-header">
-        <p class="subtitle">Short video demonstrating the desktop application's functionality</p>
-        </header>
-        <video class="vid-atr" controls>
-          <source src=
-            "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536015&authkey=!ALCfzEHtYNp3TE8">
-            Your browser does not support the video tag.
-        </video>
-        </div>
-        <div class="divider"></div>
-        <div class="datsci-pro">
-          <header class="pro-header">
-            <h2 class="pro-title cntr-txt">Robinhood Stock Data Analysis & Visualization</h2>
+            </a>
+          </div>
+          <div class="datsci-vid">
+            <header class="pro-header">
+              <p class="subtitle">Short video demonstrating the desktop application's functionality</p>
             </header>
+            <video class="vid-atr" controls>
+            <source src="https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536015&authkey=!ALCfzEHtYNp3TE8">
+            Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="datsci-pro">
+        <header class="pro-header cntr-txt">
+        <h2 class="project-title collapsible-trigger" data-target="robin-stock-data-details">
+          <span class="trigger-main-text">💸 Robinhood Portfolio Insights 🔎</span>
+          <span class="project-subtext">Robin_Stocks Pandas Numpy Matplotlib</span>
+        </h2>
+        </header>
+        <div id="robin-stock-data-details" class="collapsible-content">
+          <div class="card">
             <div>
               <h3 class="pro-description">Problem:</h3>
               <h3 class="pro-description indented">The challenge was to develop a systematic 
-                    approach for evaluating the performance of a portfolio of individual 
-                    stocks over time. 
-                  <h3 class="pro-description">Solution:</h3>
-                  <h3 class="pro-description indented">
-                    To address the challenge, a Python script was developed using the 
-                    Robin_Stocks library and the Robinhood API to record daily stock 
-                    information into a CSV file. The data is then analyzed and 
-                    visualized with the Pandas and Matplotlib libraries. The script 
-                    aggregates the performance data of individual stock selections 
-                    and compares it against the aggregate performance of two 
-                    diversified ETFs. This comparison is visualized through graphs 
-                    that illustrate total return and other key performance metrics, 
-                    enabling easy evaluation and benchmarking of the portfolio’s 
-                    performance over time. </h3>
-              </div>
-              <div>
+                approach for evaluating the performance of a portfolio of individual 
+                  stocks over time. 
+              <h3 class="pro-description">Solution:</h3>
+              <h3 class="pro-description indented">
+                To address the challenge, a Python script was developed using the 
+                Robin_Stocks library and the Robinhood API to record daily stock 
+                information into a CSV file. The data is then analyzed and 
+                visualized with the Pandas and Matplotlib libraries. The script 
+                aggregates the performance data of individual stock selections 
+                and compares it against the aggregate performance of two 
+                diversified ETFs. This comparison is visualized through graphs 
+                that illustrate total return and other key performance metrics, 
+                enabling easy evaluation and benchmarking of the portfolio’s 
+                performance over time.
+              </h3>
+            </div>
               <section class="github-pro-link">
-              <a id="profile-link" target="_blank" href="https://github.com/EsteBot/RobinStockScripts"><img class="git-logo"
-                src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536000&authkey=%21AIbtXUDz29FCd2g&width=500&height=501"
-                alt="GitHub Logo img"
-                loading="eager"
+                <a id="profile-link" 
+                  target="_blank" 
+                  href="https://github.com/EsteBot/RobinStockScripts">
+                <img class="git-logo"
+                  src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536000&authkey=%21AIbtXUDz29FCd2g&width=500&height=501"
+                  alt="GitHub Logo img"
+                  loading="eager"
                   class="logo-img"
                   width="50px">
-              </section></a>
-            </div>
-        </div>
-        <div>
-            <p class="rh-pro-subtitle">Script created using the Robin_Stocks 
-              Python library and the Robinhood API</p>
-              <a><img class="datsci-rh-logo"
-                    src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535996&authkey=%21ABj4UYvTc-Lqk1g&width=1500&height=1000"
-                    alt="Robinhood and Python logo"
-                    loading="eager">
                 </a>
-              </div>
-        <div class="rh-list-subtitle">
-          <ul>
-            <li class="rh-list">Top line graph displaying dollar value change over time.</li>
-            <li class="rh-list">Line graph displaying percent change over time.</li>
-            <li class="rh-list">Bar graph displaying total change currently.</li>
-            <li class="rh-list">Pie chart displaying asset class's portfolio distribution.</li>
-            <li class="rh-list">Pie chart displaying each asset class's current return on investment.</li>
-          </ul>
-        </div>
-          <div>
-            <a><img class="rh-graph"
-                src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535995&authkey=%21AKxsQGDEwGcWdOk&width=1000&height=885"
-                alt="Stock analysis graphs img"
-                loading="eager">
-            </a>
+              </section>
+            <div>
+              <p class="rh-pro-subtitle">
+                Script created using the Robin_Stocks 
+                Python library and the Robinhood API</p>
+              <a>
+                <img class="datsci-rh-logo"
+                  src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535996&authkey=%21ABj4UYvTc-Lqk1g&width=1500&height=1000"
+                  alt="Robinhood and Python logo"
+                  loading="eager">
+              </a>
+            </div>
+            <div class="rh-list-subtitle">
+              <ul>
+                <li class="rh-list">Top line graph displaying dollar value change over time</li>
+                <li class="rh-list">Line graph displaying percent change over time</li>
+                <li class="rh-list">Bar graph displaying total change currently</li>
+                <li class="rh-list">Pie chart displaying asset class's portfolio distribution</li>
+                <li class="rh-list">Pie chart displaying each asset class's current return on investment</li>
+              </ul>
+            </div>
+            <div>
+              <a>
+                <img class="rh-graph"
+                  src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535995&authkey=%21AKxsQGDEwGcWdOk&width=1000&height=885"
+                  alt="Stock analysis graphs img"
+                  loading="eager">
+              </a>
+            </div>
           </div>
-            <div class="divider"></div>
-            <div class="datsci-pro">
-              <header class="pro-header">
-                <h2 class="pro-title cntr-txt">Wheel Running Data Analysis & Visualization</h2>
-              </header>
+        </div>
+        <div class="datsci-pro">
+          <header class="pro-header cntr-txt">
+          <h2 class="project-title collapsible-trigger" data-target="run-wheel-data-details">
+            <span class="trigger-main-text">🐁 Wheel Running Data Parsing & Automation 🔎</span>
+            <span class="project-subtext">PySimpleGIU Openpyxl Matplotlib</span>
+          </h2>
+          </header>
+          <div id="run-wheel-data-details" class="collapsible-content">
+            <div class="card">
               <div>
                 <h3 class="pro-description">Problem:</h3>
                 <h3 class="pro-description indented">
@@ -246,6 +341,7 @@
                   The goal was to efficiently process and analyze this extensive dataset to 
                   quantify various aspects of running behavior while considering phase-specific 
                   activity patterns, providing meaningful insights into the effects of exercise.
+                </h3>
                 <h3 class="pro-description">Solution:</h3>
                 <h3 class="pro-description indented">
                   To address the data management challenges posed by these running wheel experiments, 
@@ -256,213 +352,271 @@
                   and aggregation significantly reduced the manual workload and minimizes errors, 
                   accomplishing in seconds what would otherwise have taken hours. Additionally, the program 
                   features a bar graph visualization tool, providing users with a quick and 
-                  informative visual analysis of the dataset.</h3>
-                </div>
-                <div>
-                <section class="github-pro-link">
-                <a id="profile-link" target="_blank" href="https://github.com/EsteBot/RunningWheelDataCompiler"><img class="git-logo"
+                  informative visual analysis of the dataset.
+                </h3>
+              </div>
+              <section class="github-pro-link">
+              <a id="profile-link" 
+                target="_blank" 
+                href="https://github.com/EsteBot/RunningWheelDataCompiler">
+                <img class="git-logo"
                   src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536000&authkey=%21AIbtXUDz29FCd2g&width=500&height=501"
                   alt="GitHub Logo img"
                   loading="eager"
-                    class="logo-img"
-                    width="50px">
-                </section></a>
-              </div>
-          </div>
-          <div>
-              <p class="subtitle">PySimpleGUI</p>
-                <a><img class="datsci-img"
+                  class="logo-img"
+                  width="50px">
+              </a>
+              </section>
+              <div>
+                <p class="subtitle">PySimpleGUI</p>
+                <a>
+                  <img class="datsci-img"
                       src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535997&authkey=%21AJU5aV8fkuTQ7r4&width=660&height=246"
                       alt="PySimpleGIU img"
                       loading="eager">
-                  </a>
-                </div>
-            <div class="datsci-graph">
-            <header class="pro-header">
-            <p class="run-wheel-subtitle">Graph generated showing mean values 
-              of different wheel running behaviors during the animal's active 12hr 
-              light-cycle versus their inactive 12hr light-cycle.</p>
-            </header>
-            <a><img class="run-wheel-graph"
-                    src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535999&authkey=%21AKKGZbyPvFFIs1E&width=1040&height=958"
-                    alt="Running wheel behavior graph img"
-                    loading="eager">
-                </a></div>
-            <div class="datsci-vid">
-              <header class="pro-header">
-              <p class="subtitle">Short video demonstrating the desktop application's functionality</p>
-              </header>
-              <video class="vid-atr" controls>
-                <source src=
-                  "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536004&authkey=!AFOtAphIXd9YLwA">
+                </a>
+              </div>
+              <div class="datsci-graph">
+                <header class="pro-header">
+                  <p class="run-wheel-subtitle">
+                    Graph generated showing mean values 
+                    of different wheel running behaviors during the animal's active 12hr 
+                    light-cycle versus their inactive 12hr light-cycle.</p>
+                </header>
+                <a>
+                  <img class="run-wheel-graph"
+                      src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535999&authkey=%21AKKGZbyPvFFIs1E&width=1040&height=958"
+                      alt="Running wheel behavior graph img"
+                      loading="eager">
+                </a>
+              </div>
+              <div class="datsci-vid">
+                <header class="pro-header">
+                  <p class="subtitle">Short video demonstrating the desktop application's functionality</p>
+                </header>
+                <video class="vid-atr" controls>
+                <source src="https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536004&authkey=!AFOtAphIXd9YLwA">
                   Your browser does not support the video tag.
-              </video>
+                </video>
               </div>
-              <div class="divider"></div>
-              <div class="datsci-pro">
-                <header class="pro-header">
-                  <h2 class="project-title cntr-txt">Financial Data Analysis & Visualization</h2>
-                </header>
-                <div>
-                  <h3 class="pro-description">Problem:</h3>
-                  <h3 class="pro-description indented">Credit card companies and 
-                    banks typically offer basic charts that group spending into 
-                    broad categories. While useful for a general overview, these 
-                    charts fail to monitor spending trends over time and frequently 
-                    miscategorized transactions, leading to inaccuracies. These 
-                    inaccuracies can mislead users, affecting their ability to make 
-                    informed financial decisions and plan budgets effectively. 
-                    A more personalized and precise system that accurately 
-                    categorizes spending and tracks detailed spending patterns over 
-                    time, provides more reliable data analysis to support financial planning. 
-                  <h3 class="pro-description">Solution:</h3>
-                  <h3 class="pro-description indented"> 
-                    To address the limitations of basic spending charts, a 
-                    Python script was developed to offer a personalized and 
-                    accurate view of spending data over time. This script 
-                    processes CSV files from bank and credit card statements 
-                    using the Pandas library, categorizing and analyzing the 
-                    data in detail. It then generates visualizations with 
-                    Matplotlib, such as stacked bar graphs, to present monthly 
-                    spending across specific categories. This approach provides 
-                    clear, detailed insights into financial activity, facilitating 
-                    better tracking and analysis of expenditures.</h3>
-                </div>
-                  <div>
-                  <section class="github-pro-link">
-                    <a id="profile-link" target="_blank" href="https://github.com/EsteBot/IncomeDataAnalyzer"><img class="git-logo"
-                       src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536000&authkey=%21AIbtXUDz29FCd2g&width=500&height=501"
-                       alt="GitHub Logo img"
-                       loading="eager"
-                       class="logo-img"
-                       width="50px">
-                  </section></a>
+            </div>
+          </div>
+          <div class="datsci-pro">
+            <header class="pro-header cntr-txt">
+              <h2 class="project-title collapsible-trigger" data-target="financial-data-analysis-details">
+                <span class="trigger-main-text">💰 Visual Insights from Financial Data 🔎</span>
+                <span class="project-subtext">Pandas Numpy Matplotlib</span>
+              </h2>
+            </header>
+          <div id="financial-data-analysis-details" class="collapsible-content">
+            <div class="card">
+              <div>
+                <h3 class="pro-description">Problem:</h3>
+                <h3 class="pro-description indented">Credit card companies and 
+                  banks typically offer basic charts that group spending into 
+                  broad categories. While useful for a general overview, these 
+                  charts fail to monitor spending trends over time and frequently 
+                  miscategorized transactions, leading to inaccuracies. These 
+                  inaccuracies can mislead users, affecting their ability to make 
+                  informed financial decisions and plan budgets effectively. 
+                  A more personalized and precise system that accurately 
+                  categorizes spending and tracks detailed spending patterns over 
+                  time, provides more reliable data analysis to support financial planning.
+                </h3>
+                <h3 class="pro-description">Solution:</h3>
+                <h3 class="pro-description indented"> 
+                  To address the limitations of basic spending charts, a 
+                  Python script was developed to offer a personalized and 
+                  accurate view of spending data over time. This script 
+                  processes CSV files from bank and credit card statements 
+                  using the Pandas library, categorizing and analyzing the 
+                  data in detail. It then generates visualizations with 
+                  Matplotlib, such as stacked bar graphs, to present monthly 
+                  spending across specific categories. This approach provides 
+                  clear, detailed insights into financial activity, facilitating 
+                  better tracking and analysis of expenditures.
+                </h3>
               </div>
-              </div>
-                  <div class="graph-flex-box">
-                    <div class="graph-box">
-                        <p class="fin-subtitle">Checking account activity divided into categories by month</p>
-                        <a><img class="fin-CH-img" src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536001&authkey=%21AD-5tsm9IQBz_Xs&width=640&height=711"
-                          alt="checking account data graph"
-                          loading="eager"></a>
-                    </div>
-                    <div class="graph-box">
-                        <p class="fin-subtitle">Credit Card expenditures divided into categories by month</p>
-                        <a><img class="fin-CC-img" src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536005&authkey=%21AIMxHuSbOZIeuPU&width=640&height=711"
-                          alt="credit card data graph"
-                          loading="eager"></a>
-                    </div>
-                  </div>
-              </div>
-              </div>
-              <div class="divider"></div>
-              <div class="datsci-pro">
-                <header class="pro-header">
-                  <h2 class="pro-title cntr-txt">Activity Text File Data Extraction to Excel & Visualization</h2>
-                </header>
-                <div>
-                  <h3 class="pro-description">Problem:</h3>
-                  <h3 class="pro-description indented">In our lab, we quantified 
-                    and analyzed the locomotion activity of experimental test 
-                    subjects using an activity tracking chamber. This chamber 
-                    records the subjects’ movements via infrared beam breaks 
-                    and the software outputs comprehensive data in a .txt file 
-                    across various categories. However, our analysis required 
-                    only specific portions of this data. The large amount of superfluous data in text format made locating
-                    extracting, and transferring the relevant data into a 
-                    formatted Excel spreadsheet for statistical analysis is a 
-                    manual, labor-intensive task that consumed significant time. 
-                    The process was not only inefficient, but  prone to errors, especially with large datasets from 
-                    multiple subjects over extended experimental trials. 
-                  <h3 class="pro-description">Solution:</h3>
-                  <h3 class="pro-description indented"> 
-                    To address the inefficiencies in handling locomotion activity 
-                    data, a desktop application was developed with a user-friendly 
-                    interface that automates the data processing workflow. 
-                    The application transforms the raw .txt file into a 
-                    standardized format, selectively extracts the relevant data 
-                    categories required for analysis, and transfers this data 
-                    into a properly formatted Excel spreadsheet. This automation 
-                    reduces the processing time from hours to seconds and eliminates 
-                    the risk of human errors associated with manual data handling. 
-                    In addition to data handling, the program allows the user to output 
-                    a bar graph of activity data over time for rapid analysis and anomaly detection.</h3>
-                  </div>
-                  <div>
-                  <section class="github-pro-link">
-                  <a id="profile-link" target="_blank" href="https://github.com/EsteBot/RunningWheelDataCompiler"><img class="git-logo"
+                <section class="github-pro-link">
+                  <a id="profile-link" target="_blank" href="https://github.com/EsteBot/IncomeDataAnalyzer"><img class="git-logo"
                     src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536000&authkey=%21AIbtXUDz29FCd2g&width=500&height=501"
                     alt="GitHub Logo img"
                     loading="eager"
-                      class="logo-img"
-                      width="50px">
-                  </section></a>
-                </div>
-            </div>
-            <div>
-                <p class="subtitle">PySimpleGUI</p>
-                  <a><img class="datsci-img"
-                        src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536003&authkey=%21AGlIhhpJdIM-h1Q&width=695&height=319"
-                        alt="PySimpleGIU img"
+                    class="logo-img"
+                    width="50px">
+                  </a>
+                </section>
+              <div class="graph-flex-box">
+                <div class="graph-box">
+                    <p class="fin-subtitle">Checking account activity divided into categories by month</p>
+                    <a>
+                      <img class="fin-CH-img"
+                        src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536001&authkey=%21AD-5tsm9IQBz_Xs&width=640&height=711"
+                        alt="checking account data graph"
                         loading="eager">
-                    </a>
-                  </div>
+                      </a>
+                </div>
+                <div class="graph-box">
+                    <p class="fin-subtitle">Credit Card expenditures divided into categories by month</p>
+                    <a>
+                      <img class="fin-CC-img"
+                        src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536005&authkey=%21AIMxHuSbOZIeuPU&width=640&height=711"
+                        alt="credit card data graph"
+                        loading="eager"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="datsci-pro">
+          <header class="pro-header cntr-txt">
+            <h2 class="project-title collapsible-trigger" data-target="activity-data-analysis-details">
+              <span class="trigger-main-text">📄 Text-to-Excel Automation for Activity Data 🔎</span>
+              <span class="project-subtext">Pandas Xlwt Matplotlib re</span>
+            </h2>
+          </header>
+          <div id="activity-data-analysis-details" class="collapsible-content">
+            <div class="card">
+              <div>
+                <h3 class="pro-description">Problem:</h3>
+                <h3 class="pro-description indented">In our lab, we quantified 
+                  and analyzed the locomotion activity of experimental test 
+                  subjects using an activity tracking chamber. This chamber 
+                  records the subjects’ movements via infrared beam breaks 
+                  and the software outputs comprehensive data in a .txt file 
+                  across various categories. However, our analysis required 
+                  only specific portions of this data. The large amount of 
+                  superfluous data in text format made locating
+                  extracting, and transferring the relevant data into a 
+                  formatted Excel spreadsheet for statistical analysis is a 
+                  manual, labor-intensive task that consumed significant time. 
+                  The process was not only inefficient, but  prone to errors, 
+                  especially with large datasets from 
+                  multiple subjects over extended experimental trials. 
+                <h3 class="pro-description">Solution:</h3>
+                <h3 class="pro-description indented"> 
+                  To address the inefficiencies in handling locomotion activity 
+                  data, a desktop application was developed with a user-friendly 
+                  interface that automates the data processing workflow. 
+                  The application transforms the raw .txt file into a 
+                  standardized format, selectively extracts the relevant data 
+                  categories required for analysis, and transfers this data 
+                  into a properly formatted Excel spreadsheet. This automation 
+                  reduces the processing time from hours to seconds and eliminates 
+                  the risk of human errors associated with manual data handling. 
+                  In addition to data handling, the program allows the user to output 
+                  a bar graph of activity data over time for rapid analysis and anomaly detection.
+                </h3>
+              </div>
+              <section class="github-pro-link">
+                <a id="profile-link" 
+                  target="_blank" 
+                  href="https://github.com/EsteBot/RunningWheelDataCompiler">
+                  <img class="git-logo"
+                    src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536000&authkey=%21AIbtXUDz29FCd2g&width=500&height=501"
+                    alt="GitHub Logo img"
+                    loading="eager"
+                    class="logo-img"
+                    width="50px">
+                </a>
+              </section>
+              <div>
+                <p class="subtitle">PySimpleGUI</p>
+                <a>
+                  <img class="datsci-img"
+                      src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536003&authkey=%21AGlIhhpJdIM-h1Q&width=695&height=319"
+                      alt="PySimpleGIU img"
+                      loading="eager">
+                </a>
+              </div>
               <div class="datsci-graph">
-              <header class="pro-header">
-              <p class="activity-subtitle">Graph generated showing mean values of all subjects 
-                locomotion for each 5min time period over the 1hr trial period along with SEM of each 
-                time bin. Graph is charactoristic of the inital high exploritory behavior of a novel 
-                environment that tapers off over time.</p>
-              </header>
-              <a><img class="activity-graph"
+                <header class="pro-header">
+                  <p class="activity-subtitle">
+                    Graph generated showing mean values of all subjects 
+                    locomotion for each 5min time period over the 1hr trial period along with SEM of each 
+                    time bin. Graph is charactoristic of the inital high exploritory behavior of a novel 
+                    environment that tapers off over time.
+                  </p>
+                </header>
+                <a>
+                  <img class="activity-graph"
                       src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536002&authkey=%21AHhMgRcq30-CJRg&width=1000&height=800"
                       alt="Activity bar graph img"
                       loading="eager">
-                  </a></div>
+                </a>
+              </div>
               <div class="datsci-vid">
                 <header class="pro-header">
-                <p class="subtitle">Short video demonstrating the desktop application's functionality</p>
+                  <p class="subtitle">Short video demonstrating the desktop application's functionality</p>
                 </header>
                 <video class="vid-atr" controls>
-                  <source src=
-                  "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536010&authkey=!ANmqF72Wq0fznfs">
-                    Your browser does not support the video tag.
+                  <source src="https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536010&authkey=!ANmqF72Wq0fznfs">
+                  Your browser does not support the video tag.
                 </video>
-                </div>
-                <header class="pro-header">
-                  <p class="pro-subtitle">Click Link to Try My App: PySimpleGUI Emulated on Streamlit</p>
-                </header>
-                  <section class="streamlit-pro-link">
-                    <a id="stramlit-link" target="_blank" href="https://mixmaster.streamlit.app/"><img class="git-logo"
+              </div>
+              <header class="pro-header">
+                <p class="pro-subtitle">Click Link to Try My App: PySimpleGUI Emulated on Streamlit</p>
+              </header>
+              <section class="streamlit-pro-link">
+                <a id="stramlit-link" 
+                  target="_blank" 
+                  href="https://mixmaster.streamlit.app/">
+                    <img class="git-logo"
                       src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276"
                       alt="Streamlit Logo img"
                       loading="eager"
-                        class="logo-img"
-                        width="150px">
-                  </section></a>
-                </div>
-                
-                
-                  <p class="pro-subtitle">Streamlit Emulation Preview Image</p>
-                  <a><img class="pysimp-img1"
-                        src="https://1drv.ms/i/s!ArWyPNkF5S-foqxCuCYVyEgGrfvxAg?embed=1&width=1530&height=5143"
-                        alt="Streamlit preview img"
-                        loading="eager">
-                  </a>
-                </div>
-</datsci-body>
-      <div class="bottom-flex-box">
-        <header class="return-text">
-          <p class="p-spacing">Click icon to return </p><p class="p-spacing">to profile main page</p>
-          </header>
-        <div class="return-icon">
-          <a href="index.html"><img
-                src="https://cdn.worldvectorlogo.com/logos/python-package-index-1.svg"
-                alt="home profile logo"
-                loading="eager"
-                class="logo-img"
-                width="100px">
-          </a></div>
+                      class="logo-img"
+                      width="150px">
+                </a>
+              </section>
+              <p class="pro-subtitle">Streamlit Emulation Preview Image</p>
+              <a>
+                <img class="pysimp-img1"
+                  src="https://1drv.ms/i/s!ArWyPNkF5S-foqxCuCYVyEgGrfvxAg?embed=1&width=1530&height=5143"
+                  alt="Streamlit preview img"
+                  loading="eager">
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-  </tkinter-body>
+    </div>
+  </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.collapsible-trigger').forEach(function(trigger) {
+        trigger.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetContent = document.getElementById(targetId);
+            const isActive = targetContent.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.collapsible-content').forEach(function(content) {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.collapsible-trigger').forEach(function(tr) {
+                tr.classList.remove('active');
+            });
+
+            // If it was not active, open it
+            if (!isActive) {
+                this.classList.add('active');
+                targetContent.classList.add('active');
+            }
+            // If it was active, do nothing (all are now closed)
+        });
+    });
+});
+</script>
+</body>
+<div class="return-icon">
+    <a href="index.html">
+      <img
+        src="https://1drv.ms/i/s!ArWyPNkF5S-foaFRS7NmX5PhB36xhQ?embed=1&width=512&height=512"
+        alt="home profile logo"
+        loading="eager"
+        class="logo-img"
+        width="100px">
+    </a>
+</div>
 </html>

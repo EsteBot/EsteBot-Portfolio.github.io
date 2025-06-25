@@ -3,157 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://1drv.ms/i/c/9f2fe505d93cb2b5/IQQ1viORou1US5BLjYZ34ezJAV_Pg8fkzHc0ybH6iu_7MY4?width=1024">
   <title>Streamlit Page</title>
   <link rel="stylesheet" href="StreamlitPage.css" />
 </head>
 <div class="head-flex-box">
   <div class="head-flex">
-      <nav id="navbar">
-          <ul>
-            <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
-            <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
-            <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
-            <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
-            <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
-            <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
-        </ul>
-      </nav>
+    <nav id="navbar">
+      <ul>
+        <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
+        <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
+        <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
+        <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
+        <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
+        <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
 </div>
-<streamlit-body>
-  <h1 class="cntr-txt">Welcome to my Streamlit page!</h1>
-  <div class="title-divider"></div>
-  <p class="subtitle cntr-txt">Check out some of my Streamlit projects</p>
+<body>
+  <h1 class="title">Welcome to my Streamlit page!</h1>
+  <div class="divider"></div>
+  <p class="cntr-txt">A Showcase of My Streamlit-Powered Applications</p>
   <div class="streamlit-pro">
-    <header class="pro-header cntr-txt"><h2 class="project-title">Golf-able Oracle</h2>
+    <header class="pro-header cntr-txt">
+      <h2 class="project-title collapsible-trigger" data-target="golfable-oracle-details">
+        <span class="trigger-main-text">⛳ The Golfable Oracle: Personalized Playability Forecasts 🚀</span>
+        <span class="project-subtext">Pandas Plotly</span>
+      </h2>
     </header>
-    <div>
-      <h3 class="pro-description">Inspiration:</h3>
-      <h3 class="pro-description indented">
-        Golfers know that a great game hinges on the surrounding weather conditions. 
-        Perhaps golfing will be pleasant now, but it'll rain in 2hr at the 10th tee box. 
-        Or maybe instead of playing today on a windy day, I should wait till Friday for ideal conditions? 
-        A useful tool might provide days and times that meet my ideal golfing weather conditions.
-      <h3 class="pro-description">Project:</h3>
-      <h3 class="pro-description indented">
-        To solve this problem, a dynamic web application was developed that enables 
-        users to input their city location, the min weather temperature, max average daily wind speed 
-        and max acceptable chance of precipitation as their golfable parameters. 
-        Through intigration with the Tomorrow.io API,
-        today's high temp is displayed along with the difference in degrees from your minimum, 
-        wind speed along with its difference from your max, chance of precipitation and difference. 
-        A graph with these weather metrics is created highlighting 
-        the hours that you would be comfortable golfing during the day. 
-        The sum of these hours are displayed. Under this are today and the next 
-        4 days with numbers displaying total golfable hours in each day given your parameters. 
-        Click on a day's button to see the graph and metric breakdown for that day.</h3>
-      </div>
-      <div>
-      <section class="github-pro-link">
-      <a id="profile-link" target="_blank" href="https://github.com/EsteBot/Weather_Golf_Oracle"><img class="git-logo"
-        src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
-        alt="GitHub Logo img"
-        loading="eager"
-          class="logo-img"
-          width="50px">
-      </section></a>
-    </div>
-  </div>
-<div>
-  <p class="pro-subtitle">Web Application Preview</p>
-    <a><img 
-          class="streamlit-img"
-          src="https://1drv.ms/i/s!ArWyPNkF5S-foaESkSdWGSghY4VwpQ?embed=1&width=1626&height=1190"
-          alt="Web App Demo img"
-          loading="eager">
-    </a>
-</div>
-<div class="streamlit-vid">
-  <p class="pro-subtitle">Short video demonstrating the web application's functionality</p>
-    <iframe 
-      class="streamlit-vid"
-      src="https://1drv.ms/v/s!ArWyPNkF5S-foaEUaaVqxnHARYa8dQ?embed=1" 
-      scrolling="no">
-    </iframe>
-</div>
-      <header class="pro-header">
-      <p class="pro-subtitle">Follow Streamlit Link to Web App</p>
-      </header>
-      <section class="streamlit-pro-link">
-        <a id="stramlit-link" target="_blank" href="https://weather-golf-oracle.streamlit.app"><img class="git-logo"
-          src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276"
-          alt="Streamlit Logo img"
-          loading="eager"
-            class="logo-img"
-            width="150px">
-        </section></a>
-      </div>
-    <div class="divider"></div>
-    <div class="streamlit-pro">
-      <header class="pro-header cntr-txt"><h2 class="project-title">Alcohol Preference & Treament Study</h2>
-      </header>
-      <div>
-        <h3 class="pro-description">Inspiration:</h3>
-        <h3 class="pro-description indented">
-          I wanted to create a complete dashboard of a scientific study to share 
-          and display the study design, data generated, data analysis,
-          and its findings.
-          
-        <h3 class="pro-description">Project:</h3>
-        <h3 class="pro-description indented">
-          To solve this problem, a dynamic, user-friendly, interactive web application was developed
-          with the Python library Streamlit. The web app enabled the breakdown of the study design with a schematic visual,
-          and then the dashboard steps through the data analysis guiding the viewer through group comparisons and statistical
-          analysis. The final graph with key results of the treatment is then easily understood. All graphs are enhanced
-          by being interactive and able to blow-up for closer inspection. The groups are also color coded for 
-          tracking group manipulations and comparisons throughout the study/analysis.  </h3>
-        </div>
+    <div id="golfable-oracle-details" class="collapsible-content">
+      <div class="card">
         <div>
-        <section class="github-pro-link">
-        <a id="profile-link" target="_blank" href="https://github.com/EsteBot/AlcDatSciStreamlit"><img class="git-logo"
-          src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
-          alt="GitHub Logo img"
-          loading="eager"
+          <h3 class="pro-description">Inspiration:</h3>
+          <h3 class="pro-description indented">
+            Golfers know that a great game hinges on the surrounding weather conditions. 
+            Perhaps golfing will be pleasant now, but it'll rain in 2hr at the 10th tee box. 
+            Or maybe instead of playing today on a windy day, I should wait till Friday for ideal conditions? 
+            A useful tool might provide days and times that meet my ideal golfing weather conditions.
+          </h3>
+          <h3 class="pro-description">Project:</h3>
+          <h3 class="pro-description indented">
+            To solve this problem, a dynamic web application was developed that enables 
+            users to input their city location, the min weather temperature, max average daily wind speed 
+            and max acceptable chance of precipitation as their golfable parameters. 
+            Through intigration with the Tomorrow.io API,
+            today's high temp is displayed along with the difference in degrees from your minimum, 
+            wind speed along with its difference from your max, chance of precipitation and difference. 
+            A graph with these weather metrics is created highlighting 
+            the hours that you would be comfortable golfing during the day. 
+            The sum of these hours are displayed. Under this are today and the next 
+            4 days with numbers displaying total golfable hours in each day given your parameters. 
+            Click on a day's button to see the graph and metric breakdown for that day.
+          </h3>
+      </div>
+      <section class="github-pro-link">
+        <a id="profile-link" 
+          target="_blank" 
+          href="https://github.com/EsteBot/Weather_Golf_Oracle">
+          <img class="git-logo"
+            src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
+            alt="GitHub Logo img"
+            loading="eager"
             class="logo-img"
             width="50px">
-        </section></a>
+        </a>
+      </section>
+      <div>
+        <p class="pro-subtitle">Web Application Preview</p>
+        <a>
+          <img 
+            class="streamlit-img"
+            src="https://1drv.ms/i/s!ArWyPNkF5S-foaESkSdWGSghY4VwpQ?embed=1&width=1626&height=1190"
+            alt="Web App Demo img"
+            loading="eager">
+        </a>
       </div>
-  </div>
-  <div>
-      <p class="pro-subtitle">Web Application Preview</p>
-        <a><img class="streamlit-img"
-              src="https://1drv.ms/i/s!ArWyPNkF5S-foaERpkaCXf2_pUSwkw?embed=1&width=1511&height=1267"
-              alt="Web App Demo img"
-              loading="eager">
-          </a>
-        </div>
-    <div class="streamlit-vid">
-      <header class="pro-header">
+      <div class="streamlit-vid">
         <p class="pro-subtitle">Short video demonstrating the web application's functionality</p>
-      </header>
-      <iframe
-        src="https://1drv.ms/v/s!ArWyPNkF5S-foaEVaoIz0oTneprK5Q?embed=1" 
-        width="660" 
-        height="380" 
-        scrolling="no">
-      </iframe>
-    </div>
+        <iframe 
+          class="streamlit-vid"
+          src="https://1drv.ms/v/s!ArWyPNkF5S-foaEUaaVqxnHARYa8dQ?embed=1" 
+          scrolling="no">
+        </iframe>
+      </div>
       <header class="pro-header">
         <p class="pro-subtitle">Follow Streamlit Link to Web App</p>
       </header>
-        <section class="streamlit-pro-link">
-          <a id="stramlit-link" target="_blank" href="https://alcdatsciapp-estestyle.streamlit.app"><img class="git-logo"
+      <section class="streamlit-pro-link">
+        <a id="stramlit-link" 
+          target="_blank" 
+          href="https://weather-golf-oracle.streamlit.app">
+          <img class="git-logo"
             src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276"
             alt="Streamlit Logo img"
             loading="eager"
+            class="logo-img"
+            width="150px">
+        </a>
+      </section>
+    </div>
+  </div>
+  <div class="streamlit-pro">
+    <header class="pro-header cntr-txt">
+    <h2 class="project-title collapsible-trigger" data-target="alc-exp-details">
+      <span class="trigger-main-text">💊 Alcohol Treament: Study Design Explorer with Statistical Insights 🚀</span>
+      <span class="project-subtext">Pandas Matplotlib Numpy Scipy</span>
+    </h2>
+    </header>
+    <div id="alc-exp-details" class="collapsible-content">
+      <div class="card">
+        <div>
+          <h3 class="pro-description">Inspiration:</h3>
+          <h3 class="pro-description indented">
+            I wanted to create a complete dashboard of a scientific study to share 
+            and display the study design, data generated, data analysis,
+            and its findings.
+          </h3>
+          <h3 class="pro-description">Project:</h3>
+          <h3 class="pro-description indented">
+            To solve this problem, a dynamic, user-friendly, interactive web application was developed
+            with the Python library Streamlit. The web app enabled the breakdown of the study design with a schematic visual,
+            and then the dashboard steps through the data analysis guiding the viewer through group comparisons and statistical
+            analysis. The final graph with key results of the treatment is then easily understood. All graphs are enhanced
+            by being interactive and able to blow-up for closer inspection. The groups are also color coded for 
+            tracking group manipulations and comparisons throughout the study/analysis. 
+          </h3>
+        </div>
+        <section class="github-pro-link">
+          <a id="profile-link" 
+            target="_blank" 
+            href="https://github.com/EsteBot/AlcDatSciStreamlit">
+            <img class="git-logo"
+              src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
+              alt="GitHub Logo img"
+              loading="eager"
+              class="logo-img"
+              width="50px">
+          </a>
+        </section>
+        <div>
+          <p class="pro-subtitle">Web Application Preview</p>
+          <a><img class="streamlit-img"
+            src="https://1drv.ms/i/s!ArWyPNkF5S-foaERpkaCXf2_pUSwkw?embed=1&width=1511&height=1267"
+            alt="Web App Demo img"
+            loading="eager">
+          </a>
+        </div>
+        <div class="streamlit-vid">
+          <header class="pro-header">
+            <p class="pro-subtitle">Short video demonstrating the web application's functionality</p>
+          </header>
+          <iframe
+            src="https://1drv.ms/v/s!ArWyPNkF5S-foaEVaoIz0oTneprK5Q?embed=1" 
+            width="660" 
+            height="380" 
+            scrolling="no">
+          </iframe>
+        </div>
+        <header class="pro-header">
+          <p class="pro-subtitle">Follow Streamlit Link to Web App</p>
+        </header>
+        <section class="streamlit-pro-link">
+          <a id="stramlit-link"
+            target="_blank"
+            href="https://alcdatsciapp-estestyle.streamlit.app">
+            <img class="git-logo"
+              src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276"
+              alt="Streamlit Logo img"
+              loading="eager"
               class="logo-img"
               width="150px">
-          </section></a>
-        </div>
-      <div class="divider"></div>
-      <div class="streamlit-pro">
-        <header class="pro-header cntr-txt"><h2 class="project-title">Stock Performance Comparision (Ten Max)</h2>
-        </header>
+        </section></a>
+      </div>
+    </div>
+  </div>
+  <div class="streamlit-pro">
+    <header class="pro-header cntr-txt">
+      <h2 class="project-title collapsible-trigger" data-target="stock-compare-details">
+        <span class="trigger-main-text">📈 The Stock Stack Up: Visualizing Risk and Return Across Stocks 🚀</span>
+        <span class="project-subtext">Yfinance Numpy Pandas Plotly</span>
+      </h2>
+    </header>
+    <div id="stock-compare-details" class="collapsible-content">
+      <div class="card">
         <div>
           <h3 class="pro-description">Inspiration:</h3>
           <h3 class="pro-description indented">
@@ -167,170 +200,232 @@
             users to choose up to ten stock ticker symbols and the timeframe to compare them. 
             The web application then outputs three graphs displaying 1-Price change, 2-percent price change,
             and 3-each of their risk vs return over the timespan selected. All these measures function to better
-            inform the user of their selected stocks historical performance. </h3>
-          </div>
-          <div>
-          <section class="github-pro-link">
-          <a id="profile-link" target="_blank" href="https://github.com/EsteBot/streamlit_max_ten_asset_viz"><img class="git-logo"
-            src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
-            alt="GitHub Logo img"
-            loading="eager"
-              class="logo-img"
-              width="50px">
-          </section></a>
+            inform the user of their selected stocks historical performance.
+          </h3>
         </div>
-    </div>
-    <div>
-        <p class="pro-subtitle">Web Application Preview</p>
-          <a><img class="streamlit-img"
-                src="https://1drv.ms/i/s!ArWyPNkF5S-foaEnyWTF5-jtirHAWQ?embed=1&width=1554&height=804"
-                alt="Web App Demo img"
-                loading="eager">
-            </a>
-          </div>
-      <div class="streamlit-vid">
-        <header class="pro-header">
-        <p class="pro-subtitle">Short video demonstrating the web application's functionality</p>
-        </header>
-        <iframe
-            src="https://1drv.ms/v/s!ArWyPNkF5S-foaEogKTVRIW2tJVZnA?embed=1" 
-            width="660" 
-            height="380" 
-            scrolling="no">
-        </iframe>
-      </div>
-        <header class="pro-header">
-          <p class="pro-subtitle">Follow Streamlit Link to Web App</p>
-          </header>
-          <section class="streamlit-pro-link">
-            <a id="stramlit-link" target="_blank" href="https://maxtenassetviz.streamlit.app"><img class="git-logo"
-              src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276"
-              alt="Streamlit Logo img"
-              loading="eager"
-                class="logo-img"
-                width="150px">
-            </section></a>
-          </div>
-        <div class="divider"></div>
-        <div class="streamlit-pro">
-          <header class="pro-header cntr-txt"><h2 class="project-title">Gym Goers Dataset & Analysis</h2>
-          </header>
-          <div>
-            <h3 class="pro-description">Inspiration:</h3>
-            <h3 class="pro-description indented">
-              Public datasets have become increasingly available, however, with the increase in access,
-              there is a need for the data to be easily interpreted if it is to become meaningful to the general public.
-              Here, I found an interesting dataset collected about gym goers that I wanted to analyze and share 
-              some interesting patterns and trends discovered.</h3>
-            <h3 class="pro-description">Project:</h3>
-            <h3 class="pro-description indented">
-              To solve this problem, a dynamic web application was developed that enables 
-              users to follow all the steps I used for exploratory data analysis, data cleaning, and 
-              the interpretation of each graph with its accompanying statistical calculation. 
-              Key conclusions drawn from the data are therefore more accessible as well as justifiable.</h3>
-            </div>
-            <div>
-            <section class="github-pro-link">
-            <a id="profile-link" target="_blank" href="https://github.com/EsteBot/gym_mem_exer_datsciviz"><img class="git-logo"
+        <section class="github-pro-link">
+          <a id="profile-link"
+            target="_blank"
+            href="https://github.com/EsteBot/streamlit_max_ten_asset_viz">
+            <img class="git-logo"
               src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
               alt="GitHub Logo img"
               loading="eager"
               class="logo-img"
               width="50px">
-            </section></a>
-          </div>
-      </div>
-      <div>
+          </a>
+        </section>
+        <div>
           <p class="pro-subtitle">Web Application Preview</p>
-            <a><img class="streamlit-img"
-                  src="https://1drv.ms/i/s!ArWyPNkF5S-foaETT521WNwPEY39Rw?embed=1&width=1567&height=1109"
-                  alt="Web App Demo img"
-                  loading="eager">
-              </a>
-            </div>
+            <a>
+              <img class="streamlit-img"
+                src="https://1drv.ms/i/s!ArWyPNkF5S-foaEnyWTF5-jtirHAWQ?embed=1&width=1554&height=804"
+                alt="Web App Demo img"
+                loading="eager">
+            </a>
+        </div>
         <div class="streamlit-vid">
           <header class="pro-header">
-          <p class="pro-subtitle">Short video demonstrating the web application's functionality</p>
+            <p class="pro-subtitle">Short video demonstrating the web application's functionality</p>
           </header>
           <iframe
-              src="https://1drv.ms/v/s!ArWyPNkF5S-foaEW-UYC_9UcknA5qg?embed=1" 
+              src="https://1drv.ms/v/s!ArWyPNkF5S-foaEogKTVRIW2tJVZnA?embed=1" 
               width="660" 
               height="380" 
               scrolling="no">
           </iframe>
-          </div>
+        </div>
+        <header class="pro-header">
+          <p class="pro-subtitle">Follow Streamlit Link to Web App</p>
+        </header>
+        <section class="streamlit-pro-link">
+          <a id="stramlit-link"
+            target="_blank"
+            href="https://maxtenassetviz.streamlit.app">
+            <img class="git-logo"
+              src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276"
+              alt="Streamlit Logo img"
+              loading="eager"
+              class="logo-img"
+              width="150px">
+          </a>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="streamlit-pro">
+    <header class="pro-header cntr-txt">
+      <h2 class="project-title collapsible-trigger" data-target="gym-data-details">
+        <span class="trigger-main-text">🦾 Of Reps & Results: Visualizing Gym Activity Data 🚀</span>
+        <span class="project-subtext">Pandas Numpy Plotly</span>
+      </h2>
+    </header>
+    <div id="gym-data-details" class="collapsible-content">
+      <div class="card">
+        <div>
+          <h3 class="pro-description">Inspiration:</h3>
+          <h3 class="pro-description indented">
+            Public datasets have become increasingly available, however, with the increase in access,
+            there is a need for the data to be easily interpreted if it is to become meaningful to the general public.
+            Here, I found an interesting dataset collected about gym goers that I wanted to analyze and share 
+            some interesting patterns and trends discovered.</h3>
+          <h3 class="pro-description">Project:</h3>
+          <h3 class="pro-description indented">
+            To solve this problem, a dynamic web application was developed that enables 
+            users to follow all the steps I used for exploratory data analysis, data cleaning, and 
+            the interpretation of each graph with its accompanying statistical calculation. 
+            Key conclusions drawn from the data are therefore more accessible as well as justifiable.
+          </h3>
+        </div>
+        <section class="github-pro-link">
+          <a id="profile-link"
+            target="_blank"
+            href="https://github.com/EsteBot/gym_mem_exer_datsciviz">
+            <img class="git-logo"
+              src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
+              alt="GitHub Logo img"
+              loading="eager"
+              class="logo-img"
+              width="50px">
+          </a>
+        </section>
+        <div>
+          <p class="pro-subtitle">Web Application Preview</p>
+          <a><img class="streamlit-img"
+            src="https://1drv.ms/i/s!ArWyPNkF5S-foaETT521WNwPEY39Rw?embed=1&width=1567&height=1109"
+            alt="Web App Demo img"
+            loading="eager">
+          </a>
+        </div>
+        <div class="streamlit-vid">
+          <header class="pro-header">
+            <p class="pro-subtitle">Short video demonstrating the web application's functionality</p>
+          </header>
+          <iframe
+            src="https://1drv.ms/v/s!ArWyPNkF5S-foaEW-UYC_9UcknA5qg?embed=1" 
+            width="660" 
+            height="380" 
+            scrolling="no">
+          </iframe>
+        </div>
+        <header class="pro-header">
+          <p class="pro-subtitle">Follow Streamlit Link to Web App</p>
+        </header>
+        <section class="streamlit-pro-link">
+          <a id="stramlit-link"
+            target="_blank"
+            href="https://gym-mem-exer-dat-sci-viz.streamlit.app">
+            <img class="git-logo"
+              src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276"
+              alt="Streamlit Logo img"
+              loading="eager"
+              class="logo-img"
+              width="150px">
+          </a>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="streamlit-pro">
+    <header class="pro-header cntr-txt">
+      <h2 class="project-title collapsible-trigger" data-target="cycling-data-details">
+        <span class="trigger-main-text">🚴 From Rows to Results: Visualizing Big Data with Streamlit 🚀</span>
+        <span class="project-subtext">Pandas Plotly</span>
+      </h2>
+    </header>
+    <div id="cycling-data-details" class="collapsible-content">
+      <div class="card">
+        <div>
+          <h3 class="pro-description">Inspiration:</h3>
+          <h3 class="pro-description indented">
+            While working on a BigQuery | SQL project, I sought to highlight the versatility and power of 
+            SQL not only to data professionals but also to those less familiar with data analysis. 
+            The challenge was to make the analysis process accessible and intuitive for a broader audience. 
+            To address this, I explored tools that could simplify complex datasets while maintaining their analytical depth.
+          </h3>
+          <h3 class="pro-description">Project:</h3>
+          <h3 class="pro-description indented">
+            This project involved analyzing multiple CSV files, which together comprised 144,873 rows and 13 columns of data points. 
+            SQL proved invaluable for structuring and performing meaningful analysis on such a large dataset, 
+            unlocking actionable insights with remarkable efficiency. To showcase this analysis, 
+            I developed an interactive dashboard using Streamlit, providing a user-friendly interface that 
+            brings SQL’s capabilities to life in a visual and intuitive way.
+          </h3>
+        </div>
+        <section class="github-pro-link">
+          <a id="profile-link"
+            target="_blank"
+            href="https://github.com/EsteBot/Cyclistic-SQL-DashBoard">
+            <img class="git-logo"
+              src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
+              alt="GitHub Logo img"
+              loading="eager"
+              class="logo-img"
+              width="50px">
+          </a>
+        </section>
+        <div>
+          <p class="pro-subtitle">Web Application Preview</p>
+          <a>
+            <img class="streamlit-img"
+              src="https://1drv.ms/i/s!ArWyPNkF5S-foqwIK-j4AjpJNGoeIw?embed=1&width=1710&height=5807"
+              alt="Web App Demo img"
+              loading="eager">
+          </a>
+        </div>
           <header class="pro-header">
             <p class="pro-subtitle">Follow Streamlit Link to Web App</p>
-            </header>
-            <section class="streamlit-pro-link">
-              <a id="stramlit-link" target="_blank" href="https://gym-mem-exer-dat-sci-viz.streamlit.app"><img class="git-logo"
+          </header>
+          <section class="streamlit-pro-link">
+            <a id="stramlit-link"
+              target="_blank"
+              href="https://cyclistic-sql-dashboard.streamlit.app/">
+              <img class="git-logo"
                 src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276"
                 alt="Streamlit Logo img"
                 loading="eager"
-                  class="logo-img"
-                  width="150px">
-              </section></a>
-            </div>
-            <div class="streamlit-pro">
-              <header class="pro-header cntr-txt"><h2 class="project-title">From Rows to Results: Visualizing Big Data with Streamlit</h2>
-              </header>
-              <div>
-                <h3 class="pro-description">Inspiration:</h3>
-                <h3 class="pro-description indented">
-                  While working on a BigQuery | SQL project, I sought to highlight the versatility and power of 
-                  SQL not only to data professionals but also to those less familiar with data analysis. 
-                  The challenge was to make the analysis process accessible and intuitive for a broader audience. 
-                  To address this, I explored tools that could simplify complex datasets while maintaining their analytical depth.</h3>
-                <h3 class="pro-description">Project:</h3>
-                <h3 class="pro-description indented">
-                  This project involved analyzing multiple CSV files, which together comprised 144,873 rows and 13 columns of data points. 
-                  SQL proved invaluable for structuring and performing meaningful analysis on such a large dataset, 
-                  unlocking actionable insights with remarkable efficiency. To showcase this analysis, 
-                  I developed an interactive dashboard using Streamlit, providing a user-friendly interface that brings SQL’s capabilities to life in a visual and intuitive way.</h3>
-                </div>
-                <div>
-                <section class="github-pro-link">
-                <a id="profile-link" target="_blank" href="https://github.com/EsteBot/Cyclistic-SQL-DashBoard"><img class="git-logo"
-                  src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535957&authkey=%21AM5_GtpYhiespoI&width=500&height=501"
-                  alt="GitHub Logo img"
-                  loading="eager"
-                  class="logo-img"
-                  width="50px">
-                </section></a>
-              </div>
-          </div>
-          <div>
-              <p class="pro-subtitle">Web Application Preview</p>
-                <a><img class="streamlit-img"
-                      src="https://1drv.ms/i/s!ArWyPNkF5S-foqwIK-j4AjpJNGoeIw?embed=1&width=1710&height=5807"
-                      alt="Web App Demo img"
-                      loading="eager">
-                  </a>
-                </div>
-              <header class="pro-header">
-                <p class="pro-subtitle">Follow Streamlit Link to Web App</p>
-                </header>
-                <section class="streamlit-pro-link">
-                  <a id="stramlit-link" target="_blank" href="https://cyclistic-sql-dashboard.streamlit.app/"><img class="git-logo"
-                    src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276"
-                    alt="Streamlit Logo img"
-                    loading="eager"
-                      class="logo-img"
-                      width="150px">
-                  </section></a>
-                </div>
-</streamlit-body>
-      <div class="bottom-flex-box">
-        <header class="return-text">
-          <p class="p-spacing">Click icon to return </p><p class="p-spacing">to profile main page</p>
-          </header>
-        <div class="return-icon">
-          <a href="index.html"><img
-                src="https://cdn.worldvectorlogo.com/logos/python-package-index-1.svg"
-                alt="home profile logo"
-                loading="eager"
                 class="logo-img"
-                width="100px">
-          </a></div>
+                width="150px">
+            </a>
+          </section>
+        </div>
       </div>
+    </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.collapsible-trigger').forEach(function(trigger) {
+        trigger.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetContent = document.getElementById(targetId);
+            const isActive = targetContent.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.collapsible-content').forEach(function(content) {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.collapsible-trigger').forEach(function(tr) {
+                tr.classList.remove('active');
+            });
+
+            // If it was not active, open it
+            if (!isActive) {
+                this.classList.add('active');
+                targetContent.classList.add('active');
+            }
+            // If it was active, do nothing (all are now closed)
+        });
+    });
+});
+</script>
+</body>
+<div class="return-icon">
+  <a href="index.html">
+    <img
+      src="https://1drv.ms/i/s!ArWyPNkF5S-foaFRS7NmX5PhB36xhQ?embed=1&width=512&height=512"
+      alt="home profile logo"
+      loading="eager"
+      class="logo-img"
+      width="100px">
+  </a>
+</div>
 </html>
