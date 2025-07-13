@@ -119,9 +119,10 @@ h3 {
   }
 
 .return-icon {
-    float: right;
-    padding-top: 100px;
-    padding-bottom: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2%;
 }
 
 .return-icon:hover {

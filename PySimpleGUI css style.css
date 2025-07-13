@@ -163,25 +163,6 @@ body {
     padding-left: 5%;
 }
 
-.pysimp-vid {
-    width: 80%; /* Max width of the video relative to its container */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-}
-
-.vid-atr {
-    max-width: 50%;
-    min-width: 200px;
-    height: auto
-}
-
-.fz-img-grp {
-    padding-top: 5%;
-    text-align: center;
-}
-
 .kivy-dsk-img1 {
     text-align: center;
     width: 70%;
@@ -192,8 +173,12 @@ body {
     max-height: 800px;
 }
 
-.fz-vid-atr {
-    width: 90%; /* Max width of the video relative to its container */
+.video-embed {
+    width: 600px;
+    height: 300px;
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     display: block;
     margin-left: auto;
     margin-right: auto;

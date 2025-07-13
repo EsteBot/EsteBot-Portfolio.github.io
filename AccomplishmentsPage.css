@@ -154,8 +154,10 @@ section {
 }
 
 .return-icon {
-    margin-left: 65%;
-    margin-right: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
 }
 
 .return-icon:hover {
