@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536022&authkey=%21AGziDqIRXl58E3o&width=512&height=512">
@@ -8,6 +8,11 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <link rel="icon" type="image/png" href="https://1drv.ms/i/c/9f2fe505d93cb2b5/IQQ1viORou1US5BLjYZ34ezJAV_Pg8fkzHc0ybH6iu_7MY4?width=1024">
     <title>estestyle.com</title>
+    <!-- Connects to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Loads Hanken Grotesk with a couple of useful weights (Regular and Bold) -->
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Profile CSS Code.css" />
 </head>
 <body>
@@ -15,44 +20,47 @@
     <div class="head-flex">
         <nav id="navbar">
             <ul>
-              <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
-              <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
-              <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
-              <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
-              <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
-              <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
+            <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
+            <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
+            <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
+            <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
+            <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
+            <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
             </ul>
         </nav>
     </div>
 </div>
-    <h1 class="main-page-subtxt">Welcome, my name is Esteban!</h1>
+    <h1 class="main-page-subtxt">Welcome, I'm Esteban!</h1>
     <div class="title-divider main-page-subtxt"></div>
-    <h3 class="main-page-subtxt">I'm excited to share the problems I've solved with these projects I've built!</h3>
+        <h3 class="main-page-subtxt">
+        I solve concrete problems using data and code.<br>
+        <span class="cta-subtext">Explore my projects below to see how I make data work.</span>
+        </h3>
     <div id="chart-container">
         <div id="chart"></div>
         <div id="networkchart"></div>
     </div>
-      <script>
+    <script>
         // Data for the doughnut chart
         var data = [
-          {
-            labels: ['Python', 'SQL', 'Tableau', 'Statistics', 'Streamlit'],
-            values: [40, 15, 10, 10, 25], // Adjust percentages to reflect your skills
-            type: 'pie',
-            hole: 0.4, // Creates the doughnut effect
-            marker: {
-            colors: ['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A'], // Custom colors
-            },
-            textinfo: 'label+percent', // Display labels and percentages
-            hoverinfo: 'text',
-            hovertext: [
-              'PY Hero',
-              'Query Quests',
-              'Viz Wiz',
-              'Stats Awesome',
-              'Hello www.'
-            ]
-          },
+        {
+        labels: ['Python', 'SQL', 'Tableau', 'Statistics', 'Streamlit'],
+        values: [40, 15, 10, 10, 25], // Adjust percentages to reflect your skills
+        type: 'pie',
+        hole: 0.4, // Creates the doughnut effect
+        marker: {
+        colors: ['#636EFA', '#EF553B', '#00CC96', '#AB63FA', '#FFA15A'], // Custom colors
+        },
+        textinfo: 'label+percent', // Display labels and percentages
+        hoverinfo: 'text',
+        hovertext: [
+        'PY Hero',
+        'Query Quests',
+        'Viz Wiz',
+        'Stats Awesome',
+        'Hello www.'
+        ]
+        },
         ];
 
         // Layout customization
@@ -121,18 +129,18 @@
           var skill = data.points[0].label; // Get the hovered skill label
           var emoji = skillEmojis[skill] || '☕'; // Get corresponding emoji or default
 
-          // Update the annotation text
-          Plotly.relayout(chartDiv, {
+        // Update the annotation text
+        Plotly.relayout(chartDiv, {
             'annotations[0].text': emoji,
-          });
+        });
         });
 
         // Add unhover event listener to reset emoji
         chartDiv.on('plotly_unhover', function () {
           // Reset to default emoji
-          Plotly.relayout(chartDiv, {
+        Plotly.relayout(chartDiv, {
             'annotations[0].text': '☕',
-          });
+        });
         });
 
         

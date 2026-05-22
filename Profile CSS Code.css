@@ -14,7 +14,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: 10px 20px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #navbar ul {
@@ -24,12 +24,12 @@
     display: flex; /* Use flexbox */
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #navbar ul li {
     margin: 5px 20px; /* Add spacing between navbar items */
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #navbar .nav-link {
@@ -37,7 +37,7 @@
     text-decoration: none;
     color: rgb(70, 175, 245);
     padding: 7px 10px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     border: 2px solid rgb(90, 129, 155); /* Add border */
     border-radius: 4px; /* Rounded corners */
     transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
@@ -81,7 +81,7 @@ body {
     align-items: center;
     background-color: rgb(90, 113, 133);
     margin-bottom: 5%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .card-container {
@@ -131,22 +131,22 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     margin-right: 5%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 h1 {
     color: rgb(117, 186, 251);
     padding-top: 10%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 h2 {
     padding-top: 0%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 h3 {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .title-divider {
@@ -187,11 +187,6 @@ h3 {
 #data_sci-img {
     height: 250px;
     width: 250px;
-}
-
-@font-face {
-    font-family: 'Futura';
-    src: url('path/to/futura.woff') format('woff');
 }
 
 /* Media query for smaller screens */
