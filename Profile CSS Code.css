@@ -90,7 +90,7 @@ body {
     gap: 50px;
     max-width: 1000px;
     margin: 0 auto;
-    
+
 }
 
 .card {
@@ -118,8 +118,8 @@ body {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: #333;
-    font-family: 'Futura', sans-serif;
     line-height: 1.4;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .main-page-subtxt {
@@ -152,7 +152,7 @@ h3 {
 .title-divider {
     height: 5px;
     width: 90%;
-    background-color: #000; /* Color of the line */ 
+    background-color: #000; /* Color of the line */
 }
 
 .projects {

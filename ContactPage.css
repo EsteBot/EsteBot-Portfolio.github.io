@@ -14,7 +14,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: 10px 20px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #navbar ul {
@@ -24,12 +24,12 @@
     display: flex; /* Use flexbox */
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #navbar ul li {
     margin: 5px 20px; /* Add spacing between navbar items */
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #navbar .nav-link {
@@ -37,7 +37,7 @@
     text-decoration: none;
     color: rgb(70, 175, 245);
     padding: 7px 10px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     border: 2px solid rgb(90, 129, 155); /* Add border */
     border-radius: 4px; /* Rounded corners */
     transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
@@ -57,14 +57,14 @@
     background: url('https://1drv.ms/i/s!ArWyPNkF5S-foaEmOxjPXGZ1Bxj-4A?embed=1&width=1024&height=1024') no-repeat center center/cover;
     z-index: -1; /* Ensures it stays behind the content */
     transition: filter 0.3s ease; /* Smooth blur transition */
-  }
-  
-  .content {
+}
+
+.content {
     position: relative;
     z-index: 1;
     padding: 20px;
-    font-family: Arial, sans-serif;
-  }
+    font-family: 'Hanken Grotesk', sans-serif;
+}
 
 contact-body {
     display: flex;
@@ -74,7 +74,7 @@ contact-body {
     padding-top: 10%;
     padding-bottom: 25%;
     margin-bottom: -100px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .cntr-txt {
@@ -82,14 +82,14 @@ contact-body {
     flex-wrap: wrap;
     text-align: center;
     color: rgb(70, 175, 245);
-    text-shadow: 
+    text-shadow:
     -2px -2px 0 #3a4b53,
     2px -2px 0 #3a4b53,
     -2px 2px 0 #3a4b53,
     2px 2px 0 #3a4b53;
     margin-left: 5%;
     margin-right: 5%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 h2 {
@@ -97,7 +97,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 section {
@@ -105,7 +105,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 h3 {
@@ -115,14 +115,14 @@ h3 {
 .h2-spacing {
     margin-bottom: 0em;
     margin-top: 0.2em;
-    font-family: 'Futura', sans-serif;
-  }
+    font-family: 'Hanken Grotesk', sans-serif;
+}
 
 .return-icon {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
 }
 
 .return-icon:hover {
@@ -132,14 +132,14 @@ h3 {
 .p-spacing {
     margin-bottom: 0em;
     margin-top: 0.2em;
-    font-family: 'Futura', sans-serif;
-  }
+    font-family: 'Hanken Grotesk', sans-serif;
+}
 
 .transparent-airplane-button {
     background-color: transparent; /* No background */
     border: none; /* No border */
     outline: none; /* Remove outline on focus */
-    cursor: pointer; 
+    cursor: pointer;
     filter: invert(50%) sepia(80%) saturate(500%) hue-rotate(150deg) brightness(100%) contrast(100%);
 }
 
@@ -147,7 +147,7 @@ h3 {
     background-color: transparent; /* No background */
     border: none; /* No border */
     outline: none; /* Remove outline on focus */
-    cursor: pointer; 
+    cursor: pointer;
     filter: invert(50%) sepia(80%) saturate(500%) hue-rotate(150deg) brightness(100%) contrast(100%);
 }
 
@@ -155,7 +155,7 @@ h3 {
     background-color: transparent; /* No background */
     border: none; /* No border */
     outline: none; /* Remove outline on focus */
-    cursor: pointer; 
+    cursor: pointer;
     filter: invert(50%) sepia(80%) saturate(500%) hue-rotate(150deg) brightness(100%) contrast(100%);
 }
 
@@ -172,12 +172,12 @@ h3 {
 }
 
 #emailText {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     font-weight: bolder;
     font-size: x-large;
     cursor: pointer;
     color: rgb(70, 175, 245);
-    text-shadow: 
+    text-shadow:
     -2px -2px 0 #3a4b53,
     2px -2px 0 #3a4b53,
     -2px 2px 0 #3a4b53,
@@ -185,12 +185,12 @@ h3 {
 }
 
 #phoneText {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     font-weight: bolder;
     font-size: x-large;
     cursor: pointer;
     color: rgb(70, 175, 245);
-    text-shadow: 
+    text-shadow:
     -2px -2px 0 #3a4b53,
     2px -2px 0 #3a4b53,
     -2px 2px 0 #3a4b53,
@@ -198,12 +198,12 @@ h3 {
 }
 
 #lnkdText {
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     font-weight: bolder;
     font-size: x-large; /* Match the font size with #phoneText */
     cursor: pointer;
     color: rgb(70, 175, 245);
-    text-shadow: 
+    text-shadow:
     -2px -2px 0 #3a4b53,
     2px -2px 0 #3a4b53,
     -2px 2px 0 #3a4b53,
@@ -230,14 +230,6 @@ h3 {
 
 .icon-visible {
     display: visable;
-  }
-
-
-
-@font-face {
-font-family: 'Futura';
-src: url('path/to/futura.woff2') format('woff2'),
-     url('path/to/futura.woff') format('woff');
 }
 
 @media only screen and (max-width: 200px) {
