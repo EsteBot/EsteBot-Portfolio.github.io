@@ -71,7 +71,7 @@
                     size: 22,
                     weight: 'bold', // Make the title bold
                     color: '#000000', // Set the color
-                    family: 'Futura, sans-serif'
+                    family: 'Hanken Grotesk, sans-serif'
                 }
             },
             height: window.innerWidth < 600 ? 350 : 380, // Match the height of the cards
@@ -143,14 +143,14 @@
         });
         });
 
-        
+
         // Network chart code ############################
 
         const svg = d3.select("#networkchart").append("svg")
             .attr("width", 360)
             .attr("height", 380);
 
-        
+
 
         const graph = {
             nodes: [
@@ -179,7 +179,7 @@
                 {id: "Google Colab", emoji: "🧪"},
                 {id: "Data-Visualization", emoji: "👁️"},
             ],
-            
+
             links: [
                 {source: "Analytics", target: "Scripting"},
                 {source: "Data", target: "Analytics"},
@@ -204,8 +204,8 @@
                 {source: "Data-Visualization", target: "Python"},
                 {source: "Data-Visualization", target: "Data-Analysis"},
                 {source: "Automation", target: "Scripting"}
-        
-                
+
+
             ]
         };
 
@@ -316,7 +316,7 @@
            .style("font-size", "15px") // Set the font size
            .style("fill", "#000000")
            .text("Drag nodes to investigate connections"); // Set the title text
-           
+
     </script>
     <h3 class="main-page-subtxt">See them in action! Uncover the project's use cases by clicking on a tile</h3>
     <section class="projects">

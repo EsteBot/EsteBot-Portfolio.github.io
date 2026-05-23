@@ -14,7 +14,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: 10px 20px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #navbar ul {
@@ -24,12 +24,12 @@
     display: flex; /* Use flexbox */
     justify-content: center; /* Center the flex items horizontally */
     flex-wrap: wrap;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #navbar ul li {
     margin: 5px 20px; /* Add spacing between navbar items */
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .nav-link {
@@ -37,7 +37,7 @@
     text-decoration: none;
     color: rgb(70, 175, 245);
     padding: 0px 10px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     border: 2px solid rgb(90, 129, 155); /* Add border */
     border-radius: 4px; /* Rounded corners */
     transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
@@ -71,7 +71,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 10%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .project-subtext {
@@ -96,7 +96,7 @@
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 body {
@@ -105,14 +105,14 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(90, 113, 133);
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .datsci-pro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .pro-description {
@@ -122,7 +122,7 @@ body {
     align-items: left;
     margin-left: 5%;
     margin-right: 5%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .pro-description.indented {
@@ -132,18 +132,18 @@ text-indent: 2em; /* Apply indent */
 
 .pro-header {
     margin-top: 5%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .pro-subtitle {
     text-align: center;
     display: block;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 h3 {
     line-height: 1.5;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 h1 {
@@ -155,7 +155,7 @@ h1 {
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 section {
@@ -163,14 +163,14 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .h2-spacing {
     margin-bottom: 0em;
     margin-top: 0.2em;
-    font-family: 'Futura', sans-serif;
-  }
+    font-family: 'Hanken Grotesk', sans-serif;
+}
 
 .title-divider {
     height: 5px;
@@ -191,7 +191,7 @@ section {
     width: 90%;
     align-items: center;
     margin-left: 5%;
-    margin-right: 5%;  
+    margin-right: 5%;
 }
 
 .datsci-graph {
@@ -206,7 +206,7 @@ section {
 .dreadd-subtitle {
     text-align: left;
     margin-left: 10%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .dreadd-graph {
@@ -220,7 +220,7 @@ section {
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .mindiff-graph {
@@ -234,7 +234,7 @@ section {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .datsci-rh-logo {
@@ -266,7 +266,7 @@ section {
     text-align: left;
     margin-left: 10%;
     margin-right: 10%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .run-wheel-graph {
@@ -284,8 +284,8 @@ section {
     gap: 50px; /* Adds space between the items */
     padding-left: 5%; /* Adds padding around the container */
     padding-right: 5%;
-    
-    
+
+
     box-sizing: border-box; /* Ensures padding is included in the total width */
     width: 100%; /* Ensures the container takes the full width of its parent */
 }
@@ -314,7 +314,7 @@ section {
     margin-left: 10%;
     margin-right: 10%;
     max-width: 1000px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .activity-graph {
@@ -332,7 +332,7 @@ section {
 .vid-atr {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
-    
+
 }
 
 .datsci-vid {
@@ -370,13 +370,13 @@ section {
 
 .return-icon:hover {
     transform: translateY(-5px);
-  }
+}
 
 .pro-subtitle.p-spacing{
     line-height: 1.5;
     font-size: 1.05em;
     margin-right: 40%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .subtitle {
@@ -389,16 +389,16 @@ p.p-spacing  {
     font-size: 1em;
     margin-left: 0%;
     margin-right: 0%;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 p {
     line-height: 1.5;
     font-size: 1.05em;
-    font-family: 'Futura', sans-serif;
-  }
+    font-family: 'Hanken Grotesk', sans-serif;
+}
 
-  ol {
+ol {
     padding-left: 40px; /* Space for the list marker */
 }
 ol li {
@@ -410,7 +410,7 @@ li {
     font-size: 1.05em;
     line-height: 1.5;
     font-size: 1.05em;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 /* Styles for the collapsible trigger (the project title) */
@@ -421,7 +421,7 @@ li {
     color: rgb(70, 175, 245); /* White text for contrast */
     border: 2px solid rgb(70, 175, 245); /* Same border as nav-link */
     border-radius: 8px;
-    font-family: 'Futura', sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     font-size: 1.1em;
     display: flex;
     justify-content: space-between;
@@ -495,12 +495,12 @@ li {
     width: 100%;             /* Card takes up to 90% of parent width */
     max-width: 1000px;       /* But never exceeds 800px (adjust as needed) */
     box-sizing: border-box;
-  }
-  
+}
+
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  }
+}
 
 /* Container for your live dashboard section, as you already have it */
 .live-dashboard-section {
@@ -553,15 +553,9 @@ li {
     }
 }
 
-  @font-face {
-    font-family: 'Futura';
-    src: url('path/to/futura.woff2') format('woff2'),
-         url('path/to/futura.woff') format('woff');
-}
-
-  @media only screen and (max-width: 200px) {
-      img {
-      width: 25%;
-      object-fit: cover;
-      }
+@media only screen and (max-width: 200px) {
+    img {
+    width: 25%;
+    object-fit: cover;
+    }
 }
