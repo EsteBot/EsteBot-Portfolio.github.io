@@ -10,101 +10,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="ContactPage.css" />
 </head>
-<div class="head-flex-box">
-  <div class="head-flex">
-      <nav id="navbar">
-          <ul>
-            <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
-            <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
-            <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
-            <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
-            <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
-            <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
-          </ul>
-      </nav>
+<body>
+  <div class="head-flex-box">
+    <div class="head-flex">
+        <nav id="navbar">
+            <ul>
+              <li><a class="nav-link" href="https://github.com/EsteBot">GitHub</a></li>
+              <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
+              <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
+              <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
+              <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
+              <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
   </div>
-</div>
-<div class="background"></div>
-<div class="content">
-<contact-body>
-  <h1 class="cntr-txt">Let's</h1>
-  <h1 class="cntr-txt">Solve Problems</h1>
-  <h1 class="cntr-txt">Together!</h1>
-  <button class="transparent-airplane-button" onclick="toggleAirplaneIconText()">
-  <img src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535985&authkey=%21AFTUQfG9geA1mio&width=32&height=32" alt="Icon paper airplane" id="airplane" class="icon-visible">
-</button>
-<span id="emailText" class="hidden">estestyle@gmail.com</span>
+  <main class="content">
+    <section class="contact-body">
+      <div class="terminal-container">
+        <div class="terminal-header">
+          <div class="terminal-symbol" aria-hidden="true">
+            <span>&gt;_</span>
+          </div>
+          <div class="terminal-title">contact_protocols.py</div>
+        </div>
 
-<script>
-function toggleAirplaneIconText() {
-  var airplane = document.getElementById('airplane');
-  var emailText = document.getElementById('emailText');
-  // Check if the icon is currently visible
-  if (airplane.classList.contains('icon-visible')) {
-    airplane.classList.remove('icon-visible'); // Hide the icon
-    emailText.classList.remove('hidden'); // Show the email text
-  } else {
-    airplane.classList.add('icon-visible'); // Show the icon
-    emailText.classList.add('hidden'); // Hide the email text
-  }
-}
-</script>
+        <div class="terminal-body">
+          <span id="typewriter"></span><span id="cursor" class="cursor">|</span>
 
-<button class="transparent-phone-button" onclick="togglePhoneIconText()">
-  <img src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535981&authkey=%21ANvGQMBxBAcVVjc&width=32&height=32" alt="Icon phone" id="phone" class="icon-visible">
-</button>
-<span id="phoneText" class="hidden">303.548.0325</span>
+          <div id="interactive-prompt" class="hidden">
+            <span class="prompt-text">&gt;&gt;&gt; reach_out(impressed=</span>
+            <button class="param-btn true-btn" type="button" onclick="runProtocol(true)">True</button>
+            <span class="prompt-text">/</span>
+            <button class="param-btn false-btn" type="button" onclick="runProtocol(false)">False</button>
+            <span class="prompt-text">)</span>
 
-<script>
-function togglePhoneIconText() {
-  var phone = document.getElementById('phone');
-  var phoneText = document.getElementById('phoneText');
-  // Check if the icon is currently visible
-  if (phone.classList.contains('icon-visible')) {
-    phone.classList.remove('icon-visible'); // Hide the icon
-    phoneText.classList.remove('hidden'); // Show the email text
-  } else {
-    phone.classList.add('icon-visible'); // Show the icon
-    phoneText.classList.add('hidden'); // Hide the email text
-  }
-}
-</script>
+            <div id="function-output"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<button class="transparent-lnkd-button" onclick="toggleIconText()">
-  <img src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535986&authkey=%21AGcA-3JuqyKDji0&width=32&height=32" alt="Icon lnkd" id="lnkd" class="icon-visible">
-</button>
-<span id="lnkdText" class="hidden"><a target=_blank href="https://www.linkedin.com/in/esteban-loetz-272a7640/">Go to Linkedin Profile</a></span>
-
-<script>
-function toggleIconText() {
-  var lnkd = document.getElementById('lnkd');
-  var lnkdText = document.getElementById('lnkdText');
-  // Check if the icon is currently visible
-  if (lnkd.classList.contains('icon-visible')) {
-    lnkd.classList.remove('icon-visible'); // Hide the icon
-    lnkdText.classList.remove('hidden'); // Show the email text
-  } else {
-    lnkd.classList.add('icon-visible'); // Show the icon
-    lnkdText.classList.add('hidden'); // Hide the email text
-  }
-}
-</script>
-</a></div>
-<script>
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY; // Get the vertical scroll position
-    const background = document.querySelector('.background');
-
-    if (scrollY > 10) {
-      background.style.filter = 'blur(35px)';
-    } else {
-      background.style.filter = 'blur(0)';
-    }
-  });
-</script>
-</contact-body>
-</div>
-<div class="bottom-flex-box">
+  <div class="bottom-flex-box">
     <div class="return-icon">
       <a href="index.html"><img
             src="https://1drv.ms/i/s!ArWyPNkF5S-foaFRS7NmX5PhB36xhQ?embed=1&width=512&height=512"
@@ -114,5 +62,66 @@ function toggleIconText() {
             width="100px">
       </a></div>
   </div>
-    </div>
+
+  <script>
+    const codeText = `def reach_out(impressed: bool):
+    contact_info = {
+        "phone": "(303) 548-0325",
+        "email": "estestyle@gmail.com",
+        "linkedIn": "https://www.linkedin.com/in/estestyle/"
+    }
+
+    if impressed:
+        print("Excellent choice. Let's build.")
+        return contact_info
+    else:
+        return "Review more of Esteban's projects!"`;
+
+    let index = 0;
+    const speed = 25;
+
+    function appendTypedCharacter(character) {
+      const typewriter = document.getElementById("typewriter");
+
+      if (character === "\n") {
+        typewriter.appendChild(document.createElement("br"));
+      } else {
+        typewriter.appendChild(document.createTextNode(character));
+      }
+    }
+
+    function typeWriter() {
+      if (index < codeText.length) {
+        appendTypedCharacter(codeText.charAt(index));
+        index++;
+        setTimeout(typeWriter, speed);
+      } else {
+        document.getElementById("cursor").style.display = "none";
+        document.getElementById("interactive-prompt").classList.remove("hidden");
+      }
+    }
+
+    function runProtocol(impressed) {
+      const outputDiv = document.getElementById("function-output");
+
+      if (impressed) {
+        outputDiv.innerHTML = `
+          &gt;&gt;&gt; Excellent choice. Let's build.<br>
+          &gt;&gt;&gt; {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;"phone": "<a class='terminal-link' href='tel:3035480325'>+1 (303) 548-0325</a>",<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;"email": "<a class='terminal-link' href='mailto:estestyle@gmail.com'>estestyle@gmail.com</a>",<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;"linkedIn": "<a class='terminal-link' href='https://www.linkedin.com/in/estestyle/' target='_blank' rel='noopener'>linkedin.com/in/estestyle</a>"<br>
+          &gt;&gt;&gt; }
+        `;
+      } else {
+        outputDiv.innerHTML = `
+          &gt;&gt;&gt; "Review more of Esteban's projects!"<br>
+          &gt;&gt;&gt; Error 418: Teapot / Missing enthusiasm. Try clicking 'True'.
+        `;
+      }
+    }
+
+    window.addEventListener("load", typeWriter);
+  </script>
+</body>
 </html>
