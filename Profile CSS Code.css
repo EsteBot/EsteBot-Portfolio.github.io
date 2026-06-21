@@ -135,7 +135,7 @@ body {
 }
 
 h1 {
-    color: rgb(117, 186, 251);
+    color: #000;
     padding-top: 10%;
     font-family: 'Hanken Grotesk', sans-serif;
 }
@@ -149,10 +149,31 @@ h3 {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+h3.main-page-subtxt,
+.cta-subtext {
+    color: #000;
+}
+
 .title-divider {
-    height: 5px;
+    position: relative;
+    height: 1.4rem;
     width: 90%;
-    background-color: #000; /* Color of the line */
+    overflow: hidden;
+    color: rgb(117, 186, 251);
+    font-family: monospace;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.4rem;
+    opacity: 0.9;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+.title-divider::before {
+    content: "01000101 01110011 01110100 01100101 01100010 01100001 01101110 00100000 01000100 01100001 01110100 01100001 00100000 01000011 01101111 01100100 01100101 00100000 01000001 01001001 00100000 01010011 01010001 01001100 00100000 01010000 01111001 01110100 01101000 01101111 01101110";
+    display: block;
+    white-space: nowrap;
 }
 
 .projects {
