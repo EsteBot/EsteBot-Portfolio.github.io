@@ -36,7 +36,7 @@
         </div>
 
         <div class="terminal-body">
-          <span id="typewriter"></span><span id="cursor" class="cursor">|</span>
+          <pre id="typewriter" class="code-output"></pre><span id="cursor" class="cursor">|</span>
 
           <div id="interactive-prompt" class="hidden">
             <span class="prompt-text">&gt;&gt;&gt; reach_out(impressed=</span>
@@ -106,17 +106,19 @@
 
       if (impressed) {
         outputDiv.innerHTML = `
-          &gt;&gt;&gt; Excellent choice. Let's build.<br>
-          &gt;&gt;&gt; {<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;"phone": "<a class='terminal-link' href='tel:3035480325'>+1 (303) 548-0325</a>",<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;"email": "<a class='terminal-link' href='mailto:estestyle@gmail.com'>estestyle@gmail.com</a>",<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;"linkedIn": "<a class='terminal-link' href='https://www.linkedin.com/in/estestyle/' target='_blank' rel='noopener'>linkedin.com/in/estestyle</a>"<br>
-          &gt;&gt;&gt; }
+          <div class="repl-line success-output"><span class="prompt-marker">&gt;&gt;&gt;</span> Excellent choice. Let's build.</div>
+          <div class="repl-line success-output"><span class="prompt-marker">&gt;&gt;&gt;</span></div>
+          <div class="repl-line success-output">{</div>
+          <div class="repl-line success-output">&nbsp;&nbsp;&nbsp;&nbsp;"phone": "<a class='terminal-link' href='tel:3035480325'>+1 (303) 548-0325</a>",</div>
+          <div class="repl-line success-output">&nbsp;&nbsp;&nbsp;&nbsp;"email": "<a class='terminal-link' href='mailto:estestyle@gmail.com'>estestyle@gmail.com</a>",</div>
+          <div class="repl-line success-output">&nbsp;&nbsp;&nbsp;&nbsp;"linkedIn": "<a class='terminal-link' href='https://www.linkedin.com/in/estestyle/' target='_blank' rel='noopener'>linkedin.com/in/estestyle</a>"</div>
+          <div class="repl-line success-output">}</div>
+          <div class="repl-line success-output"><span class="prompt-marker">&gt;&gt;&gt;</span></div>
         `;
       } else {
         outputDiv.innerHTML = `
-          &gt;&gt;&gt; "Review more of Esteban's projects!"<br>
-          &gt;&gt;&gt; Error 418: Teapot / Missing enthusiasm. Try clicking 'True'.
+          <div class="repl-line error-output"><span class="prompt-marker">&gt;&gt;&gt;</span> "Review more of Esteban's projects!"</div>
+          <div class="repl-line error-output"><span class="prompt-marker">&gt;&gt;&gt;</span> Error 418: Teapot / Missing enthusiasm. Try clicking 'True'.</div>
         `;
       }
     }
