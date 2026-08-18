@@ -103,6 +103,11 @@ body {
     color: rgb(7, 110, 206);
 }
 
+/* Keep top-level resume sections visually consistent. */
+.section-title {
+    color: #000;
+}
+
 .subheader-txt, .edu-txt {
     line-height: 1.3;
 }
