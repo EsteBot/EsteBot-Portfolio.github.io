@@ -96,6 +96,11 @@ body {
     flex: 2; /* Make the second column narrower */
 }
 
+/* Align the work history beneath the name in the left column. */
+.card .work-experience-column {
+    padding-top: 3rem;
+}
+
 
 .subheader-txt {
     margin-bottom: -1.6%;
