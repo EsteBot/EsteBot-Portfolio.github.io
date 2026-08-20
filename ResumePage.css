@@ -98,9 +98,8 @@ body {
 
 /* Align the right-column section heading with the left-column headline. */
 .card .work-experience-column {
-    padding-top: 3.2rem;
+    padding-top: 3rem;
 }
-
 
 .subheader-txt {
     margin-bottom: -1.6%;
@@ -134,8 +133,6 @@ body {
     margin-bottom: 10px;
     text-indent: -20px; /* Creates hanging indentation */
 }
-
-
 
 .italic-item {
     font-style: italic;
