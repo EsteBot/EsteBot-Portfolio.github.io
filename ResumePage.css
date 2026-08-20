@@ -96,9 +96,9 @@ body {
     flex: 2; /* Make the second column narrower */
 }
 
-/* Align the work history beneath the name in the left column. */
+/* Align the right-column section heading with the left-column headline. */
 .card .work-experience-column {
-    padding-top: 7rem;
+    padding-top: 3.2rem;
 }
 
 
