@@ -14,6 +14,7 @@
     <!-- Loads Hanken Grotesk with a couple of useful weights (Regular and Bold) -->
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Profile CSS Code.css" />
+    <link rel="stylesheet" href="chat-widget.css" />
 </head>
 <body>
 <div class="head-flex-box">
@@ -301,71 +302,70 @@
 
         // Append a title to the SVG
         svg.append("text")
-           .attr("x", 180) // Position the title at the center horizontally
-           .attr("y", 20) // Position the title vertically
-           .attr("text-anchor", "middle") // Center the text
-           .style("font-size", "22px") // Set the font size
-           .style("fill", "#000000")
-           .text("Skill Network"); // Set the title text
+        .attr("x", 180) // Position the title at the center horizontally
+        .attr("y", 20) // Position the title vertically
+        .attr("text-anchor", "middle") // Center the text
+        .style("font-size", "22px") // Set the font size
+        .style("fill", "#000000")            .text("Skill Network"); // Set the title text
 
         // Append a title to the SVG
         svg.append("text")
-           .attr("x", 180) // Position the title at the center horizontally
-           .attr("y", 40) // Position the title vertically
-           .attr("text-anchor", "middle") // Center the text
-           .style("font-size", "15px") // Set the font size
-           .style("fill", "#000000")
-           .text("Drag nodes to investigate connections"); // Set the title text
+        .attr("x", 180) // Position the title at the center horizontally
+        .attr("y", 40) // Position the title vertically
+        .attr("text-anchor", "middle") // Center the text
+        .style("font-size", "15px") // Set the font size
+        .style("fill", "#000000")
+        .text("Drag nodes to investigate connections"); // Set the title text
 
     </script>
     <h3 class="main-page-subtxt">See them in action! Uncover the project's use cases by clicking on a tile</h3>
     <section class="projects">
-      <div class="card-container">
+    <div class="card-container">
         <div class="card">
-              <div class="project-tile">
-                  <header class="pro-header">
-                      <h2 class="project-title">Data Science</h2>
-                      <p class="pro-subtitle">Data science analysis and visualization</p>
-                  </header>
-                  <a href="DatSciPage.html">
-                      <img id="data_sci-img" src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536022&authkey=%21AGziDqIRXl58E3o&width=512&height=512" alt="data science project thumbnail" loading="eager" class="logo-img" width="100px">
-                  </a>
-              </div>
-          </div>
-          <div class="card">
-              <div class="project-tile">
-                  <header class="pro-header">
-                      <h2 class="project-title">Streamlit</h2>
-                      <p class="pro-subtitle">Online interactive/dynamic data visualizations</p>
-                  </header>
-                  <a href="StreamlitPage.html">
-                      <img id="scripts-img" src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276" alt="streamlit project thumbnail" loading="eager" class="logo-img" width="100px">
-                  </a>
-              </div>
-          </div>
-          <div class="card">
-              <div class="project-tile">
-                  <header class="pro-header">
-                      <h2 class="project-title">SciApps Desktop</h2>
-                      <p class="pro-subtitle">Scientific applications & GUIs</p>
-                  </header>
-                  <a href="PySimpleGUIPage.html">
-                      <img id="pysimplegui-img" src="https://1drv.ms/i/c/9f2fe505d93cb2b5/IQRUJDdFvaBuToBaGP-3fPFaAcg8NYOCH_as57QhQPDMv8o?width=2048&height=2048" alt="sciapps desktop project thumbnail" loading="eager" class="logo-img" width="100px">
-                  </a>
-              </div>
-          </div>
-          <div class="card">
-              <div class="project-tile">
-                  <header class="pro-header">
-                      <h2 class="project-title">SciApps Mobile</h2>
-                      <p class="pro-subtitle">Scientific Android applications</p>
-                  </header>
-                  <a href="KivyPage.html">
-                      <img id="kivy-img" src="https://1drv.ms/i/c/9f2fe505d93cb2b5/IQSy8v5Lw0bkSa5E1GKCN6toAdHfRMry5SQzxf5fs0pufsU?width=2048&height=2048" alt="kivymd project thumbnail" loading="eager" class="logo-img" width="100px">
-                  </a>
-              </div>
-          </div>
-          <div class="card">
+            <div class="project-tile">
+                <header class="pro-header">
+                    <h2 class="project-title">Data Science</h2>
+                    <p class="pro-subtitle">Data science analysis and visualization</p>
+                </header>
+                <a href="DatSciPage.html">
+                    <img id="data_sci-img" src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536022&authkey=%21AGziDqIRXl58E3o&width=512&height=512" alt="data science project thumbnail" loading="eager" class="logo-img" width="100px">
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="project-tile">
+                <header class="pro-header">
+                    <h2 class="project-title">Streamlit</h2>
+                    <p class="pro-subtitle">Online interactive/dynamic data visualizations</p>
+                </header>
+                <a href="StreamlitPage.html">
+                    <img id="scripts-img" src="https://1drv.ms/i/s!ArWyPNkF5S-foaAxsvtXv8n7p5AnkA?embed=1&width=2181&height=1276" alt="streamlit project thumbnail" loading="eager" class="logo-img" width="100px">
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="project-tile">
+                <header class="pro-header">
+                    <h2 class="project-title">SciApps Desktop</h2>
+                    <p class="pro-subtitle">Scientific applications & GUIs</p>
+                </header>
+                <a href="PySimpleGUIPage.html">
+                    <img id="pysimplegui-img" src="https://1drv.ms/i/c/9f2fe505d93cb2b5/IQRUJDdFvaBuToBaGP-3fPFaAcg8NYOCH_as57QhQPDMv8o?width=2048&height=2048" alt="sciapps desktop project thumbnail" loading="eager" class="logo-img" width="100px">
+                </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="project-tile">
+                <header class="pro-header">
+                    <h2 class="project-title">SciApps Mobile</h2>
+                    <p class="pro-subtitle">Scientific Android applications</p>
+                </header>
+                <a href="KivyPage.html">
+                    <img id="kivy-img" src="https://1drv.ms/i/c/9f2fe505d93cb2b5/IQSy8v5Lw0bkSa5E1GKCN6toAdHfRMry5SQzxf5fs0pufsU?width=2048&height=2048" alt="kivymd project thumbnail" loading="eager" class="logo-img" width="100px">
+                </a>
+            </div>
+        </div>
+        <div class="card">
             <div class="project-tile">
                 <header class="pro-header">
                     <h2 class="project-title">Tableau</h2>
@@ -376,18 +376,92 @@
                 </a>
             </div>
         </div>
-          <div class="card">
-              <div class="project-tile">
-                  <header class="pro-header">
-                      <h2 class="project-title">MedStateCode</h2>
-                      <p class="pro-subtitle">Operant chamber control code</p>
-                  </header>
-                  <a href="MedAssocPage.html">
-                      <img id="medassoc-img" src="https://1drv.ms/i/c/9f2fe505d93cb2b5/IQQ0UrhA8Nb5QoUXYhMKgow1Aat_nd1ZCS4OIk6MbLrvl_g?width=1787&height=1455" alt="MedStateCode project thumbnail" loading="eager" class="logo-img" width="100px">
-                  </a>
-              </div>
-          </div>
-      </div>
-  </section>
+        <div class="card">
+            <div class="project-tile">
+                <header class="pro-header">
+                    <h2 class="project-title">MedStateCode</h2>
+                    <p class="pro-subtitle">Operant chamber control code</p>
+                </header>
+                <a href="MedAssocPage.html">
+                    <img id="medassoc-img" src="https://1drv.ms/i/c/9f2fe505d93cb2b5/IQQ0UrhA8Nb5QoUXYhMKgow1Aat_nd1ZCS4OIk6MbLrvl_g?width=1787&height=1455" alt="MedStateCode project thumbnail" loading="eager" class="logo-img" width="100px">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="ai-widget-container">
+<button id="ai-chat-button" onclick="toggleChat()">✨ Portfolio Assistant</button>
+<div id="ai-chat-box">
+    <div id="ai-chat-header">
+    <strong>Portfolio AI Assistant</strong>
+    </div>
+    
+    <div id="ai-chat-window">
+    <div class="chat-msg bot-msg">
+        Hi! Tell me what role or technical requirement you're hiring for, and I'll point you to relevant projects on Esteban's site.
+    </div>
+    </div>
+    
+    <div id="ai-chat-input-area">
+    <input 
+        type="text" 
+        id="ai-chat-input" 
+        placeholder="e.g., Which projects use SQL?" 
+        onkeydown="if(event.key === 'Enter') askAI()"
+    />
+    <button id="ai-chat-send" onclick="askAI()">Send</button>
+    </div>
+</div>
+</div>
+<script>
+    // 1. Toggle Chat Visibility
+    function toggleChat() {
+    const box = document.getElementById('ai-chat-box');
+    const isHidden = box.style.display === 'none' || box.style.display === '';
+    box.style.display = isHidden ? 'flex' : 'none';
+    }
+
+    // 2. Simple Markdown Link Parser [Text](URL) -> <a>Text</a>
+    function parseMarkdownLinks(text) {
+    return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+    }
+
+    // 3. Handle Asking the AI
+    async function askAI() {
+    const input = document.getElementById('ai-chat-input');
+    const chatWindow = document.getElementById('ai-chat-window');
+    const query = input.value.trim();
+
+    if (!query) return;
+
+    // Render User Message
+    chatWindow.innerHTML += `<div class="chat-msg user-msg">${query}</div>`;
+    input.value = '';
+    chatWindow.scrollTop = chatWindow.scrollHeight;
+
+    // Render Temporary Loading Indicator
+    const loadingId = 'loading-' + Date.now();
+    chatWindow.innerHTML += `<div class="chat-msg bot-msg" id="${loadingId}">Thinking...</div>`;
+    chatWindow.scrollTop = chatWindow.scrollHeight;
+
+    try {
+        const response = await fetch('https://portfolio-estebot.estestyle.workers.dev/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userPrompt: query })
+        });
+
+        const data = await response.json();
+        const formattedReply = parseMarkdownLinks(data.reply);
+
+        document.getElementById(loadingId).innerHTML = formattedReply;
+    } catch (err) {
+        document.getElementById(loadingId).innerText = "Sorry, I couldn't reach the assistant right now.";
+    }
+
+    chatWindow.scrollTop = chatWindow.scrollHeight;
+    }
+</script>
 </body>
 </html
