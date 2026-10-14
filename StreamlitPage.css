@@ -149,6 +149,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
@@ -168,6 +169,8 @@ body {
 
 .pro-header {
     margin-top: 5%;
+    width: min(90%, 1000px);
+    box-sizing: border-box;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
@@ -257,6 +260,27 @@ li {
     transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
     box-shadow: 0 2px 6px rgba(70, 175, 245, 0.08);
     margin-bottom: 8px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.collapsible-trigger .trigger-main-text,
+.collapsible-trigger .project-subtext {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+.collapsible-trigger::after {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 600px) {
+    .collapsible-trigger {
+        padding: 12px 14px;
+        font-size: 1rem;
+    }
 }
 
 .collapsible-trigger:hover,
