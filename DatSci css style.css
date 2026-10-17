@@ -70,6 +70,11 @@
 .title {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    width: 100%;
+    box-sizing: border-box;
     margin-top: 10%;
     font-family: 'Hanken Grotesk', sans-serif;
 }
@@ -192,8 +197,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0;
+    margin-right: 0;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 

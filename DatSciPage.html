@@ -39,29 +39,22 @@
       <div class="card">
         <div>
           <h3 class="pro-description">Problem:</h3>
-          <h3 class="pro-description indented">
-              For hotel operations to thrive, swift and informed decisions are paramount.
-              However, critical data points such as real-time occupancy, projected arrivals,
-              out-of-order room availability, and variable room pricing were often fragmented
-              and difficult to access in a coherent format. This presented a significant challenge:
-              how to synthesize these dynamic metrics, track their evolution over time,
-              and visualize their interdependencies to empower effective decision-making?
-              The absence of a readily accessible, visual overview meant that opportunities for optimizing room pricing,
-              and maximizing overall revenue might be overlooked due to data being siloed and difficult to interpret
-              as various numbers only tables.
-          </h3>
+          <p>
+            <strong>Fragmentation:</strong> 
+            Critical hotel metrics—real-time occupancy, 
+            projected arrivals, out-of-order rooms, and variable pricing—were siloed 
+            across separate, numbers-only tables.
+          </p>
+          <p>
+            <strong>Blind Spots:</strong> 
+            Lack of a unified, real-time visual overview risked 
+            missed opportunities for optimizing room pricing and resource allocation.
+          </p>
           <h3 class="pro-description">Solution:</h3>
-          <h3 class="pro-description indented">
-              To streamline the analysis of critical hotel performance indicators,
-              I engineered an automated data analysis and visualization dashboard within Google Sheets.
-              This robust solution was designed to efficiently parse disparate raw data sources for hotel occupancy,
-              arrivals, out-of-order rooms, and pricing, and then aggregate these metrics dynamically.
-              The core of this solution lies in its ability to present complex, time-series data in clear,
-              digestible visualizations that update automatically. This drastically reduced the manual effort
-              and potential for error, providing management with a high-fidelity, real-time overview of operational health.
-              The result is a powerful tool that enables proactive adjustments to pricing, optimized resource allocation,
-              and a deeper, ongoing understanding of the hotel's evolving financial and operational landscape.
-          </h3>
+          <p>
+            <strong>Automation:</strong> 
+            Engineered an automated Google Sheets dashboard to parse, aggregate, and visualize dynamic time-series data, providing management with real-time operational health and proactive pricing insights.
+          </p>
         </div>
         <section class="live-dashboard-section">
           <header class="pro-header">
@@ -97,25 +90,29 @@
       <div class="card">
         <div>
           <h3 class="pro-description">Problem:</h3>
-          <h3 class="pro-description indented">
-            In our lab, we collected a variety of behavioral data
-            from experimental subjects across four distinct groups. The challenge was that this data
-            required extensive reformatting before it can be transferred to statistical analysis
-            software for group-by-group testing and graphing. This manual reformatting process was
-            not only time-consuming but also susceptible to human error. Moreover, the statistical
-            software used generated basic and aesthetically unappealing graphs, which limited the
-            quality of data visualization.
-          </h3>
-            <h3 class="pro-description">Solution:</h3>
-          <h3 class="pro-description indented">To overcome the inefficiencies and error-prone nature
-            of manual data reformatting, a PySimpleGUI desktop application was created, tailored
-            for processing behavioral data from uniformly formatted Excel datasheets. The application
-            boasts a user-friendly graphical interface, enabling lab members to quickly extract
-            relevant data, conduct group-by-group analyses, and generate comparative graphs with
-            minimal effort. This solution allows users to perform these tasks with a few clicks,
-            delivering analyzed results and high-quality visualizations of group differences within
-            seconds, thereby streamlining the workflow and improving the quality of data representation.
-          </h3>
+          <p>
+            <strong>Bottleneck:</strong> 
+            Lab experiments generated multi-group 
+            behavioral datasets requiring tedious, manual reformatting before moving to 
+            statistical software.
+          </p>
+          <p>
+            <strong>Risk:</strong> 
+            High susceptibility to human error during manual 
+            data manipulation across extensive trial runs.
+          </p>
+          <p>
+            <strong>Visual Gap:</strong> 
+            Default statistical software produced rigid, 
+            aesthetically unappealing charts that lacked publication-ready quality.
+          </p>
+          <h3 class="pro-description">Solution:</h3>
+          <p>
+            <strong>Automation:</strong> 
+            Engineered a custom PySimpleGUI
+            desktop application to automate ingestion, group-by-group statistical analysis, 
+            and high-fidelity visualization in seconds.
+          </p>
         </div>
         <section class="github-pro-link">
           <a id="profile-link"
@@ -170,45 +167,25 @@
         <div class="card">
           <div>
             <h3 class="pro-description">Problem:</h3>
-            <h3 class="pro-description indented">In experiments involving pair-housed subjects that
-              undergo an initial baseline test and based on this baseline data are assigned to subsequent groups,
-              the challenge lies in assigning them to two groups (control vs treatment) with
-              minimal initial differences between groups. However, doing so ensures that any biases from
-              previous conditions do not influence the outcomes of subsequent experiments.
-              Moreover, it's crucial to maintain cage mates within the same group to prevent
-              potential cross-group effects—if one subject experiences stress due to its
-              group's treatment, it could impact the results of its paired partner in future
-              tests. Compounding this challenge of identifying the two groups that exhibit the
-              absolute least differences, is the fact that the task could  potentially involve
-              analyzing and comparing hundreds, if not thousands, of group assignment
-              possibilities. Such extensive analysis would be impractical for a human to
-              perform manually.
+            <p>
+              <strong>Assignment Complexity:</strong> 
+              Assigning pair-housed subjects to treatment versus control groups 
+              based on baseline data required minimizing initial differences 
+              while strictly preserving cage-mate pairs.
+            </p>
+            <p>
+              <strong>Scale:</strong> 
+              Evaluating thousands of potential group assignment combinations 
+              to find the absolute minimum variance was entirely impractical 
+              to perform manually.
+            </p>
             <h3 class="pro-description">Solution:</h3>
-            <h3 class="pro-description indented">
-              A PySimpleGUI desktop application was developed to analyze individual
-              data from cage mate pairs stored in an Excel file. The application systematically evaluates every possible
-              combination of group assignments to identify the combination where the
-              data points exhibit the least overall difference while preserving
-              their pairing. This analysis
-              includes calculating and recording various metrics in an Excel
-              output file, such as:
-              <ol>
-                <li class="rh-list">All possible group combinations considered</li>
-                <li class="rh-list">The means of all possible group combinations</li>
-                <li class="rh-list">The absolute differences between data points
-                                    across all group combinations</li>
-                <li class="rh-list">The specific group assignments resulting in
-                                    the smallest mean difference between groups</li>
-              </ol>
-              The program also displays a graphical representation of the group assignments using Matplotlib.
-              The line plot depicts the data points of the least
-              different group assignments, while also maintaining
-              adherence to cage mate pairing. These lines are plotted to visually
-              illustrate the minimal possible distance between data points.
-              The application’s output provides a comprehensive overview of the
-              analysis steps and results, facilitating informed decision-making
-              for optimal group assignment in experimental setups.
-            </h3>
+            <p>
+              <strong>Algorithm & Interface:</strong> Developed a PySimpleGUI desktop app 
+              leveraging Pandas and Itertools to systematically compute all group permutations,
+              identify optimal minimum-variance pairings, and generate 
+              Matplotlib visual verification.
+            </p>
           </div>
           <section class="github-pro-link">
             <a id="profile-link"
@@ -267,22 +244,19 @@
           <div class="card">
             <div>
               <h3 class="pro-description">Problem:</h3>
-              <h3 class="pro-description indented">The challenge was to develop a systematic
-                approach for evaluating the performance of a portfolio of individual
-                  stocks over time.
+              <p>
+                <strong>Evaluation Gap:</strong> 
+                Tracking individual stock portfolio performance 
+                over time lacked a systematic, automated method for historical benchmarking.
+              </p>
               <h3 class="pro-description">Solution:</h3>
-              <h3 class="pro-description indented">
-                To address the challenge, a Python script was developed using the
-                Robin_Stocks library and the Robinhood API to record daily stock
-                information into a CSV file. The data is then analyzed and
-                visualized with the Pandas and Matplotlib libraries. The script
-                aggregates the performance data of individual stock selections
-                and compares it against the aggregate performance of two
-                diversified ETFs. This comparison is visualized through graphs
-                that illustrate total return and other key performance metrics,
-                enabling easy evaluation and benchmarking of the portfolio’s
-                performance over time.
-              </h3>
+              <p>
+                <strong>API Pipeline:</strong> 
+                Built a Python automation script using the <code>robin_stocks</code> API 
+                to log daily positions into CSV, leveraging Pandas and Matplotlib 
+                to benchmark portfolio total return and asset allocation against 
+                diversified ETFs.
+              </p>
             </div>
               <section class="github-pro-link">
                 <a id="profile-link"
@@ -337,31 +311,25 @@
             <div class="card">
               <div>
                 <h3 class="pro-description">Problem:</h3>
-                <h3 class="pro-description indented">
-                  In studies investigating the effects of exercise using a running wheel,
-                  our lab used a program that tracked total revolutions every minute.
-                  This data was logged into an Excel worksheet each minute over a 24-hour
-                  cycle creating one sheet per subject for each 24-hour cycle. For many
-                  subjects over extended periods, this generates millions of data points.
-                  The analytical challenge included counting only valid running bouts
-                  (≥3 revolutions per minute) and distinguishing running behaviors between
-                  the light (inactive) and dark (active) phases of the subject’s light cycle.
-                  The goal was to efficiently process and analyze this extensive dataset to
-                  quantify various aspects of running behavior while considering phase-specific
-                  activity patterns, providing meaningful insights into the effects of exercise.
-                </h3>
+                <p>
+                  <strong>Data Deluge:</strong> 
+                  Running-wheel experiments generated millions 
+                  of timestamped revolution data points across multiple subjects 
+                  and extended cycles.
+                </p>
+                <p>
+                  <strong>Filtering Bottleneck:</strong> 
+                  Manually filtering valid running bouts (>=3 RPM) 
+                  and isolating activity between light (inactive) 
+                  and dark (active) phases was labor-intensive and error-prone.
+                </p>
                 <h3 class="pro-description">Solution:</h3>
-                <h3 class="pro-description indented">
-                  To address the data management challenges posed by these running wheel experiments,
-                  a user-friendly graphical interface program was developed. This program compiles
-                  and organizes the raw data from Excel files into a ‘Combined Data’ sheet alongside
-                  the original data sheets, categorizing running behaviors and distinguishing them by
-                  the subjects’ inactive (light) and active (dark) phases. Automating data calculation
-                  and aggregation significantly reduced the manual workload and minimizes errors,
-                  accomplishing in seconds what would otherwise have taken hours. Additionally, the program
-                  features a bar graph visualization tool, providing users with a quick and
-                  informative visual analysis of the dataset.
-                </h3>
+                <p>
+                  <strong>Parsing Engine:</strong> 
+                  Created a PySimpleGUI and Openpyxl desktop application 
+                  to ingest, filter, and aggregate multi-subject running data 
+                  by phase in seconds, complete with automated Matplotlib comparative graphs.
+                </p>
               </div>
               <section class="github-pro-link">
               <a id="profile-link"
@@ -422,30 +390,20 @@
             <div class="card">
               <div>
                 <h3 class="pro-description">Problem:</h3>
-                <h3 class="pro-description indented">Credit card companies and
-                  banks typically offer basic charts that group spending into
-                  broad categories. While useful for a general overview, these
-                  charts fail to monitor spending trends over time and frequently
-                  miscategorized transactions, leading to inaccuracies. These
-                  inaccuracies can mislead users, affecting their ability to make
-                  informed financial decisions and plan budgets effectively.
-                  A more personalized and precise system that accurately
-                  categorizes spending and tracks detailed spending patterns over
-                  time, provides more reliable data analysis to support financial planning.
-                </h3>
+                <p>
+                  <strong>Category Inaccuracies:</strong> 
+                  Commercial bank and credit card dashboards relied on broad, 
+                  rigid spending categories that frequently miscategorized transactions 
+                  and lacked trend tracking.
+                </p>
                 <h3 class="pro-description">Solution:</h3>
-                <h3 class="pro-description indented">
-                  To address the limitations of basic spending charts, a
-                  Python script was developed to offer a personalized and
-                  accurate view of spending data over time. This script
-                  processes CSV files from bank and credit card statements
-                  using the Pandas library, categorizing and analyzing the
-                  data in detail. It then generates visualizations with
-                  Matplotlib, such as stacked bar graphs, to present monthly
-                  spending across specific categories. This approach provides
-                  clear, detailed insights into financial activity, facilitating
-                  better tracking and analysis of expenditures.
-                </h3>
+                <p>
+                  <strong>Custom Pipeline:</strong> 
+                  Developed a Pandas-powered Python script to clean 
+                  and re-categorize statement CSVs, 
+                  generating granular Matplotlib stacked bar charts 
+                  for precise monthly expenditure tracking.
+                </p>
               </div>
                 <section class="github-pro-link">
                   <a id="profile-link" target="_blank" href="https://github.com/EsteBot/IncomeDataAnalyzer"><img class="git-logo"
@@ -489,34 +447,26 @@
             <div class="card">
               <div>
                 <h3 class="pro-description">Problem:</h3>
-                <h3 class="pro-description indented">In our lab, we quantified
-                  and analyzed the locomotion activity of experimental test
-                  subjects using an activity tracking chamber. This chamber
-                  records the subjects’ movements via infrared beam breaks
-                  and the software outputs comprehensive data in a .txt file
-                  across various categories. However, our analysis required
-                  only specific portions of this data. The large amount of
-                  superfluous data in text format made locating
-                  extracting, and transferring the relevant data into a
-                  formatted Excel spreadsheet for statistical analysis is a
-                  manual, labor-intensive task that consumed significant time.
-                  The process was not only inefficient, but  prone to errors,
-                  especially with large datasets from
-                  multiple subjects over extended experimental trials.
+                <p>
+                  <strong>Extraneous Data:</strong> 
+                  Infrared beam-break chambers outputted massive, 
+                  unstructured text files containing substantial superfluous data 
+                  alongside target locomotion metrics.
+                </p>
+                <p>
+                  <strong>Manual Friction:</strong> 
+                  Manually extracting and formatting relevant time-bins 
+                  for multiple subjects across multi-hour trials was painfully slow 
+                  and prone to transcription errors.
+                </p>
                 <h3 class="pro-description">Solution:</h3>
-                <h3 class="pro-description indented">
-                  To address the inefficiencies in handling locomotion activity
-                  data, a desktop application was developed with a user-friendly
-                  interface that automates the data processing workflow.
-                  The application transforms the raw .txt file into a
-                  standardized format, selectively extracts the relevant data
-                  categories required for analysis, and transfers this data
-                  into a properly formatted Excel spreadsheet. This automation
-                  reduces the processing time from hours to seconds and eliminates
-                  the risk of human errors associated with manual data handling.
-                  In addition to data handling, the program allows the user to output
-                  a bar graph of activity data over time for rapid analysis and anomaly detection.
-                </h3>
+                <p>
+                  <strong>Text Parser:</strong> 
+                  Built a PySimpleGUI desktop utility using regular expressions 
+                  and Pandas to parse raw text outputs, 
+                  normalize data into clean Excel spreadsheets, 
+                  and auto-generate exploratory time-bin graphs.
+                </p>
               </div>
               <section class="github-pro-link">
                 <a id="profile-link"
