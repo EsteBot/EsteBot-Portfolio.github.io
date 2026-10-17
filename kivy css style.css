@@ -71,6 +71,11 @@
     color: #000;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    width: 100%;
+    box-sizing: border-box;
     margin-top: 10%;
     font-family: 'Hanken Grotesk', sans-serif;
 }
