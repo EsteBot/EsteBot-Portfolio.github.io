@@ -27,53 +27,57 @@
 <body>
   <h1 class="title">Welcome to my MedStateCode page!</h1>
   <div class="title-divider" aria-hidden="true"></div>
-  <p class="cntr-txt">What is MedStateCode!?!</p>
+  <p class="cntr-txt">Domain-Specific Hardware Control & Behavioral Data Collection</p>
+  
   <div class="pro-description">
-    <h3 class="pro-subtitle">
-      These programs were created using MedState Notation (MSN)
-      which is a programming language used to operate Med Associates Operant
-      Chambers. MSN procedures are compiled into DLL files that can be executed
-      by Med-PC, which is the operating system that runs MSN procedures.
-      Med Associates Operant chambers enable the design and implementation of
-      behavioral studies along with behavioral data collection.
-    </h3>
+    <p class="pro-subtitle">
+      Automating Med Associates Operant Chambers using 
+      <strong>MedState Notation (MSN)</strong>
+      —a domain-specific state-machine programming language compiled into DLLs 
+      for real-time hardware execution and behavioral event logging in Med-PC.
+    </p>
   </div>
+
   <div class="divider" aria-hidden="true"></div>
+  
   <div class="medassoc-pro">
     <header class="pro-header">
       <h2 class="pro-title">Operant Chamber Schematic</h2>
     </header>
     <p class="pro-subtitle">
-      Subject presses lever for reward.
-      Reward schedule and availability are governed by the
-      MedStateCode program which also determines the data collected.
+      Subject presses lever for reward. Reward schedules, timeout periods, 
+      and timestamped event logging are governed by custom MedStateCode procedures.
     </p>
     <a><img class="medassoc-img1"
         src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536028&authkey=%21AIKFkVXkBxpCHrA&width=584&height=337"
-        alt="Behvior Timer img"
+        alt="Behavior Timer img"
         loading="lazy"
         class="logo-img"
         width="100px">
     </a>
   </div>
+
   <div class="divider" aria-hidden="true"></div>
+
+  <!-- Global High-Level Overview -->
   <div>
-    <h3 class="pro-description">Problem:</h3>
-    <h3 class="pro-description indented">
-      The challenge was to learn and implement the MSN programming language to
-      effectively program the parameters of operant behavior chambers, aiming to
-      record subject responses in a way that provided reliable data for experimental
-      group analysis.
-    </h3>
+    <h3 class="pro-description">Domain Challenge:</h3>
+    <p>
+      <strong>Hardware State Control:</strong> 
+      Programming complex operant conditioning schedules requires mastering low-level 
+      MedState Notation (MSN) to manage precise hardware inputs, output relays, 
+      and real-time behavioral data capture without system latency.
+    </p>
     <h3 class="pro-description">Solution:</h3>
-    <h3 class="pro-description indented">
-      To address this challenge, I gained proficiency in the MSN programming language
-      by studying Med Associates documentation and experimenting with code. I programmed
-      the operant behavior chambers to accurately set experimental parameters and
-      created data extraction protocols to record subject responses, ensuring the data
-      was reliable for subsequent analysis.
-    </h3>
+    <p>
+      <strong>State Machine Engineering:</strong> 
+      Developed custom MSN procedures to automate reinforcement schedules, 
+      priming intervals, and timeout windows while generating standardized, 
+      timestamped data logs for downstream group analysis.
+    </p>
   </div>
+
+  <!-- Project 1: Pellet Self-Administration -->
   <div class="medassoc-pro">
     <header class="pro-header cntr-txt">
     <h2 class="project-title collapsible-trigger" data-target="pellet-admin-details">
@@ -85,15 +89,16 @@
       <div class="card">
         <div>
           <h2 class="pro-title">Operant Conditioning for Pellet Self Administration</h2>
-          <p class="pro-subtitle">This is a program that delivers a sugar
-            pellet to a rat upon the pressing of a lever. With an initial (priming)
-            pellet delivered at the beginning of a 90min trial. If the animal does not
-            respond by pressing the lever for 3min, another priming pellet is delivered.
-            After a correct lever press, there is a 30sec (time-out) period in which
-            lever pressing does not deliver more pellets, although pressing attempts
-            are still recorded. In addition to the behavioral parameters, the code
-            governs what data is collected. This includes timestamped lever presses
-            and pellets delivered.
+          <p>
+            <strong>Logic & Schedule:</strong> 
+            Governs a 90-minute trial delivering sugar pellet rewards upon lever presses. 
+            Features automated initial/inactivity priming pellets (3-min threshold) 
+            and a 30-second post-reward timeout interval.
+          </p>
+          <p>
+            <strong>Data Acquisition:</strong> 
+            Captures timestamped records of active lever presses, timeout presses, 
+            and total pellets delivered for rate-of-responding analyses.
           </p>
           <section class="github-pro-link">
             <a id="profile-link"
@@ -111,6 +116,8 @@
       </div>
     </div>
   </div>
+
+  <!-- Project 2: Liquid Reward Self-Administration -->
   <div class="medassoc-pro">
     <header class="pro-header cntr-txt">
     <h2 class="project-title collapsible-trigger" data-target="liquid-admin-details">
@@ -123,15 +130,15 @@
         <header class="pro-header">
           <h2 class="pro-title">Operant Conditioning for Liquid Reward Self Administration</h2>
         </header>
-        <p class="pro-subtitle">This operant behavioral program delivers
-          a specific amount of liquid solution to an animal after a
-          correct lever press response along with a cue light. The liquid
-          reward delivery is followed by a “time-out” period in which
-          lever pressing, although recorded, does not result in liquid
-          delivery. The program not only controls behavioral parameters,
-          but also the data collected. All lever presses are timestamped
-          regardless of whether a reward was delivered although, the data
-          distinguishes between the two.
+        <p>
+          <strong>Logic & Schedule:</strong> 
+          Delivers calibrated liquid volumetric rewards paired with a synchronized visual light cue 
+          upon correct lever presses, followed by an unrewarded timeout period.
+        </p>
+        <p>
+          <strong>Data Acquisition:</strong> 
+          Differentiates and timestamps reinforced vs. unreinforced lever responses 
+          to evaluate cue reactivity and extinction patterns.
         </p>
         <section class="github-pro-link">
           <a id="profile-link"
@@ -148,6 +155,7 @@
       </div>
     </div>
   </div>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.collapsible-trigger').forEach(function(trigger) {
