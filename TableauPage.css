@@ -63,25 +63,76 @@ body {
 .cntr-txt {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-.head-flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px;
-}
-
 .tableau-pro {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    margin: 20px 0;
     font-family: 'Hanken Grotesk', sans-serif;
 }
+
+/* --- Collapsible Accordion & Tile Component Styles --- */
+
+.collapsible-trigger {
+    cursor: pointer;
+    user-select: none;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgb(90, 129, 155);
+    border-radius: 8px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.collapsible-trigger:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgb(70, 175, 245);
+}
+
+.trigger-main-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a2b32;
+}
+
+.project-subtext {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #2c3e50;
+    margin-top: 4px;
+}
+
+.collapsible-content {
+    display: none;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.collapsible-content.active {
+    display: block;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ---------------------------------------------------- */
 
 .divider,
 .title-divider {
@@ -99,12 +150,12 @@ body {
 }
 
 .title-divider {
-    margin: 0; /* Adjust margin as needed */
+    margin: 0;
 }
 
 .divider {
     height: 1px;
-    margin: 60px 0;
+    margin: 40px 0;
     background: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
 }
 
@@ -138,18 +189,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: left;
-    margin-left: 5%;
-    margin-right: 5%;
+    align-items: flex-start;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-.pro-description.indented {
-    text-indent: 2em; /* Apply indent */
-}
-
 .pro-header {
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
@@ -159,10 +205,18 @@ body {
 }
 
 .tableau-img {
-    width: 90%;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tableau-pro-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 h1 {
@@ -174,36 +228,21 @@ h3 {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-p.p-spacing  {
-    line-height: 1;
-    font-size: 1em;
-    font-family: 'Hanken Grotesk', sans-serif;
-}
-
 p {
     line-height: 1.5;
     font-size: 1.05em;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-.p-spacing {
-    margin-bottom: 0em;
-    margin-top: 0.2em;
-    font-family: 'Hanken Grotesk', sans-serif;
-}
-
 li {
-    line-height: 2;
-    font-size: 1.05em;
     line-height: 1.5;
     font-size: 1.05em;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-
 @media only screen and (max-width: 200px) {
     img {
-    width: 25%;
-    object-fit: cover;
+        width: 25%;
+        object-fit: cover;
     }
 }

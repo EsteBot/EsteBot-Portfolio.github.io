@@ -424,7 +424,7 @@ section {
 }
 
 .return-icon {
-    padding-top: 100px;
+    padding-top: 35px;
     padding-bottom: 3%;
 }
 
@@ -506,9 +506,49 @@ li {
 }
 
 @media (max-width: 600px) {
+    .datsci-pro {
+        width: 100%;
+    }
+
+    .pro-header.cntr-txt {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .collapsible-trigger {
         padding: 12px 14px;
         font-size: 1rem;
+    }
+
+    .collapsible-content {
+        padding-left: 4px;
+        padding-right: 4px;
+        min-width: 0;
+    }
+
+    .collapsible-content.active {
+        padding: 12px 4px;
+    }
+
+    .collapsible-content .card {
+        width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+        padding: 18px;
+    }
+
+    .collapsible-content .video-embed {
+        width: 100%;
+        max-width: 600px;
+        box-sizing: border-box;
+    }
+
+    .collapsible-content .datsci-rh-graphs {
+        width: 100%;
+        max-width: 650px;
+        padding-right: 0;
     }
 }
 
@@ -638,5 +678,22 @@ li {
     img {
     width: 25%;
     object-fit: cover;
+    }
+}
+
+/* Keep expanded project cards aligned with their headers on mobile. */
+@media (max-width: 600px) {
+    .collapsible-content {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .collapsible-content.active {
+        padding: 12px 4px;
+    }
+
+    .collapsible-content .card {
+        width: 100%;
+        margin: 0 auto;
     }
 }
