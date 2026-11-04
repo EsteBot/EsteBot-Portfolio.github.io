@@ -1,0 +1,296 @@
+/* LandingPage Styles Settings */
+
+.head-flex-box {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    flex-wrap: wrap;
+    background-color: #3a4b53;
+    height: 50%;
+    width: 100%;
+}
+
+.head-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.head-flex-box > .mobile-menu-button {
+    display: none;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the flex items horizontally */
+    flex-wrap: wrap;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+#navbar ul li {
+    margin: 5px 20px; /* Add spacing between navbar items */
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+#navbar .nav-link {
+    display: inline-block; /* Limits clickable link area to text */
+    text-decoration: none;
+    color: rgb(70, 175, 245);
+    padding: 7px 10px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    border: 2px solid rgb(90, 129, 155); /* Add border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
+}
+
+#navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
+    border-radius: 4px; /* Rounded corners for the hover effect */
+}
+
+#chart-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 50px;
+    max-width: 1000px;
+    margin: 8% auto;
+}
+
+#chart, #networkchart {
+    background-color: rgb(117, 186, 251); /* Match the background color of the cards */
+    border: 1px solid #ddd; /* Match the border of the cards */
+    border-radius: 8px; /* Match the border-radius of the cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Match the box-shadow of the cards */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 450px;
+    width: 350px;
+    padding: 50px 10px; /* Add padding to match the cards */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#networkchart text {
+    fill: rgb(156, 10, 46); /* Set the desired color for the title text */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(90, 113, 133);
+    margin-bottom: 5%;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.card {
+    background-color: rgb(117, 186, 251);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 450px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Card title */
+.card h3, .card h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.4;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.main-page-subtxt {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-right: 5%;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+h1 {
+    color: #000;
+    padding-top: 10%;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+h2 {
+    padding-top: 0%;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+h3 {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+h3.main-page-subtxt,
+.cta-subtext {
+    color: #000;
+}
+
+.title-divider {
+    position: relative;
+    height: 1.4rem;
+    width: 90%;
+    overflow: hidden;
+    color: rgb(117, 186, 251);
+    font-family: monospace;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.4rem;
+    opacity: 0.9;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+.title-divider::before {
+    content: "01000101 01110011 01110100 01100101 01100010 01100001 01101110 00100000 01000100 01100001 01110100 01100001 00100000 01000011 01101111 01100100 01100101 00100000 01000001 01001001 00100000 01010011 01010001 01001100 00100000 01010000 01111001 01110100 01101000 01101111 01101110";
+    display: block;
+    white-space: nowrap;
+}
+
+.projects {
+    padding-top: 1%;
+}
+
+#tkinter-img {
+    height: 250px;
+    width: 250px;
+}
+
+#pysimplegui-img {
+    height: 250px;
+    width: 300px;
+}
+
+#medassoc-img {
+    height: 250px;
+    width: 300px;
+}
+
+#kivy-img {
+    height: 250px;
+    width: 200px;
+}
+
+#scripts-img {
+    height: 250px;
+    width: 250px;
+}
+
+#data_sci-img {
+    height: 250px;
+    width: 250px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .head-flex-box {
+        justify-content: flex-end;
+        padding: 10px 16px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+
+    .head-flex-box > .mobile-menu-button {
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: 2px solid rgb(90, 129, 155);
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.08);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+    }
+
+    .head-flex-box > .mobile-menu-button span {
+        width: 20px;
+        height: 2px;
+        background: white;
+        border-radius: 999px;
+        transition: transform 0.2s ease;
+    }
+
+    .head-flex-box > .mobile-menu-button.is-open span:first-child {
+        transform: translateY(4.5px) rotate(45deg);
+    }
+
+    .head-flex-box > .mobile-menu-button.is-open span:last-child {
+        transform: translateY(-4.5px) rotate(-45deg);
+    }
+
+    .head-flex-box .head-flex {
+        display: none;
+        flex-basis: 100%;
+        padding: 10px 0 0;
+    }
+
+    .head-flex-box .head-flex.mobile-menu-open {
+        display: block;
+    }
+
+    #navbar ul {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 4px;
+    }
+
+    #navbar ul li {
+        width: 100%;
+        margin: 0;
+    }
+
+    #navbar .nav-link {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 11px 12px;
+    }
+
+    #chart-container {
+        grid-template-columns: 1fr; /* Stack charts in a single column */
+    }
+    .card-container {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+
+    .card {
+        height: auto; /* Allow height to adjust based on content */
+    }
+}
