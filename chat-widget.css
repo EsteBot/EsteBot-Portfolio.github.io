@@ -9,19 +9,20 @@
 }
 
 #ai-chat-button {
-  background-color: #2563eb;
-  color: #ffffff;
-  border: none;
+  background-color: #242424;
+  color: #ededed;
+  border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 50px;
   padding: 12px 20px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4), 0 0 12px rgba(255, 255, 255, 0.06);
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 #ai-chat-button:hover {
-  background-color: #1d4ed8;
+  background-color: #353535;
+  border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-2px);
 }
 
