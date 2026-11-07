@@ -199,7 +199,7 @@ h1.main-page-subtxt {
 
 .welcome-message-container {
     width: min(680px, 92vw);
-    min-height: 174px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -860,7 +860,7 @@ h3.main-page-subtxt {
     }
 
     h1.main-page-subtxt { font-size: 2.2rem; }
-    .welcome-message-container { min-height: 146px; }
+    .welcome-message-container { height: 200px; }
     .welcome-terminal-titlebar { padding: 8px 12px; }
     .welcome-code { font-size: 0.68rem; padding: 14px; }
     .hero-grid { gap: 20px; }
