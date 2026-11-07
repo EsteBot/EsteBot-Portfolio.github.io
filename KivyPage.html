@@ -33,7 +33,7 @@
   <div class="kivy-pro">
     <header class="pro-header cntr-txt">
       <h2 class="project-title collapsible-trigger" data-target="bout-timer-details">
-        <span class="trigger-main-text">⌛ Bout Time: A Mobile Logger for Behavioral Science 📱</span>
+        <span class="trigger-main-text">⌛ Bout Time: A Mobile Logger for Behavioral Science</span>
         <span class="project-subtext">Kivy Sqlite3</span>
       </h2>
     </header>
@@ -98,7 +98,7 @@
   <div class="kivy-pro">
     <header class="pro-header cntr-txt">
       <h2 class="project-title collapsible-trigger" data-target="soln-calc-details">
-        <span class="trigger-main-text">🧪 DaSoln App: A Lab Bench Reagent Assistant 📱</span>
+        <span class="trigger-main-text">🧪 DaSoln App: A Lab Bench Reagent Assistant</span>
         <span class="project-subtext">KivyMD</span>
       </h2>
     </header>
@@ -179,7 +179,7 @@
   <div class="kivy-pro">
     <header class="pro-header cntr-txt">
       <h2 class="project-title collapsible-trigger" data-target="weight-dose-details">
-        <span class="trigger-main-text">⚖️ Weight4It App: Simplifying Drug Formulations 📱</span>
+        <span class="trigger-main-text">⚖️ Weight4It App: Simplifying Drug Formulations</span>
         <span class="project-subtext">KivyMD</span>
       </h2>
     </header>
@@ -251,7 +251,7 @@
   <div class="kivy-pro">
     <header class="pro-header cntr-txt">
       <h2 class="project-title collapsible-trigger" data-target="stax-calc-details">
-        <span class="trigger-main-text">🧠 StaxAttax App: Stereotaxic Coordinate Calculator 📱</span>
+        <span class="trigger-main-text">🧠 StaxAttax App: Stereotaxic Coordinate Calculator</span>
         <span class="project-subtext">KivyMD</span>
       </h2>
     </header>
@@ -280,4 +280,92 @@
         <section class="github-pro-link">
           <a id="profile-link"
             target="_blank"
-            href="
+            href="https://github.com/EsteBot/KivyMD_MobileApp_StereotaxicCoordinateCalc">
+              <img class="git-logo"
+                src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536017&authkey=%21ABPGedGVfxhKs2U&width=500&height=501"
+                alt="GitHub Logo img"
+                loading="eager"
+                class="logo-img"
+                width="50px">
+            </a>
+          </section>
+        <section class="app-flex-box">
+            <div class="app-box">
+                <p class="pro-subtitle">Unilateral Clac UI</p>
+                <a><img class="kivy-img"
+                        src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536074&authkey=%21AOMQzj9g9hzGA4Q&width=1080&height=2400"
+                        alt="Kivy UI img"
+                        loading="eager">
+                </a>
+            </div>
+        
+          <div class="app-box">
+              <p class="pro-subtitle">Bilateral Calc UI</p>
+              <a><img class="kivy-img"
+                      src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536016&authkey=%21AHTK1DvE6e0JVPg&width=1080&height=2400"
+                      alt="Kivy UI img"
+                      loading="eager">
+              </a>
+          </div>
+        </section>
+        <section class="app-flex-box">
+          <div class="app-box">
+            <p class="pro-subtitle">2 x Bilateral Calc UI</p>
+            <a><img class="kivy-img"
+                    src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21536073&authkey=%21AFJmzLBN86bL9XQ&width=1080&height=2400"
+                    alt="Kivy UI img"
+                    loading="eager">
+            </a>
+        </div>
+          <div class="app-box">
+                <p class="pro-subtitle">Demo of app functionality</p>
+                <video class="vid-atr" controls>
+                  <source src=
+                      "https://onedrive.live.com/download?resid=9F2FE505D93CB2B5%21536019&authkey=!AHeb1gAauTZMoXI">
+                            Your browser does not support the video tag
+                </video>
+                </section>
+              </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.collapsible-trigger').forEach(function(trigger) {
+        trigger.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetContent = document.getElementById(targetId);
+            const isActive = targetContent.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.collapsible-content').forEach(function(content) {
+                content.classList.remove('active');
+            });
+            document.querySelectorAll('.collapsible-trigger').forEach(function(tr) {
+                tr.classList.remove('active');
+            });
+
+            // If it was not active, open it
+            if (!isActive) {
+                this.classList.add('active');
+                targetContent.classList.add('active');
+            }
+            // If it was active, do nothing (all are now closed)
+        });
+    });
+});
+</script>
+</body>
+<div class="return-icon">
+    <a href="index.html">
+      <img
+        src="https://1drv.ms/i/s!ArWyPNkF5S-foaFRS7NmX5PhB36xhQ?embed=1&width=512&height=512"
+        alt="home profile logo"
+        loading="eager"
+        class="logo-img"
+        width="100px">
+    </a>
+</div>
+</html>
