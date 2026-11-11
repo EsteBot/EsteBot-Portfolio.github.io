@@ -88,6 +88,53 @@ body::before {
     margin-left: 24px;
 }
 
+/* R&D Logs Link Container */
+.rd-logs-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+/* The ghost text dictates the box size invisibly */
+.rd-ghost {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Default state - centered absolutely */
+.rd-text-default {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 2px));
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Hover state starts hidden - centered absolutely, with a micro-nudge if brackets still feel high */
+.rd-text-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 2px)); /* The 1px micro-nudge handles any remaining font-metric drift */
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.95);
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Smooth cross-fade on hover/focus */
+.rd-logs-link:hover .rd-text-default,
+.rd-logs-link:focus .rd-text-default {
+    opacity: 0;
+}
+
+.rd-logs-link:hover .rd-text-hover,
+.rd-logs-link:focus .rd-text-hover {
+    opacity: 1;
+}
+
 .header-chat-btn {
     margin-left: auto;
 }
@@ -110,7 +157,7 @@ body::before {
     color: var(--text-secondary);
     background: transparent;
     padding: 6px 12px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 500;
     border: none;
     transition: all 0.2s ease;
@@ -473,7 +520,7 @@ h3.main-page-subtxt {
 
 .tile-content h2 {
     color: inherit;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 500;
     margin: 0;
 }
@@ -843,7 +890,7 @@ h3.main-page-subtxt {
     #navbar .nav-link {
         display: block;
         padding: 11px 12px;
-        font-size: 0.95rem;
+        font-size: 1rem;
         border-radius: 5px;
     }
 
@@ -860,10 +907,11 @@ h3.main-page-subtxt {
     }
 
     h1.main-page-subtxt { font-size: 2.2rem; }
-    .welcome-message-container { height: 200px; }
+    .welcome-message-container { height: 140px; }
+    .logo-container .personal-logo { width: 140px; }
     .welcome-terminal-titlebar { padding: 8px 12px; }
     .welcome-code { font-size: 0.68rem; padding: 14px; }
-    .hero-grid { gap: 20px; }
+    .hero-grid { gap: 8px; }
     #ai-chat-box { width: calc(100vw - 32px); right: 16px; bottom: 16px; }
 }
 

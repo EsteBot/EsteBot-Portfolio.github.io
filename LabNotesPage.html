@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <title>R&D Lab Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="LabNotesPage.css" />
+</head>
+<body>
+  <div class="head-flex-box">
+    <div class="head-flex">
+        <nav id="navbar">
+            <ul>
+              <li><a class="nav-link" href="https://github.com/EsteBot" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
+              <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
+              <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
+              <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
+              <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+  </div>
+
+  <main id="lab-notes-section" class="lab-notes-container">
+    <div class="lab-header">
+      <h3>Experimental Log</h3>
+      <div id="category-filters" class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+      </div>
+    </div>
+    <div id="notes-timeline" class="timeline">
+    </div>
+  </main>
+
+  <!-- Bottom Return Button -->
+  <div class="bottom-flex-box">
+    <div class="return-icon">
+      <a href="index.html"><img
+            src="https://1drv.ms/i/s!ArWyPNkF5S-foaFRS7NmX5PhB36xhQ?embed=1&width=512&height=512"
+            alt="home profile logo"
+            loading="eager"
+            class="logo-img"
+            width="100px">
+      </a></div>
+  </div>
+  <!-- Notes populated dynamically -->
+  <script>
+    async function loadLabNotes() {
+      try {
+        const response = await fetch('./lab_notes.json');
+        const notes = await response.json();
+        
+        const timeline = document.getElementById('notes-timeline');
+        const filtersContainer = document.getElementById('category-filters');
+        
+        // Extract unique categories
+        const categories = ['all', ...new Set(notes.map(n => n.category))];
+        
+        // Render filter buttons
+        filtersContainer.innerHTML = categories.map(cat => 
+          `<button class="filter-btn ${cat === 'all' ? 'active' : ''}" data-filter="${cat}">${cat}</button>`
+        ).join('');
+
+        function render(filter = 'all') {
+          const filtered = filter === 'all' ? notes : notes.filter(n => n.category === filter);
+          timeline.innerHTML = filtered.map(n => `
+            <div class="note-card">
+              <div class="note-meta">
+                <span class="note-date">${n.date}</span>
+                <span class="note-tag">${n.category}</span>
+              </div>
+              <div class="note-content">${n.content}</div>
+              ${n.snippet ? `<pre class="note-snippet"><code>${n.snippet}</code></pre>` : ''}
+            </div>
+          `).join('');
+        }
+
+        render();
+
+        // Bind filter clicks
+        filtersContainer.addEventListener('click', (e) => {
+          if (e.target.classList.contains('filter-btn')) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            render(e.target.dataset.filter);
+          }
+        });
+
+      } catch (err) {
+        console.error('Failed to load lab notes:', err);
+      }
+    }
+
+    loadLabNotes();
+  </script>
+</body>
+</html>
