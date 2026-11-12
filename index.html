@@ -152,6 +152,7 @@
     <!-- Landing page interactions -->
     <script>
         const navbarLogoTrigger = document.querySelector('.navbar-logo-trigger');
+        const siteHeader = document.querySelector('.site-header');
         const navAndActions = document.querySelector('.nav-and-actions');
         const mobileMenuButton = document.querySelector('.mobile-menu-button');
         const welcomeMessageContainer = document.querySelector('.welcome-message-container');
@@ -203,7 +204,12 @@
 
         updateProjectTicker();
         if (typeof mobileNavbarQuery.addEventListener === 'function') {
-            mobileNavbarQuery.addEventListener('change', updateProjectTicker);
+            mobileNavbarQuery.addEventListener('change', () => {
+                updateProjectTicker();
+                if (!mobileNavbarQuery.matches) {
+                    setMobileMenuOpen(false);
+                }
+            });
         }
         if ('ResizeObserver' in window) {
             new ResizeObserver(updateProjectTicker).observe(projectsSection);
@@ -211,6 +217,8 @@
 
         function setMobileMenuOpen(open) {
             navAndActions.classList.toggle('mobile-menu-open', open);
+            siteHeader.classList.toggle('mobile-menu-open', open);
+            document.body.classList.toggle('mobile-menu-open', open);
             mobileMenuButton.classList.toggle('is-open', open);
             mobileMenuButton.setAttribute('aria-expanded', String(open));
             mobileMenuButton.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');

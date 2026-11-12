@@ -1,10 +1,17 @@
 [
   {
-  "id": "note-001",
-  "date": "2026-11-05",
-  "category": "Stats & Viz",
-  "content": "Comparing plotting strategies in Matplotlib for two-group experimental data: upgrading standard bar-plus-SEM plots with jittered scatter overlays, box plots with mean diamonds, and density-driven violin plots to expose true underlying distributions.",
-  "snippet": "x_control = np.random.normal(0, 0.04, size=len(control))\nplt.scatter(x_control, control, color='black', alpha=0.8, zorder=3)"
+    "id": "note-004",
+    "date": "2026-11-12",
+    "category": "Code Dev",
+    "content": "Shipped Res&Dev_Log telemetry feed to bridge the gap between static portfolio case studies and active daily builds. Solved navbar layout-shift issues during hover states ([ e.log // ∫ dx ]) by implementing a CSS ghost-width container, keepingvisual grid locked while hiding an Easter egg in plain sight.",
+    "snippet": ".rd-text-hover\n{position: absolute;top: 50%;left: 50%;\ntransform: translate(-50%, calc(-50% + 2px))\ntransition: opacity 0.2s ease-in-out;}"
+  },
+  {
+    "id": "note-003",
+    "date": "2026-11-09",
+    "category": "Stats & Viz",
+    "content": "Built a non-parametric A/B test simulation in NumPy. Shuffled pooled control and treatment groups 10,000 times to simulate pure cosmic randomness against our observed difference.",
+    "snippet": "p_value = np.sum(np.abs(perm_diffs) >= np.abs(observed_diff)) / n_iterations"
   },
   {
   "id": "note-002",
@@ -14,10 +21,10 @@
   "snippet": "pyramid_tiers = [1.0, 1.5, 2.2]\nrisk_buffer = 0.015  # ATR trailing stop multiplier"
   },
   {
-    "id": "note-003",
-    "date": "2026-11-09",
-    "category": "Stats & Viz",
-    "content": "Built a non-parametric A/B test simulation in NumPy. Shuffled pooled control and treatment groups 10,000 times to simulate pure cosmic randomness against our observed difference.",
-    "snippet": "p_value = np.sum(np.abs(perm_diffs) >= np.abs(observed_diff)) / n_iterations"
+  "id": "note-001",
+  "date": "2026-11-05",
+  "category": "Stats & Viz",
+  "content": "Comparing plotting strategies in Matplotlib for two-group experimental data: upgrading standard bar-plus-SEM plots with jittered scatter overlays, box plots with mean diamonds, and density-driven violin plots to expose true underlying distributions.",
+  "snippet": "x_control = np.random.normal(0, 0.04, size=len(control))\nplt.scatter(x_control, control, color='black', alpha=0.8, zorder=3)"
   }
 ]
