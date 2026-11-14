@@ -31,20 +31,53 @@
             <div class="nav-and-actions" id="mobile-navigation">
                 <nav id="navbar">
                     <ul>
-                        <li><a class="nav-link" href="https://github.com/EsteBot" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                        <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
-                        <li><a class="nav-link" href="PublicationPage.html">Research</a></li>
-                        <li><a class="nav-link" href="AccomplishmentsPage.html">Credentials</a></li>
-                        <li><a class="nav-link" href="MyJourneyPage.html">Trajectory</a></li>
-                        <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
                         <li>
-                            <a class="nav-link rd-logs-link" href="LabNotesPage.html" aria-label="R and D Logs">
-                                <!-- Invisible ghost element locks down the maximum container width -->
-                                <span class="rd-ghost" aria-hidden="true">[ e.lab // ∫ dx ]</span>
-                                <!-- Default visible label -->
-                                <span class="rd-text-default">Res&amp;Dev_Log</span>
-                                <!-- Hover visible label -->
-                                <span class="rd-text-hover" aria-hidden="true">[ e.lab // ∫ dx ]</span>
+                            <a class="nav-link nav-morph-link" href="https://github.com/EsteBot" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <span class="nav-ghost" aria-hidden="true">[ git push // e ]</span>
+                                <span class="nav-text-default">GitHub</span>
+                                <span class="nav-text-hover" aria-hidden="true">[ git push // e ]</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-morph-link" href="ResumePage.html" aria-label="Resume">
+                                <span class="nav-ghost" aria-hidden="true">[ e.info ( ) ]</span>
+                                <span class="nav-text-default">Resume</span>
+                                <span class="nav-text-hover" aria-hidden="true">[ e.info ( ) ]</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-morph-link" href="PublicationPage.html" aria-label="Research">
+                                <span class="nav-ghost" aria-hidden="true">[ H₁ // p &lt; 0.05 ]</span>
+                                <span class="nav-text-default">Research</span>
+                                <span class="nav-text-hover" aria-hidden="true">[ H₁ // p &lt; 0.05 ]</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-morph-link" href="AccomplishmentsPage.html" aria-label="Credentials">
+                                <span class="nav-ghost" aria-hidden="true">[ R² → 1.0 ]</span>
+                                <span class="nav-text-default">Credentials</span>
+                                <span class="nav-text-hover" aria-hidden="true">[ R² → 1.0 ]</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-morph-link" href="MyJourneyPage.html" aria-label="Path">
+                                <span class="nav-ghost" aria-hidden="true">[ e.path // ∑dx ]</span>
+                                <span class="nav-text-default">Path</span>
+                                <span class="nav-text-hover" aria-hidden="true">[ e.path // ∑dx ]</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-morph-link" href="LabNotesPage.html" aria-label="Research and Development Logs">
+                                <span class="nav-ghost" aria-hidden="true">[ e.log // ∫ dx ]</span>
+                                <span class="nav-text-default">R&amp;D Log</span>
+                                <span class="nav-text-hover" aria-hidden="true">[ e.log // ∫ dx ]</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link nav-morph-link" href="ContactPage.html" aria-label="Contact">
+                                <span class="nav-ghost" aria-hidden="true">[ e.ping ( ) ]</span>
+                                <span class="nav-text-default">Contact</span>
+                                <span class="nav-text-hover" aria-hidden="true">[ e.ping ( ) ]</span>
                             </a>
                         </li>
                     </ul>
@@ -215,6 +248,88 @@
             new ResizeObserver(updateProjectTicker).observe(projectsSection);
         }
 
+// --- Cipher Scramble Engine with Dwell Pause ---
+        const cipherGlyphs = "01/\\[]{}#∑∫<>";
+
+        function scrambleReveal(defaultEl, startText, targetText, duration = 500) {
+            const startTime = performance.now();
+
+            // Turn on the high-tech decoding color/glow
+            defaultEl.classList.add('ciphering');
+
+            function update(now) {
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+
+                const currentLength = Math.round(
+                    startText.length + (targetText.length - startText.length) * progress
+                );
+                const lockedCount = Math.floor(progress * targetText.length);
+                let output = "";
+
+                for (let i = 0; i < currentLength; i++) {
+                    if (i < lockedCount) {
+                        output += targetText[i];
+                    } else if (targetText[i] === " ") {
+                        output += " ";
+                    } else {
+                        output += cipherGlyphs[Math.floor(Math.random() * cipherGlyphs.length)];
+                    }
+                }
+
+                defaultEl.textContent = output;
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    defaultEl.textContent = targetText;
+                    defaultEl.classList.remove('ciphering');
+                }
+            }
+
+            requestAnimationFrame(update);
+        }
+
+        function triggerCipherDecode() {
+            if (window.innerWidth > 768) return;
+            const morphLinks = navAndActions.querySelectorAll(".nav-morph-link");
+            
+            const linkData = [];
+            morphLinks.forEach((link) => {
+                const defaultEl = link.querySelector(".nav-text-default");
+                const hoverEl = link.querySelector(".nav-text-hover");
+                if (!defaultEl || !hoverEl) return;
+
+                // Cache the true clean label (e.g. "Resume") on first run so we never lose it
+                if (!link.dataset.originalText) {
+                    link.dataset.originalText = defaultEl.textContent.trim();
+                }
+
+                linkData.push({
+                    link,
+                    defaultEl,
+                    startText: hoverEl.textContent.trim(),
+                    targetText: link.dataset.originalText
+                });
+            });
+
+            // Step 1: Snap all items immediately to their nerd aliases when menu opens
+            linkData.forEach(item => {
+                clearTimeout(item.link._cipherTimer);
+                item.defaultEl.textContent = item.startText;
+            });
+
+            // Step 2: Hold the nerd aliases on screen for 650ms, then decode to targetText!
+            setTimeout(() => {
+                linkData.forEach((item, index) => {
+                    item.link._cipherTimer = setTimeout(() => {
+                        scrambleReveal(item.defaultEl, item.startText, item.targetText, 600);
+                    }, index * 700); // 45ms stagger down the list
+                });
+            }, 750); // 650ms dwell time
+        }
+
+        // --- Mobile Menu State Handler ---
         function setMobileMenuOpen(open) {
             navAndActions.classList.toggle('mobile-menu-open', open);
             siteHeader.classList.toggle('mobile-menu-open', open);
@@ -222,6 +337,11 @@
             mobileMenuButton.classList.toggle('is-open', open);
             mobileMenuButton.setAttribute('aria-expanded', String(open));
             mobileMenuButton.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+
+            // Trigger cipher decode right when menu opens on mobile
+            if (open) {
+                setTimeout(triggerCipherDecode, 30);
+            }
         }
 
         mobileMenuButton.addEventListener('click', () => {

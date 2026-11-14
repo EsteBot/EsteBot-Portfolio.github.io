@@ -66,12 +66,15 @@ body::before {
 .brand-logo {
     display: flex;
     align-items: center;
+    width: 100px;
+    flex: 0 0 100px;
     height: 56px;
     text-decoration: none;
 }
 
 .brand-logo .personal-logo {
     animation: none;
+    flex-shrink: 0;
 }
 
 .brand-logo .personal-logo:hover {
@@ -85,11 +88,11 @@ body::before {
     display: flex;
     align-items: center;
     flex: 1;
-    margin-left: 24px;
+    margin-left: 8px;
 }
 
-/* R&D Logs Link Container */
-.rd-logs-link {
+/* Generalized Morph Link Container (Replaces .rd-logs-link) */
+.nav-morph-link {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -98,13 +101,13 @@ body::before {
 }
 
 /* The ghost text dictates the box size invisibly */
-.rd-ghost {
+.nav-ghost {
     visibility: hidden;
     pointer-events: none;
 }
 
-/* Default state - centered absolutely */
-.rd-text-default {
+/* Default state - centered absolutely with your +2px alignment fix */
+.nav-text-default {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -113,25 +116,25 @@ body::before {
     transition: opacity 0.2s ease-in-out;
 }
 
-/* Hover state starts hidden - centered absolutely, with a micro-nudge if brackets still feel high */
-.rd-text-hover {
+/* Hover state starts hidden - centered absolutely with your +2px alignment fix */
+.nav-text-hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, calc(-50% + 2px)); /* The 1px micro-nudge handles any remaining font-metric drift */
+    transform: translate(-50%, calc(-50% + 2px));
     opacity: 0;
     color: rgba(255, 255, 255, 0.95);
     transition: opacity 0.2s ease-in-out;
 }
 
 /* Smooth cross-fade on hover/focus */
-.rd-logs-link:hover .rd-text-default,
-.rd-logs-link:focus .rd-text-default {
+.nav-morph-link:hover .nav-text-default,
+.nav-morph-link:focus .nav-text-default {
     opacity: 0;
 }
 
-.rd-logs-link:hover .rd-text-hover,
-.rd-logs-link:focus .rd-text-hover {
+.nav-morph-link:hover .nav-text-hover,
+.nav-morph-link:focus .nav-text-hover {
     opacity: 1;
 }
 
@@ -812,7 +815,7 @@ h3.main-page-subtxt {
     }
 }
 
-/* Responsive */
+/* Responsive pixel 10 dimensions are 412 x 924*/
 @media (max-width: 768px) {
     body.mobile-menu-open {
         overflow: hidden;
@@ -855,7 +858,7 @@ h3.main-page-subtxt {
     }
 
     .projects-section {
-        margin: 0 auto 12px;
+        margin: 0 auto 15px;
     }
 
     .header-container {
@@ -864,7 +867,7 @@ h3.main-page-subtxt {
     }
 
     .brand-logo {
-        height: 48px;
+        height: 70px;
         order: 1;
     }
 
@@ -945,7 +948,7 @@ h3.main-page-subtxt {
 
     #navbar ul {
         width: 100%;
-        gap: 2px;
+        gap: 18px; /* Slightly more breathing room between command rows */
         flex-direction: column;
         align-items: stretch;
     }
@@ -953,7 +956,7 @@ h3.main-page-subtxt {
     #navbar .nav-link {
         display: block;
         padding: 11px 12px;
-        font-size: 1rem;
+        font-size: 1.5rem;
         border-radius: 5px;
         text-align: center;
     }
@@ -962,21 +965,71 @@ h3.main-page-subtxt {
         background: rgba(255, 255, 255, 0.07);
     }
 
+    /* Mobile Cipher Reset for Morph Links */
+    #navbar .nav-link.nav-morph-link {
+        display: flex;
+        align-items: center;
+        padding: 13px 16px;
+        font-size: 1.5rem;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(220, 206, 206, 0.497);
+        border-radius: 8px;
+        text-align: left; /* Aligns nicely next to the persistent prompt */
+        text-decoration: none;
+        color: var(--text-primary);
+        transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    /* Permanent terminal prompt on every row — gives it immediate CLI flavor */
+    #navbar .nav-link.nav-morph-link::before {
+        content: "> ";
+        color: #00ff66;
+        font-weight: 700;
+        margin-right: 8px;
+        user-select: none;
+    }
+
+    /* Tactile mobile tap feedback (replaces hover for touchscreens) */
+    #navbar .nav-link.nav-morph-link:active {
+        background: rgba(255, 255, 255, 0.09);
+        border-color: rgba(255, 255, 255, 0.25);
+        transform: scale(0.985); /* Gives a satisfying physical press feel */
+    }
+
+    #navbar .nav-morph-link .nav-ghost,
+    #navbar .nav-morph-link .nav-text-hover {
+        display: none !important;
+    }
+
+    #navbar .nav-morph-link .nav-text-default {
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    /* High-tech telemetry color shift during active decoding */
+    #navbar .nav-link.nav-morph-link .nav-text-default.ciphering {
+        color: #00ff66; /* Bright terminal green (or change to your preferred accent color) */
+        text-shadow: 0 0 8px rgba(0, 255, 102, 0.3);
+    }
+
     .header-chat-btn {
         width: auto;
         margin: 0 0 0 auto;
-        padding: 9px 10px;
+        padding: 20px 20px;
         white-space: nowrap;
         order: 2;
     }
 
-    h1.main-page-subtxt { font-size: 2rem; }
+    h1.main-page-subtxt { font-size: 3rem; }
     .welcome-message-container { height: 124px; }
     .logo-container .personal-logo { width: 120px; }
     .logo-container .personal-logo,
     .logo-container .personal-logo:hover { transform: scale(2); }
     .welcome-terminal-titlebar { padding: 8px 12px; }
-    .welcome-code { font-size: 0.68rem; padding: 14px; }
+    .welcome-code { font-size: 1.5rem; padding: 14px; }
     .hero-grid {
         flex: 1;
         justify-content: space-evenly;
@@ -986,8 +1039,8 @@ h3.main-page-subtxt {
 }
 
 @media (max-width: 480px) {
-    h1.main-page-subtxt { font-size: 1.75rem; }
-    .welcome-message-container { height: 108px; }
-    .logo-container .personal-logo { width: 108px; }
-    .section-heading { margin-bottom: 10px; }
+    h1.main-page-subtxt { font-size: 2.25rem; }
+    .welcome-message-container { height: 120px; }
+    .logo-container .personal-logo { width: 150px; }
+    .section-heading { margin-bottom: 15px; }
 }
