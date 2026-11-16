@@ -4,6 +4,8 @@
 
 :root {
     --bg-obsidian: #000000;
+    --pulse-muted: #777777;
+    --glow-white-soft-color: rgba(255, 255, 255, 0.35);
     --border-glass: rgba(255, 255, 255, 0.08);
     --border-glass-hover: rgba(255, 255, 255, 0.2);
     --text-primary: #ededed;
@@ -138,10 +140,6 @@ body::before {
     opacity: 1;
 }
 
-.header-chat-btn {
-    margin-left: auto;
-}
-
 .nav-and-actions + .header-chat-btn {
     margin-left: 12px;
 }
@@ -169,38 +167,7 @@ body::before {
 #navbar .nav-link:hover,
 .nav-and-actions.navbar-logo-hovered #navbar .nav-link {
     color: var(--text-primary);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
-}
-
-.navbar-logo-hovered ~ .header-chat-btn {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: var(--border-glass-hover);
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
-}
-
-/* Header Chat Button */
-.header-chat-btn {
-    background: rgba(255, 255, 255, 0.06);
-    color: var(--text-primary);
-    border: 1px solid var(--border-glass-hover);
-    padding: 6px 14px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.header-chat-btn:hover {
-    background: rgba(255, 255, 255, 0.12);
-    transform: translateY(-1px);
-}
-
-.header-chat-btn .chat-button-icon {
-    display: inline-block;
-    font-size: 1.35em;
-    line-height: 1;
-    vertical-align: -0.08em;
+    text-shadow: 0 0 10px var(--glow-white-soft-color);
 }
 
 .mobile-menu-button {
@@ -313,7 +280,7 @@ h1.main-page-subtxt {
         opacity: 0.7;
     }
     16%, 19% {
-        color: #777777;
+        color: var(--pulse-muted);
         filter: none;
         opacity: 0.35;
     }
@@ -323,7 +290,7 @@ h1.main-page-subtxt {
         opacity: 0.9;
     }
     25%, 29% {
-        color: #777777;
+        color: var(--pulse-muted);
         filter: none;
         opacity: 0.45;
     }
@@ -368,7 +335,7 @@ h3.main-page-subtxt {
 
 .hero-light-up-word {
     display: block;
-    color: #000000;
+    color: var(--bg-obsidian);
     text-shadow: none;
     opacity: 0;
     transform: translateX(-50%) translateZ(0);
@@ -431,7 +398,7 @@ h3.main-page-subtxt {
 .project-label-trigger:hover,
 .project-label-trigger:focus-visible {
     color: var(--text-primary);
-    text-shadow: 0 0 12px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 12px var(--glow-white-soft-color);
     outline: none;
 }
 
@@ -503,7 +470,7 @@ h3.main-page-subtxt {
 
 .projects-section.project-labels-hovered .vercel-tile {
     color: var(--text-primary);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+    text-shadow: 0 0 10px var(--glow-white-soft-color);
 }
 
 .projects-section.project-labels-pulsing .vercel-tile {
@@ -517,7 +484,7 @@ h3.main-page-subtxt {
     }
     18%, 82% {
         color: var(--text-primary);
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+        text-shadow: 0 0 10px var(--glow-white-soft-color);
     }
 }
 
@@ -528,130 +495,17 @@ h3.main-page-subtxt {
     margin: 0;
 }
 
-/* AI Chat Widget Overrides */
-#ai-chat-box {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    width: 340px;
-    height: 460px;
-    background: rgba(15, 15, 15, 0.92);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid var(--border-glass-hover);
-    border-radius: 14px;
-    box-shadow: 0 16px 48px rgba(0,0,0,0.7);
-    display: flex;
-    flex-direction: column;
-    z-index: 10000;
-}
-
-#ai-chat-header {
-    padding: 14px 16px;
-    background: rgba(255, 255, 255, 0.03);
-    border-bottom: 1px solid var(--border-glass);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--text-primary);
-    font-size: 0.95rem;
-}
-
-.close-chat {
-    background: none;
-    border: none;
-    color: var(--text-secondary);
-    cursor: pointer;
-    font-size: 1rem;
-    transition: color 0.2s;
-}
-
-.close-chat:hover {
-    color: var(--text-primary);
-}
-
-#ai-chat-window {
-    flex: 1;
-    padding: 16px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.chat-msg {
-    padding: 10px 14px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    max-width: 85%;
-}
-
-.bot-msg {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border-glass);
-    color: var(--text-primary);
-    align-self: flex-start;
-}
-
-.user-msg {
-    background: rgba(99, 102, 241, 0.2);
-    border: 1px solid rgba(99, 102, 241, 0.4);
-    color: var(--text-primary);
-    align-self: flex-end;
-}
-
-#ai-chat-input-area {
-    padding: 12px;
-    border-top: 1px solid var(--border-glass);
-    display: flex;
-    gap: 8px;
-    background: rgba(10, 10, 10, 0.5);
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-}
-
-#ai-chat-input {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid var(--border-glass);
-    border-radius: 6px;
-    padding: 8px 12px;
-    color: var(--text-primary);
-    font-size: 0.9rem;
-}
-
-#ai-chat-input:focus {
-    outline: none;
-    border-color: var(--border-glass-hover);
-}
-
-#ai-chat-send {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid var(--border-glass-hover);
-    color: var(--text-primary);
-    padding: 8px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background 0.2s;
-}
-
-#ai-chat-send:hover {
-    background: rgba(255, 255, 255, 0.15);
-}
-
 /* Container on dark background */
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    background-color: #000000; /* Dark background to test transparency */
+    background-color: var(--bg-obsidian); /* Dark background to test transparency */
 }
 
 .logo-container .personal-logo path {
-    fill: #000000;
+    fill: var(--bg-obsidian);
     animation: heroLogoFillPulse 25s linear infinite;
 }
 
@@ -700,10 +554,10 @@ h3.main-page-subtxt {
 
 @keyframes heroLogoFillPulse {
     0%, 17%, 33%, 50%, 66%, 82%, 100% {
-        fill: #000000;
+        fill: var(--bg-obsidian);
     }
     18%, 34%, 51%, 67%, 83% {
-        fill: #777777;
+        fill: var(--pulse-muted);
     }
     21%, 32%, 38%, 49%, 54%, 65%, 70%, 81%, 86%, 99.9% {
         fill: #ffffff;
@@ -712,12 +566,12 @@ h3.main-page-subtxt {
 
 @keyframes heroAutomationPulse {
     0%, 17%, 33%, 34%, 100% {
-        color: #000000;
+        color: var(--bg-obsidian);
         text-shadow: none;
         opacity: 0;
     }
     18% {
-        color: #777777;
+        color: var(--pulse-muted);
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
         opacity: 0.35;
     }
@@ -727,7 +581,7 @@ h3.main-page-subtxt {
         opacity: 1;
     }
     33% {
-        color: #777777;
+        color: var(--pulse-muted);
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
         opacity: 0.35;
     }
@@ -735,12 +589,12 @@ h3.main-page-subtxt {
 
 @keyframes heroDataPulse {
     0%, 33%, 50%, 51%, 100% {
-        color: #000000;
+        color: var(--bg-obsidian);
         text-shadow: none;
         opacity: 0;
     }
     34% {
-        color: #777777;
+        color: var(--pulse-muted);
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
         opacity: 0.35;
     }
@@ -753,12 +607,12 @@ h3.main-page-subtxt {
 
 @keyframes heroIterationPulse {
     0%, 50%, 51%, 66%, 67%, 100% {
-        color: #000000;
+        color: var(--bg-obsidian);
         text-shadow: none;
         opacity: 0;
     }
     51% {
-        color: #777777;
+        color: var(--pulse-muted);
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
         opacity: 0.35;
     }
@@ -768,7 +622,7 @@ h3.main-page-subtxt {
         opacity: 1;
     }
     66% {
-        color: #777777;
+        color: var(--pulse-muted);
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
         opacity: 0.35;
     }
@@ -776,12 +630,12 @@ h3.main-page-subtxt {
 
 @keyframes heroCodePulse {
     0%, 66%, 67%, 82%, 83%, 100% {
-        color: #000000;
+        color: var(--bg-obsidian);
         text-shadow: none;
         opacity: 0;
     }
     67% {
-        color: #777777;
+        color: var(--pulse-muted);
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
         opacity: 0.35;
     }
@@ -791,7 +645,7 @@ h3.main-page-subtxt {
         opacity: 1;
     }
     82% {
-        color: #777777;
+        color: var(--pulse-muted);
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
         opacity: 0.35;
     }
@@ -799,12 +653,12 @@ h3.main-page-subtxt {
 
 @keyframes heroInnovationPulse {
     0%, 82%, 83%, 100% {
-        color: #000000;
+        color: var(--bg-obsidian);
         text-shadow: none;
         opacity: 0;
     }
     83% {
-        color: #777777;
+        color: var(--pulse-muted);
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
         opacity: 0.35;
     }
@@ -868,10 +722,6 @@ h3.main-page-subtxt {
     .section-heading {
         position: relative;
         top: 44px;
-    }
-
-    .description-text {
-        transform: translateY(-24px);
     }
 
     .header-container {
@@ -967,7 +817,6 @@ h3.main-page-subtxt {
     }
 
     #navbar .nav-link {
-        display: block;
         padding: 11px 12px;
         font-size: 1.5rem;
         border-radius: 5px;
@@ -1012,13 +861,13 @@ h3.main-page-subtxt {
 
     #navbar .nav-morph-link .nav-ghost,
     #navbar .nav-morph-link .nav-text-hover {
-        display: none !important;
+        display: none;
     }
 
     #navbar .nav-morph-link .nav-text-default {
-        position: static !important;
-        transform: none !important;
-        opacity: 1 !important;
+        position: static;
+        transform: none;
+        opacity: 1;
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     }
 
@@ -1070,5 +919,4 @@ h3.main-page-subtxt {
         justify-content: space-evenly;
         gap: 0;
     }
-    #ai-chat-box { width: calc(100vw - 32px); right: 16px; bottom: 16px; }
 }
