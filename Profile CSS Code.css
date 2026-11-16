@@ -817,6 +817,10 @@ h3.main-page-subtxt {
 
 /* Responsive pixel 10 dimensions are 412 x 924*/
 @media (max-width: 768px) {
+    body {
+        min-height: 100svh;
+    }
+
     body.mobile-menu-open {
         overflow: hidden;
     }
@@ -863,7 +867,7 @@ h3.main-page-subtxt {
 
     .section-heading {
         position: relative;
-        top: 60px;
+        top: 44px;
     }
 
     .description-text {
