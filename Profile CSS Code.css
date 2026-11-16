@@ -151,7 +151,7 @@ body::before {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 8px;
+    gap: 4px;
     align-items: center;
 }
 
@@ -159,8 +159,8 @@ body::before {
     text-decoration: none;
     color: var(--text-secondary);
     background: transparent;
-    padding: 6px 12px;
-    font-size: 0.9rem;
+    padding: 6px 4px;
+    font-size: 1rem;
     font-weight: 500;
     border: none;
     transition: all 0.2s ease;
@@ -359,7 +359,7 @@ h1.main-page-subtxt {
 
 h3.main-page-subtxt {
     color: var(--text-secondary);
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.6;
     margin: 0;
@@ -417,7 +417,7 @@ h3.main-page-subtxt {
 
 .section-heading {
     color: var(--text-secondary);
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 500;
     margin: 0 0 18px;
     text-align: center;
@@ -523,7 +523,7 @@ h3.main-page-subtxt {
 
 .tile-content h2 {
     color: inherit;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 500;
     margin: 0;
 }
@@ -854,11 +854,20 @@ h3.main-page-subtxt {
 
     .hero-section {
         flex: 1;
-        margin: 12px auto 0;
+        margin: -12px auto 0;
     }
 
     .projects-section {
-        margin: 0 auto 15px;
+        margin: 0 auto 56px;
+    }
+
+    .section-heading {
+        position: relative;
+        top: 60px;
+    }
+
+    .description-text {
+        transform: translateY(-24px);
     }
 
     .header-container {
@@ -867,7 +876,7 @@ h3.main-page-subtxt {
     }
 
     .brand-logo {
-        height: 70px;
+        height: 60px;
         order: 1;
     }
 
@@ -1023,24 +1032,39 @@ h3.main-page-subtxt {
         order: 2;
     }
 
-    h1.main-page-subtxt { font-size: 3rem; }
-    .welcome-message-container { height: 124px; }
-    .logo-container .personal-logo { width: 120px; }
+    h1.main-page-subtxt { font-size: 2.5rem; }
+    .welcome-message-container { height: 150px; }
+    .hero-logo-column { position: relative; top: 20px; }
+    .logo-container .personal-logo { width: 150px; }
     .logo-container .personal-logo,
     .logo-container .personal-logo:hover { transform: scale(2); }
     .welcome-terminal-titlebar { padding: 8px 12px; }
-    .welcome-code { font-size: 1.5rem; padding: 14px; }
+    .welcome-message-container.showing-code .welcome-terminal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .welcome-message-container.showing-code {
+        position: relative;
+        align-items: flex-start;
+        overflow: visible;
+    }
+    .welcome-message-container.showing-code .welcome-code {
+        flex: none;
+        overflow: visible;
+        padding: 10px 12px;
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
     .hero-grid {
         flex: 1;
         justify-content: space-evenly;
         gap: 0;
     }
     #ai-chat-box { width: calc(100vw - 32px); right: 16px; bottom: 16px; }
-}
-
-@media (max-width: 480px) {
-    h1.main-page-subtxt { font-size: 2.25rem; }
-    .welcome-message-container { height: 120px; }
-    .logo-container .personal-logo { width: 150px; }
-    .section-heading { margin-bottom: 15px; }
 }
