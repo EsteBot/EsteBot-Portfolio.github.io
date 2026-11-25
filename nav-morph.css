@@ -1,0 +1,75 @@
+/* Give each desktop navigation item an equal share of the space between
+   the brand and the chat button. */
+@media (min-width: 769px) {
+    .header-container > .nav-and-actions {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .header-container #navbar {
+        flex: 1 1 auto;
+        min-width: 0;
+        width: auto;
+    }
+
+    .header-container #navbar ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    .header-container #navbar ul > li {
+        flex: 1 1 0;
+        display: flex;
+        justify-content: center;
+        min-width: 0;
+        margin: 0;
+    }
+}
+
+/* Shared navbar code-name morph used across the portfolio pages. */
+#navbar .nav-morph-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+#navbar .nav-morph-link .nav-ghost {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#navbar .nav-morph-link .nav-text-default,
+#navbar .nav-morph-link .nav-text-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% + 2px));
+    transition: opacity 0.2s ease-in-out;
+}
+
+#navbar .nav-morph-link .nav-text-default { opacity: 1; }
+#navbar .nav-morph-link .nav-text-hover {
+    opacity: 0;
+    color: #46aff5;
+    text-shadow: 0 0 8px rgba(70, 175, 245, 0.7);
+}
+
+#navbar .nav-morph-link:hover .nav-text-default,
+#navbar .nav-morph-link:focus-visible .nav-text-default { opacity: 0; }
+#navbar .nav-morph-link:hover .nav-text-hover,
+#navbar .nav-morph-link:focus-visible .nav-text-hover { opacity: 1; }
+
+#navbar .nav-morph-link:hover,
+#navbar .nav-morph-link:focus-visible {
+    color: #46aff5 !important;
+    text-shadow: 0 0 10px rgba(70, 175, 245, 0.65);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #navbar .nav-morph-link .nav-text-default,
+    #navbar .nav-morph-link .nav-text-hover { transition: none; }
+}

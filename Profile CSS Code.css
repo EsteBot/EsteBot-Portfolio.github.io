@@ -1,6 +1,4 @@
-/* ==========================================
-    Vercel-Grade Dark Glass Aesthetic Overhaul
-   ========================================== */
+/* Landing Page Styles Settings */
 
 :root {
     --bg-obsidian: #000000;
@@ -141,7 +139,7 @@ body::before {
 }
 
 .nav-and-actions + .header-chat-btn {
-    margin-left: 12px;
+    margin-left: 25px;
 }
 
 #navbar ul {
@@ -151,6 +149,16 @@ body::before {
     display: flex;
     gap: 4px;
     align-items: center;
+}
+
+@media (min-width: 769px) {
+    #navbar {
+        width: 100%;
+    }
+
+    #navbar ul {
+        justify-content: space-between;
+    }
 }
 
 #navbar .nav-link {
@@ -168,6 +176,18 @@ body::before {
 .nav-and-actions.navbar-logo-hovered #navbar .nav-link {
     color: var(--text-primary);
     text-shadow: 0 0 10px var(--glow-white-soft-color);
+}
+
+/* The landing page keeps its monochrome nav glow when morph labels appear. */
+#navbar .nav-link.nav-morph-link:hover,
+#navbar .nav-link.nav-morph-link:focus-visible {
+    color: var(--text-primary) !important;
+    text-shadow: 0 0 10px var(--glow-white-soft-color);
+}
+
+#navbar .nav-link.nav-morph-link .nav-text-hover {
+    color: var(--text-primary);
+    text-shadow: 0 0 8px var(--glow-white-soft-color);
 }
 
 .mobile-menu-button {
@@ -511,7 +531,7 @@ h3.main-page-subtxt {
 
 /* Base Logo Styling */
 .personal-logo {
-    width: 120px; /* Adjust size as needed */
+    width: 125px; /* Adjust size as needed */
     height: auto;
     transition: transform 0.3s ease, filter 0.3s ease;
 
@@ -829,15 +849,17 @@ h3.main-page-subtxt {
 
     /* Mobile Cipher Reset for Morph Links */
     #navbar .nav-link.nav-morph-link {
-        display: flex;
+        display: grid;
+        grid-template-columns: auto auto;
         align-items: center;
+        justify-content: center;
         padding: 13px 16px;
         font-size: 1.5rem;
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         background: rgba(255, 255, 255, 0.1);
         border: 1px solid rgba(220, 206, 206, 0.497);
         border-radius: 8px;
-        text-align: left; /* Aligns nicely next to the persistent prompt */
+        text-align: center;
         text-decoration: none;
         color: var(--text-primary);
         transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
@@ -845,10 +867,12 @@ h3.main-page-subtxt {
 
     /* Permanent terminal prompt on every row — gives it immediate CLI flavor */
     #navbar .nav-link.nav-morph-link::before {
-        content: "> ";
+        content: ">";
+        grid-column: 1;
+        grid-row: 1;
         color: #00ff66;
         font-weight: 700;
-        margin-right: 8px;
+        margin-right: 0.25em;
         user-select: none;
     }
 
@@ -859,16 +883,47 @@ h3.main-page-subtxt {
         transform: scale(0.985); /* Gives a satisfying physical press feel */
     }
 
-    #navbar .nav-morph-link .nav-ghost,
-    #navbar .nav-morph-link .nav-text-hover {
+    #navbar .nav-morph-link .nav-ghost {
         display: none;
     }
 
     #navbar .nav-morph-link .nav-text-default {
         position: static;
+        grid-column: 2;
+        grid-row: 1;
         transform: none;
         opacity: 1;
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    #navbar .nav-morph-link .nav-text-hover {
+        display: none;
+    }
+
+    #navbar .nav-morph-link:hover .nav-text-default,
+    #navbar .nav-morph-link:focus-visible .nav-text-default {
+        opacity: 0;
+    }
+
+    #navbar .nav-morph-link:hover .nav-text-hover,
+    #navbar .nav-morph-link:focus-visible .nav-text-hover {
+        opacity: 1;
+    }
+
+    /* Mobile menu rows keep their default labels and do not glow on hover. */
+    #navbar .nav-link.nav-morph-link:hover,
+    #navbar .nav-link.nav-morph-link:focus-visible {
+        text-shadow: none;
+    }
+
+    #navbar .nav-morph-link:hover .nav-text-default,
+    #navbar .nav-morph-link:focus-visible .nav-text-default {
+        opacity: 1;
+    }
+
+    #navbar .nav-morph-link:hover .nav-text-hover,
+    #navbar .nav-morph-link:focus-visible .nav-text-hover {
+        opacity: 0;
     }
 
     /* High-tech telemetry color shift during active decoding */

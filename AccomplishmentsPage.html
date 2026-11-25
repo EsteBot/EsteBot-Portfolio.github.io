@@ -1,82 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <title>Accomplishments Page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="AccomplishmentsPage.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <title>Accomplishments Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="AccomplishmentsPage.css" />
+    <link rel="stylesheet" href="chat-widget.css" />
+    <link rel="stylesheet" href="nav-morph.css" />
 </head>
-<div class="head-flex-box">
-  <div class="head-flex">
-      <nav id="navbar">
-          <ul>
-            <li><a class="nav-link" href="https://github.com/EsteBot" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a class="nav-link" href="ResumePage.html">Resume</a></li>
-            <li><a class="nav-link" href="PublicationPage.html">Publications & Presentations</a></li>
-            <li><a class="nav-link" href="AccomplishmentsPage.html">Accomplishments</a></li>
-            <li><a class="nav-link" href="MyJourneyPage.html">My Journey</a></li>
-            <li><a class="nav-link" href="ContactPage.html">Contact</a></li>
-          </ul>
-      </nav>
-  </div>
-</div>
+
 <body>
-  <h1 class="title">Accomplishments</h1>
-  <div class="divider" aria-hidden="true"></div>
-  <h3 class="cntr-txt">Credentials & Recognition</h3>
-  <div class="card-container">
-    <div class="card">
-      <h2 class="cntr-txt">Codecademy <a target=_blank href="https://www.codecademy.com/users/estethon/achievements">Courses</a></h2>
-        <ul class="cred-list">
-          <li>Learn Python 2</li>
-          <li>Principles of Data Literacy</li>
-          <li>Getting Started with Python for Data Science</li>
-          <li>Intro to Data Visualization with Python</li>
-          <li>Python for Data Science: Working with Data</li>
-          <li>Intro to SQL</li>
-          <li>Learn SQL</li>
-          <li>Probability</li>
-          <li class="cred-list">Linear Algebra</li>
-        </ul>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-logo navbar-logo-trigger" aria-label="Esteban's home">
+                <svg class="personal-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1458 1458">
+                    <path fill="#ffffff" d="M635 384.7c-9.6 3.3-13.8 16.6-8.1 26 2.5 4.1 8.3 6.6 15.6 6.8 6.6.1 9.9 1.4 11.6 4.6 1.7 3.3 1.6 127.2-.1 132.5-3.8 11.5-11.9 21-21.5 25.3s-37.7 20.3-45.5 25.9c-15.7 11.3-17.2 12.6-30.9 26.2-18 17.7-22.2 22.8-33.5 39.8-8.8 13.3-22.3 39.8-27.4 53.7-5.5 15-11.8 41.3-14 58-2.1 15.6-2.2 48-.3 63 3 23.6 5.2 33.9 11.6 53 5.5 16.5 6 17.7 15.7 37 21.9 43.4 57.8 81.2 100.3 105.3 27.2 15.4 41.7 21 70 27.3 23.2 5.1 48.7 6.9 72.2 5 15.7-1.2 42.6-7.2 60-13.2 14-4.9 41-18.7 54.3-27.8 5.2-3.6 11.4-7.8 13.7-9.3 2.3-1.6 11-9.2 19.3-16.9 18.7-17.4 35.5-38 46.8-57.4 9.4-16.1 23.9-51.3 27.3-66.4 5.3-23.8 7.1-37 7.6-58.7.5-19.3.3-24.2-1.6-38-3.9-28.6-6.7-39.9-16.1-65-4.9-13.2-13.7-32.1-16.4-35.4-.7-.8-2.7-4.2-4.6-7.5-1.8-3.3-7.1-11.1-11.8-17.4-23.4-31.5-62.6-63.6-93.6-76.8-13.6-5.7-22.7-13.6-27.8-24l-3.3-6.8-.5-60.5c-.3-33.3-.2-62.8.2-65.5 1-6.9 3.6-9 12.3-9.9 7.6-.8 10.8-2.1 14.8-6.3 7.2-7.7 5.1-19.9-4.5-25.3l-4.3-2.5h-92c-69.2 0-92.8.3-95.5 1.2m130.5 199.7c18.6 2.6 44.8 11 65.9 21.1 15.4 7.4 17.2 8.5 33.1 19.9 18.9 13.6 42.3 37.2 53.8 54.4 2.1 3.1 4.5 6.4 5.2 7.2s3 4.6 5.1 8.5c15.6 28.6 23.7 51.9 29.1 83 2.6 14.8 2.8 18 2.8 43 0 18.1-.4 28.3-1.2 31-.7 2.2-2 8.3-2.9 13.5-1.8 10.3-5 23.3-6.4 26.5-.6 1.1-2.4 6-4.1 10.9-3.7 10.7-14.5 32.9-21.7 44.7-12.8 20.8-30.9 41.3-50 56.6-13.4 10.7-41.4 29-47.3 30.8-1.3.4-5.5 2.2-9.4 4-24.5 11.2-67.8 20-89.2 18.1-12.1-1.1-24.3-3.3-30.3-5.4-6.1-2.2-21.7-10.5-28.9-15.4-7-4.8-21.8-20.3-26.9-28.2-7-10.9-13.8-26.3-15.6-35.2-4.4-21.8-4.1-36.5 1.1-56.4 4.5-17.3 11.1-30.5 21.7-42.9 9.2-10.8 17.5-17.8 28.2-23.9 17.4-10 26.5-12.7 50.9-14.7 32.8-2.8 53.3-10.1 73.4-26.2 14.2-11.3 24.9-25.3 33-43 4.6-9.9 6.2-15.6 10.1-34.6 3.3-16.2-1.5-47.2-10.2-66.7-7.5-16.6-22.7-35.6-34.9-43.5-3.7-2.4-7-4.8-7.4-5.4-1.1-1.8-17.4-9.6-25-12-3.8-1.2-8.5-2.7-10.4-3.3s-9.5-1.6-16.9-2.2c-12.2-1.1-13.7-1.4-15.4-3.6-2.9-3.6-2.1-8.9 1.7-11.5 2.8-1.8 4.1-1.9 15-1.4 6.6.3 17.4 1.4 24 2.3m-57.7 2.6c-2.3 8.9 2.2 18.9 10.3 23.1q4.2 2.1 13.8 3c19.7 1.8 30.3 4.5 42.6 10.6 20.8 10.4 39.5 31 48.7 53.5 5.4 13.4 8.6 35.4 6.9 48.2-4.3 32-16.6 54.9-39.4 73.1-16.8 13.4-33.8 19.3-61.9 21.5-23.9 1.8-34.6 4.4-51.2 12.5-23.9 11.6-42.7 30.4-55.7 55.7-6.5 12.8-8.3 18.2-11.5 34.7-2.4 12.1-2.6 15.1-2.1 28.1.8 21.1 4.6 36.1 13.6 53.5 5.8 11.2 15.1 24.3 22.4 31.5 3.1 3 5.4 5.6 5.3 5.8-.7.6-21.7-8.8-29.9-13.4-42.6-24.2-74.1-57.5-96.7-102.4-5.5-11-14.2-34.4-16.8-45.5-10.6-44.2-10.8-79.6-.6-120.9 7.3-29.4 15.2-47.7 31.2-72.5 27.1-42.2 66.7-73.5 116.9-92.6 12.6-4.8 51.6-13.3 54.4-11.8.4.1.2 2.1-.3 4.3Z"/>
+                    <path fill="#ffffff" d="m683.7 905.7-4.7 4.8 17.5 17.5 17.5 17.5-17.6 17.9-17.5 17.9 5 5.1 5.1 5.1 22.5-22.5c12.4-12.4 22.5-22.9 22.5-23.4 0-1.2-43.2-44.6-44.5-44.6-.5 0-3.2 2.1-5.8 4.7m51.5 78 .3 6.8h60l.3-6.8.3-6.7h-61.2zm29.1-331.8c-11.6 2.5-21.5 4.9-21.9 5.4-.4.4 1.9 3.4 5.1 6.7l6 6-15.5 15.5-15.5 15.5-12-12c-6.6-6.6-12.5-12-13-12-1.3 0-52.5 51.2-52.5 52.5 0 1.6 8.4 9.5 10 9.5.8 0 10.7-9.2 22-20.5l20.5-20.5 12 12c6.6 6.6 12.5 12 13 12 .6 0 10.3-9.2 21.4-20.5l20.3-20.5 6.5 5.8c3.5 3.1 6.7 5.7 7.1 5.7.6 0 9.1-39.8 9.2-43.3 0-1.2-.3-2.1-.7-2.1-.5.1-10.3 2.2-22 4.8Z"/>
+                    <path fill="#ffffff" d="M753 745v40h16v-80h-16zm-63 8.5v31.6l7.5-.3 7.6-.3.1-31 .2-31-7.7-.3-7.7-.3zm31.4-17.2c-.2.7-.3 11.8-.2 24.7l.3 23.5 7.8.3 7.7.3V735h-7.5c-5.2 0-7.7.4-8.1 1.3m-60.1 14.4-3.3.4V785h16l-.2-17.3-.3-17.2-4.5-.1c-2.5-.1-6 .1-7.7.3Z"/>
+                </svg>
+            </a>
+            <button class="mobile-menu-button" type="button" aria-controls="mobile-navigation" aria-expanded="false" aria-label="Open navigation menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <div class="nav-and-actions" id="mobile-navigation">
+                <nav id="navbar">
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="https://github.com/EsteBot" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="ResumePage.html" aria-label="Resume">Resume</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="PublicationPage.html" aria-label="Research">Research</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="AccomplishmentsPage.html" aria-label="Credentials">Credentials</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="MyJourneyPage.html" aria-label="Path">My Path</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="LabNotesPage.html" aria-label="Research and Development Logs">R&amp;D Log</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="ContactPage.html" aria-label="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="ai-chat-button" class="header-chat-btn" onclick="toggleChat()">Ask Este <span class="chat-button-icon" aria-hidden="true">☣︎</span> Bot</button>
+        </div>
+    </header>
+
+    <h1 class="title">Accomplishments</h1>
+    <div class="divider">[ R² → 1.0 ]</div>
+    <h3 class="cntr-txt">Credentials &amp; Recognition</h3>
+
+    <main class="card-container">
+        <section class="card cred-card" aria-labelledby="verified-skills-heading">
+            <h2 id="verified-skills-heading" class="cntr-txt cred-list-heading">Verified Skills</h2>
+
+            <ul class="cred-list">
+                <li class="cred-item">
+                    <a class="cred-link" target="_blank" rel="noopener noreferrer"
+                        href="https://www.credly.com/badges/f4be6dda-e36c-4ac5-8dbd-132ed5009439/linked_in?t=sot3o8">
+                        <span class="cred-title">Google Data Analytics Professional Certification</span>
+                        <span class="cred-meta">Coursera <span class="cred-arrow" aria-hidden="true">↗</span></span>
+                    </a>
+                </li>
+
+                <li class="cred-item">
+                    <a class="cred-link" target="_blank" rel="noopener noreferrer"
+                        href="https://www.freecodecamp.org/Estestyle">
+                        <span class="cred-title">Data Analysis with Python</span>
+                        <span class="cred-meta">freeCodeCamp <span class="cred-arrow" aria-hidden="true">↗</span></span>
+                    </a>
+                </li>
+
+                <li class="cred-item">
+                    <a class="cred-link" target="_blank" rel="noopener noreferrer"
+                        href="https://www.freecodecamp.org/Estestyle">
+                        <span class="cred-title">Responsive Web Design</span>
+                        <span class="cred-meta">freeCodeCamp <span class="cred-arrow" aria-hidden="true">↗</span></span>
+                    </a>
+                </li>
+
+                <li class="cred-item">
+                    <a class="cred-link" target="_blank" rel="noopener noreferrer"
+                        href="https://clas.ucdenver.edu/deans-notes/2021/11/10/esteban-loetz-psychology-professional-research-assistant">
+                        <span class="cred-title">Featured in CU Denver Dean's Notes</span>
+                        <span class="cred-meta">CU Denver · Psychology Research <span class="cred-arrow" aria-hidden="true">↗</span></span>
+                    </a>
+                </li>
+
+                <li class="cred-item">
+                    <a class="cred-link" target="_blank" rel="noopener noreferrer"
+                        href="https://www.codecademy.com/users/estethon/achievements">
+                        <span class="cred-title">Python, SQL, Probability &amp; Linear Algebra</span>
+                        <span class="cred-meta">Codecademy <span class="cred-arrow" aria-hidden="true">↗</span></span>
+                    </a>
+                </li>
+
+                <li class="cred-item">
+                    <a class="cred-link" target="_blank" rel="noopener noreferrer"
+                      href="https://github.com/EsteBot/EsteBot-Portfolio.github.io">
+                        <span class="cred-title">Designed &amp; Maintain this Portfolio Website</span>
+                        <span class="cred-meta">
+                            <svg class="git-svg" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/>
+                            </svg>
+                            EsteStyle.com Repo <span class="cred-arrow" aria-hidden="true">↗</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- AI Chat Drawer Container -->
+    <div id="ai-widget-container">
+        <div id="ai-chat-box" style="display: none;">
+            <div id="ai-chat-header">
+                <strong>Portfolio AI Assistant</strong>
+                <button onclick="toggleChat()" class="close-chat">✕</button>
+            </div>
+            <div id="ai-chat-window">
+                <div class="chat-msg bot-msg">
+                    Hi! Tell me what role or technical requirement you're hiring for, and I'll point you to relevant projects on Esteban's site.
+                </div>
+            </div>
+            <div id="ai-chat-input-area">
+                <input type="text" id="ai-chat-input" placeholder="e.g., Which projects use SQL?" onkeydown="if(event.key === 'Enter') askAI()" />
+                <button id="ai-chat-send" onclick="askAI()">Send</button>
+            </div>
+        </div>
     </div>
-    <div class="card">
-      <h2 class="cntr-txt">Free Code Camp</h2>
-      <ul class="cred-list">
-        <li>Responsive Web Design <a target=_blank href="https://www.freecodecamp.org/Estestyle">Certificate</a></li>
-        <li>Data Analysis with Python <a target=_blank href="https://www.freecodecamp.org/Estestyle">Certificate</a></li>
-      </ul>
-      <h2 class="cntr-txt">Coursera</h2>
-      <ul>
-        <li>Google Data Analytics Professional Certification <a target=_blank href="https://www.credly.com/badges/f4be6dda-e36c-4ac5-8dbd-132ed5009439/linked_in?t=sot3o8">Certificate</a></li>
-      </ul>
-      </div>
-      <div class="card">
-        <h3 class="cntr-txt">Work highlighted at the University of Colorado Denver <a target="_blank" href="https://clas.ucdenver.edu/deans-notes/2021/11/10/esteban-loetz-psychology-professional-research-assistant">Dean's Notes</a></h3>
-        <h3 class="cntr-txt">Created and maintain this Portfolio Website</h3>
-      <div>
-      <section class="github-pro-link">
-      <a id="profile-link" target="_blank" href="https://github.com/EsteBot/EsteBot-Portfolio.github.io"><img class="git-logo"
-        src="https://onedrive.live.com/embed?resid=9F2FE505D93CB2B5%21535968&authkey=%21AMCg7fN0AtHIegU&width=500&height=501"
-        alt="GitHub Logo img"
-        loading="lazy"
-        class="logo-img"
-        width="50px">
-      </section></a>
-    </div>
-  </div>
-<div class="return-icon">
-  <a href="index.html">
-    <img
-      src="https://1drv.ms/i/s!ArWyPNkF5S-foaFRS7NmX5PhB36xhQ?embed=1&width=512&height=512"
-      alt="home profile logo"
-      loading="eager"
-      class="logo-img"
-      width="100px">
-  </a>
-</div>
-</accomplish-body>
+
+    <script>
+        const siteHeader = document.querySelector('.site-header');
+        const menuButton = document.querySelector('.mobile-menu-button');
+        const navAndActions = document.querySelector('.nav-and-actions');
+        const navbarLogoTrigger = document.querySelector('.navbar-logo-trigger');
+
+        function setMobileMenuOpen(open) {
+            navAndActions.classList.toggle('mobile-menu-open', open);
+            siteHeader.classList.toggle('mobile-menu-open', open);
+            document.body.classList.toggle('mobile-menu-open', open);
+            menuButton.classList.toggle('is-open', open);
+            menuButton.setAttribute('aria-expanded', String(open));
+            menuButton.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+        }
+
+        menuButton.addEventListener('click', () => {
+            setMobileMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true');
+        });
+
+        navAndActions.addEventListener('click', (event) => {
+            if (event.target.closest('a')) setMobileMenuOpen(false);
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+                setMobileMenuOpen(false);
+                menuButton.focus();
+            }
+        });
+
+        function setNavbarLogoHoverState(hovered) {
+            navAndActions.classList.toggle('navbar-logo-hovered', hovered);
+        }
+
+        navbarLogoTrigger.addEventListener('mouseenter', () => setNavbarLogoHoverState(true));
+        navbarLogoTrigger.addEventListener('mouseleave', () => setNavbarLogoHoverState(false));
+        navbarLogoTrigger.addEventListener('focus', () => setNavbarLogoHoverState(true));
+        navbarLogoTrigger.addEventListener('blur', () => setNavbarLogoHoverState(false));
+    </script>
+    <script src="nav-morph.js"></script>
+
+    <script>
+        (() => {
+            const items = document.querySelectorAll('.cred-item');
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (reducedMotion || !('IntersectionObserver' in window)) {
+                items.forEach((item) => item.classList.add('is-visible'));
+            } else {
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (!entry.isIntersecting) return;
+                            const idx = Array.from(items).indexOf(entry.target);
+                            entry.target.style.transitionDelay = `${Math.min(idx * 65, 325)}ms`;
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        });
+                    },
+                    { threshold: 0.12 }
+                );
+                items.forEach((item) => observer.observe(item));
+            }
+
+            document.querySelectorAll('.cred-link').forEach((card) => {
+                card.addEventListener('pointermove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    card.style.setProperty('--mx', `${e.clientX - rect.left}px`);
+                    card.style.setProperty('--my', `${e.clientY - rect.top}px`);
+                });
+            });
+        })();
+    </script>
+</body>
 </html>

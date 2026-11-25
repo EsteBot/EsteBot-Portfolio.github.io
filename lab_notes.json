@@ -1,5 +1,12 @@
 [
   {
+    "id": "note-005",
+    "date": "2026-11-18",
+    "category": "ML AI",
+    "content": "First-Principles ML: OLS Regression: built an interactive Google Colab sandbox (yfinance + scikit-learn) to introduce Ordinary Least Squares (`y = wx + b`) using live `SPY` closing prices instead of toy datasets. Walked through residual minimization, `±1σ / ±2σ` volatility channels, and a 252-day forward projection.",
+    "snippet": "# Fit the linear regression model\nmodel = LinearRegression()\nmodel.fit(X, y);"
+  },
+  {
     "id": "note-004",
     "date": "2026-11-12",
     "category": "Code Dev",
